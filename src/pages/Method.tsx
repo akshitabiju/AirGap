@@ -70,7 +70,7 @@ npm install && npm run dev`}</code></pre>
             <div className="eyebrow mb-2 mt-5">Architecture</div>
             <ol className="num space-y-1 text-xs text-ink-2">
               <li>Python pipeline (fetch → LightGBM → GeoJSON) runs locally or on a schedule.</li>
-              <li>Static site: Vite/React, served from Amazon S3 behind CloudFront.</li>
+              <li>Static site: Vite/React, served over HTTPS by AWS Amplify Hosting (S3 + CloudFront script included for verified accounts).</li>
               <li>Live point prediction: AWS Lambda (Python) loads the model, fetches today's features from Open-Meteo for any lat/lon, returns value + 68 % interval via a Function URL.</li>
             </ol>
             {meta && <p className="num mt-5 text-[11px] text-ink-3">Build {meta.generated_at.slice(0, 16).replace('T', ' ')} UTC · predictions for {meta.prediction_date} · {fmt(meta.n_districts)} districts · {fmt(meta.n_stations)} monitors</p>}

@@ -39,3 +39,6 @@ infra/.deploy-state.json
 infra/lambda_build/
 infra/lambda.zip
 AIRGAP_PROMPT.md
+
+infra/site.zip
+infra/.amplify-*

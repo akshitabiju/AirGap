@@ -61,6 +61,9 @@ if [ "$DO_LAMBDA" = 1 ]; then
       --cors '{"AllowOrigins":["*"],"AllowMethods":["GET"],"MaxAge":3600}' >/dev/null
     run aws lambda add-permission --function-name "$FN" --statement-id public-url --action lambda:InvokeFunctionUrl \
       --principal '*' --function-url-auth-type NONE --region "$REGION" >/dev/null || true
+    # Public URLs also need InvokeFunction (scoped to calls arriving via the URL), otherwise they return 403.
+    run aws lambda add-permission --function-name "$FN" --statement-id public-url-invoke --action lambda:InvokeFunction \
+      --principal '*' --invoked-via-function-url --region "$REGION" >/dev/null || true
   fi
   FN_URL=$(aws lambda get-function-url-config --function-name "$FN" --region "$REGION" --query FunctionUrl --output text 2>/dev/null || echo "")
   echo "function url: $FN_URL"

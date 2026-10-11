@@ -1,0 +1,6 @@
+{"CallerReference":"airgap-1791699643","Comment":"AirGap static site","Enabled":true,"DefaultRootObject":"index.html",
+ "Origins":{"Quantity":1,"Items":[{"Id":"s3","DomainName":"airgap-site-792560738684-9383.s3.ap-south-1.amazonaws.com","OriginAccessControlId":"E24EECZZVMHKGO","S3OriginConfig":{"OriginAccessIdentity":""}}]},
+ "DefaultCacheBehavior":{"TargetOriginId":"s3","ViewerProtocolPolicy":"redirect-to-https","Compress":true,
+   "CachePolicyId":"658327ea-f89d-4fab-a63d-7e88639e58f6","AllowedMethods":{"Quantity":2,"Items":["GET","HEAD"]}},
+ "CustomErrorResponses":{"Quantity":2,"Items":[{"ErrorCode":403,"ResponsePagePath":"/index.html","ResponseCode":"200","ErrorCachingMinTTL":10},{"ErrorCode":404,"ResponsePagePath":"/index.html","ResponseCode":"200","ErrorCachingMinTTL":10}]},
+ "PriceClass":"PriceClass_200","HttpVersion":"http2and3"}

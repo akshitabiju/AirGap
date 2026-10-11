@@ -2,6 +2,8 @@
 
 **PM2.5 for the districts India doesn't measure.**
 
+Live: **https://main.d3cvwqcst393r5.amplifyapp.com** · Live model endpoint: `https://2gd4u767a54mvulo4cqwsnhshq0iwbjh.lambda-url.ap-south-1.on.aws/?lat=26.9&lon=75.8`
+
 India has roughly 600 PM2.5 monitors reporting publicly for 1.4 billion people. Most of its 735 districts have none. AirGap learns from the monitors that exist, reads today's satellite-assimilated aerosol and weather for every district, and publishes:
 
 1. a daily PM2.5 estimate with an honest error bar for all 735 districts,
@@ -75,7 +77,7 @@ src/           Vite + React + TypeScript + Tailwind v4 + MapLibre (OpenFreeMap t
 infra/         AWS: Lambda handler + deploy.sh (S3 + CloudFront + Lambda Function URL)
 ```
 
-**AWS**: the built site is served from S3 behind CloudFront. A Python 3.12 Lambda behind a Function URL answers `GET /?lat=&lon=` for any point in India by fetching today's CAMS + weather from Open-Meteo and evaluating the LightGBM models with a dependency-free evaluator (`ml/lgb_pure.py`, verified equal to lightgbm in tests). The site calls it when `VITE_PREDICT_URL` is set and otherwise shows the precomputed district value. See [`infra/README.md`](infra/README.md).
+**AWS**: the built site is served over HTTPS by **AWS Amplify Hosting** (manual zip deploy, `infra/deploy_amplify.sh`); the S3 + CloudFront path in `infra/deploy.sh` also works on accounts that AWS has verified for CloudFront (new accounts are blocked from creating distributions until Support verifies them). A **Python 3.12 Lambda behind a public Function URL** (ap-south-1) answers `GET /?lat=&lon=` for any point in India by fetching today's CAMS + weather from Open-Meteo and evaluating the LightGBM models with a dependency-free evaluator (`ml/lgb_pure.py`, verified equal to lightgbm in tests). The site calls it when a district is pinned (`VITE_PREDICT_URL` is baked in at build time) and falls back to the precomputed district value. See [`infra/README.md`](infra/README.md).
 
 ## Run it
 

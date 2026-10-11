@@ -45,7 +45,7 @@ Numbers in [brackets] are what the site shows on the day of recording; read what
 
 ### 2:35 – 2:55 · How it's built (Method page, scroll slowly; end on the architecture box)
 
-> All open data: OpenAQ for ground truth, Copernicus CAMS and ERA5 through Open-Meteo for features, geoBoundaries for districts. One Python pipeline regenerates everything; LightGBM with leave-cities-out validation. The site is static on S3 behind CloudFront, and the live prediction is an AWS Lambda with a Function URL.
+> All open data: OpenAQ for ground truth, Copernicus CAMS and ERA5 through Open-Meteo for features, geoBoundaries for districts. One Python pipeline regenerates everything; LightGBM with leave-cities-out validation. The site is on AWS Amplify, and the live prediction is an AWS Lambda with a public Function URL.
 
 ### 2:55 – 3:00 · Close (back to the map)
 

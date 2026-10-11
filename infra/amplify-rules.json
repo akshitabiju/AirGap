@@ -1,0 +1,7 @@
+[
+  {
+    "source": "</^[^.]+$|\\.(?!(css|gif|ico|jpg|jpeg|js|mjs|png|txt|svg|woff|woff2|ttf|map|json|geojson|webp)$)([^.]+$)/>",
+    "target": "/index.html",
+    "status": "200"
+  }
+]
