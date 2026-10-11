@@ -1,4 +1,4 @@
-# I built a PM2.5 model for the half of India with no air monitor, and shipped it on AWS in a weekend
+# I built a PM2.5 model for the half of India with no air monitor, and shipped it on AWS in a day
 
 India has about 570 public PM2.5 monitors for 1.4 billion people. When I counted, 368 of the 735 districts had no monitor within 50 km. For the people there, every air-quality app shows a blank, or quietly interpolates between faraway dots without saying how wrong that is.
 
@@ -16,7 +16,7 @@ A random train/test split would let the model see Delhi on Monday and be tested 
 
 ## The AWS part
 
-**AWS Lambda with a Function URL** is the live piece. When a user pins any district, the browser calls `GET /?lat=&lon=`. The function fetches today's CAMS and weather features for that exact coordinate, evaluates the three LightGBM model files with a 100-line pure-Python evaluator (verified equal to lightgbm in tests, so the package is 2 MB instead of 100 MB), and returns the prediction and interval in about a second. No API Gateway, no containers.
+**AWS Lambda with a Function URL** is the live piece. When a user pins any district, the browser calls `GET /?lat=&lon=`. The function fetches today's CAMS and weather features for that exact coordinate, evaluates the three LightGBM model files with a pure-Python evaluator of about 79 lines (verified equal to lightgbm in tests, so the package is 2 MB instead of 100 MB), and returns the prediction and interval in about a second. No API Gateway, no containers.
 
 **AWS Amplify Hosting** serves the React site and its generated data files over HTTPS with a CDN. I deploy with manual zip uploads from a script; a retrained model goes live with one command.
 
