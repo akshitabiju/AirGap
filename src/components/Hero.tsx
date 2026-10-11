@@ -5,6 +5,15 @@ import { band, colorFor, fmt } from '../lib/scale'
 import { useParallax } from '../lib/useReveal'
 
 const LON0 = 68, LON1 = 97.5, LAT0 = 6.5, LAT1 = 36
+const merc = (lat: number) => Math.log(Math.tan(Math.PI / 4 + (lat * Math.PI) / 360))
+const MY0 = merc(LAT0), MY1 = merc(LAT1)
+/** Web-Mercator fit of India's bounding box into a w x h box (same look as the MapLibre map below). */
+function projector(w: number, h: number) {
+  const sc = Math.min(w / ((LON1 - LON0) * (Math.PI / 180)), h / (MY1 - MY0))
+  const pw = (LON1 - LON0) * (Math.PI / 180) * sc, ph = (MY1 - MY0) * sc
+  const ox = (w - pw) / 2, oy = (h - ph) / 2
+  return { X: (lon: number) => ox + (lon - LON0) * (Math.PI / 180) * sc, Y: (lat: number) => oy + (MY1 - merc(lat)) * sc, sc }
+}
 
 /* India drawn from the live district predictions: district fills, glowing state names, pulsing hotspots. */
 function IndiaGlow() {
@@ -27,10 +36,8 @@ function IndiaGlow() {
       for (const c of [cv, base]) { c.width = Math.round(W * dpr); c.height = Math.round(H * dpr) }
       const b = base.getContext('2d')!
       b.setTransform(dpr, 0, 0, dpr, 0, 0)
-      const s = Math.min(W / (LON1 - LON0), H / ((LAT1 - LAT0) * 1.05))
-      const ox = (W - (LON1 - LON0) * s) / 2, oy = (H - (LAT1 - LAT0) * s * 1.05) / 2
-      X = (lon) => ox + (lon - LON0) * s
-      Y = (lat) => oy + (LAT1 - lat) * s * 1.05
+      const pr = projector(W, H)
+      X = pr.X; Y = pr.Y
       const tracePolys = (f: (typeof districts.features)[number]) => {
         const g = f.geometry
         const polys = g.type === 'Polygon' ? [g.coordinates] : g.type === 'MultiPolygon' ? g.coordinates : []
@@ -72,9 +79,7 @@ function Hotspots({ onOpen }: { onOpen: (district: string) => void }) {
   }, [])
   const hot = (states?.hotspots ?? []).filter((h) => h.pred >= 60).slice(0, 25)
   const { w, h } = size
-  const sc = Math.min(w / (LON1 - LON0), h / ((LAT1 - LAT0) * 1.05))
-  const ox = (w - (LON1 - LON0) * sc) / 2, oy = (h - (LAT1 - LAT0) * sc * 1.05) / 2
-  const X = (lon: number) => ox + (lon - LON0) * sc, Y = (lat: number) => oy + (LAT1 - lat) * sc * 1.05
+  const { X, Y } = projector(w, h)
   const sel = open != null ? hot[open] : null
   return (
     <div ref={host} className="absolute inset-0" onClick={(e) => { if (e.target === e.currentTarget) setOpen(null) }}>
@@ -179,12 +184,12 @@ export default function Hero({ onExplore, onCheck }: { onExplore: () => void; on
       <Particles />
 
       {/* glowing India, sized to the viewport so the whole country is on the first screen */}
-      <div className="float-2 pointer-events-none absolute right-[-6%] top-[14%] h-[60%] w-[60%] opacity-90 lg:right-[2%] lg:top-[76px] lg:h-[calc(100svh-140px)] lg:max-h-[880px] lg:w-[calc((100svh-140px)*0.92)] lg:max-w-[46vw]">
+      <div className="float-2 pointer-events-none absolute right-[-6%] top-[14%] z-10 h-[60%] w-[60%] opacity-95 lg:right-[1%] lg:top-[112px] lg:h-[calc(100svh-120px)] lg:max-h-[960px] lg:w-[calc((100svh-120px)*0.98)] lg:max-w-[52vw]">
         <IndiaGlow />
         <Hotspots onOpen={onOpenDistrict} />
       </div>
       {/* live readout over the map */}
-      <div className="pointer-events-none absolute right-4 top-[72px] hidden flex-col items-end gap-2 lg:flex">
+      <div className="pointer-events-none absolute right-4 top-[72px] z-20 hidden flex-col items-end gap-2 lg:flex">
         <Clock />
         {worstState && top && (
           <div className="glass rounded-2xl px-3.5 py-2.5 text-xs text-cream/85">
@@ -197,7 +202,7 @@ export default function Hero({ onExplore, onCheck }: { onExplore: () => void; on
       </div>
       <div className="pointer-events-none absolute inset-x-0 bottom-0 h-40 bg-gradient-to-t from-cream to-transparent" />
 
-      <div className="relative mx-auto flex max-w-7xl flex-col justify-center px-5 pb-24 pt-28 sm:px-8 sm:pt-32" style={{ minHeight: 'max(100svh, 720px)' }}>
+      <div className="relative z-[5] mx-auto flex max-w-7xl flex-col justify-center px-5 pb-24 pt-28 sm:px-8 sm:pt-32 pointer-events-none [&_a]:pointer-events-auto [&_button]:pointer-events-auto" style={{ minHeight: 'max(100svh, 720px)' }}>
         <div className="max-w-3xl lg:max-w-[52%]">
           <p className="rise inline-flex items-center gap-2 rounded-full border border-cream/20 bg-white/5 px-3 py-1 text-xs uppercase tracking-[0.18em] text-cream/80 backdrop-blur">
             <Satellite size={13} className="text-haze" /> Daily air guide for every district in India · {meta?.prediction_date ?? '…'}
