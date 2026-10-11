@@ -1,9 +1,5 @@
 # AirGap · Track 1: Air · Team Axiom
 
-**Live:** https://main.d3cvwqcst393r5.amplifyapp.com
-**Code:** https://github.com/akshitabiju/AirGap
-**Video:** (YouTube link)
-
 ## The problem
 
 PM2.5 is the pollutant that lodges deepest in the lungs and is one of India's largest causes of early death. India has about 570 public PM2.5 monitors, almost all in big cities. **368 of 735 districts have no public monitor within 50 km.** For the people there, at least 85 million in towns alone plus most of rural India, no app can answer the most basic question: *is it safe to go outside today?* A mother with an asthmatic child, a school deciding on outdoor assembly, an outdoor worker, an elderly person with a heart condition: none of them has a number to act on.
@@ -47,6 +43,10 @@ OpenAQ (CC BY 4.0) · Copernicus CAMS and ERA5 via Open-Meteo (CC BY 4.0 / Coper
 ## Honest limitations
 
 District-scale daily estimates, not street-level measurements. Trained on a monsoon window (low, flat PM2.5), so R² is modest (0.28) even though the error beats the baseline by 36 %; winter will read differently and the pipeline is built to be re-run. Hourly "best hours" use the satellite model's diurnal shape scaled to our daily estimate. Placement optimises one defensible objective; real siting also needs land, power and maintenance.
+
+## AI tools used
+
+**Claude Code (Anthropic, Claude Fable 5.1)** was used as a pair programmer throughout the build: scaffolding the data pipeline and the React front end, writing the AWS deployment scripts, debugging (rate limits, CloudFront account restrictions, Lambda URL permissions, MapLibre rendering issues), and drafting documentation. Product decisions, scope, verification of every number against the source data, the AWS account and deployment, and the demo were done by the team. No AI model is used inside the product itself: predictions come from a LightGBM model trained on real monitor data, and all guidance text is adapted from CPCB's published health advisories.
 
 ## Team
 
