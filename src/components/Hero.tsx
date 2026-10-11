@@ -45,8 +45,8 @@ function IndiaGlow() {
       const tracePolys = (f: (typeof districts.features)[number]) => {
         const g = f.geometry
         const polys = g.type === 'Polygon' ? [g.coordinates] : g.type === 'MultiPolygon' ? g.coordinates : []
+        b.beginPath()   // one path for ALL parts of a multipolygon, else only the last part gets filled
         for (const poly of polys) {
-          b.beginPath()
           for (const ring of poly) { ring.forEach(([lon, lat], i) => (i ? b.lineTo(X(lon), Y(lat)) : b.moveTo(X(lon), Y(lat)))); b.closePath() }
         }
       }
