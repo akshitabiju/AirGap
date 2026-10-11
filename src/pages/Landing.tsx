@@ -25,7 +25,9 @@ export default function Landing() {
   const deepLinked = useRef(false)
   useEffect(() => {
     if (deepLinked.current || !districts) return
-    const id = Number(new URLSearchParams(location.search).get('d'))
+    const raw = new URLSearchParams(location.search).get('d')
+    if (raw == null || raw === '') { deepLinked.current = true; return }
+    const id = Number(raw)
     const f = Number.isFinite(id) ? districts.features.find((x) => x.properties.id === id) : undefined
     if (!f) return
     deepLinked.current = true
