@@ -103,7 +103,7 @@ export default function Hero({ onExplore, onCheck }: { onExplore: () => void; on
   const gain = metrics ? Math.round(((metrics.overall.cams_mae - metrics.overall.mae) / metrics.overall.cams_mae) * 100) : null
 
   return (
-    <section ref={host} className="hero-sky relative overflow-hidden text-cream" style={{ height: 'max(100svh, 720px)' }}>
+    <section ref={host} className="hero-sky relative overflow-hidden text-cream" style={{ minHeight: 'max(100svh, 720px)' }}>
       {/* atmosphere */}
       <div className="haze haze-a" style={{ width: '70vw', height: '50vh', left: '-10vw', top: '35%', background: 'rgba(56,189,248,0.22)' }} />
       <div className="haze haze-b" style={{ width: '60vw', height: '45vh', right: '-15vw', top: '20%', background: 'rgba(94,234,212,0.2)' }} />
@@ -121,12 +121,12 @@ export default function Hero({ onExplore, onCheck }: { onExplore: () => void; on
       </div>
       <div className="pointer-events-none absolute inset-x-0 bottom-0 h-40 bg-gradient-to-t from-cream to-transparent" />
 
-      <div className="relative mx-auto flex h-full max-w-7xl flex-col justify-center px-5 pb-24 pt-20 sm:px-8">
+      <div className="relative mx-auto flex max-w-7xl flex-col justify-center px-5 pb-24 pt-28 sm:px-8 sm:pt-32" style={{ minHeight: 'max(100svh, 720px)' }}>
         <div className="max-w-3xl">
           <p className="rise inline-flex items-center gap-2 rounded-full border border-cream/20 bg-white/5 px-3 py-1 text-xs uppercase tracking-[0.18em] text-cream/80 backdrop-blur">
             <Satellite size={13} className="text-haze" /> Daily air guide for every district in India · {meta?.prediction_date ?? '…'}
           </p>
-          <h1 className="rise rise-1 mt-6 text-[2.9rem] leading-[0.98] text-cream sm:text-6xl lg:text-[5.4rem]">
+          <h1 className="rise rise-1 mt-6 text-[2.6rem] leading-[1] text-cream sm:text-5xl lg:text-[4.4rem] xl:text-[5rem]">
             Should you <span className="shimmer-text italic">step out</span> today?<br />
             <span className="text-haze">Every district</span> has an answer now.
           </h1>
@@ -147,7 +147,7 @@ export default function Hero({ onExplore, onCheck }: { onExplore: () => void; on
         </div>
 
         {/* floating glass stats */}
-        <div className="float-1 mt-14 grid max-w-3xl grid-cols-2 gap-3 sm:grid-cols-4">
+        <div className="float-1 mt-10 grid max-w-3xl grid-cols-2 gap-3 sm:grid-cols-4">
           <Glass icon={<Wind size={14} />} label="Districts predicted" value={meta ? fmt(meta.n_districts) : '…'} />
           <Glass icon={<Satellite size={14} />} label="Monitors learned from" value={meta ? fmt(meta.n_stations) : '…'} />
           <Glass icon={<ShieldCheck size={14} />} label="Held-out-city error" value={metrics ? `${fmt(metrics.overall.mae, 1)}` : '…'} unit="µg/m³ MAE" />
