@@ -10,7 +10,7 @@ export default function Method() {
   return (
     <div className="mx-auto max-w-7xl px-5 py-12 sm:px-8">
       <div className="hero-sky relative -mx-5 -mt-12 overflow-hidden px-5 pb-14 pt-16 text-cream sm:-mx-8 sm:rounded-b-[2.5rem] sm:px-10">
-        <div className="haze haze-b" style={{ width: '50vw', height: '40vh', right: '-10vw', top: '-10%', background: 'rgba(90,120,220,0.3)' }} />
+        <div className="haze haze-b" style={{ width: '50vw', height: '40vh', right: '-10vw', top: '-10%', background: 'rgba(129,140,248,0.22)' }} />
         <div className="relative">
           <p className="rise text-xs uppercase tracking-[0.18em] text-cream/60">Method &amp; data</p>
           <h1 className="rise rise-1 mt-2 max-w-3xl !text-cream text-4xl sm:text-6xl">Everything here is open data and <em className="italic text-haze">one model you can rerun tonight.</em></h1>

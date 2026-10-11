@@ -3,7 +3,7 @@ import { fmt } from '../lib/scale'
 
 /* Two-series palette, validated with the dataviz palette checker (light surface #f5efe4).
    CAMS markers are hollow as a secondary encoding so identity is never colour-alone. */
-export const SERIES = { airgap: '#3f8a5d', cams: '#a8640f' }
+export const SERIES = { airgap: '#16697a', cams: '#b8862a' }
 
 interface Pt { obs: number; pred: number; cams: number; city: string }
 

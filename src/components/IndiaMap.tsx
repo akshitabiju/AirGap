@@ -1,11 +1,11 @@
 import { useEffect, useRef, useState } from 'react'
-import { Map as MLMap, NavigationControl, setWorkerUrl, type MapMouseEvent } from 'maplibre-gl'
+import { Map as MLMap, NavigationControl, Popup, setWorkerUrl, type MapMouseEvent } from 'maplibre-gl'
 import 'maplibre-gl/dist/maplibre-gl.css'
 import { useData } from '../lib/store'
 import { MAP_COLOR_EXPR, UNC_COLOR_EXPR, DIST_COLOR_EXPR } from '../lib/scale'
 import type { PlacementSite } from '../lib/types'
 
-const STYLE = 'https://tiles.openfreemap.org/styles/positron'
+const STYLE = 'https://tiles.openfreemap.org/styles/liberty'
 // Vite 8 / Rolldown can't resolve MapLibre's inline worker blob; serve the worker as a static file instead.
 setWorkerUrl(`${import.meta.env.BASE_URL.replace(/\/$/, '')}/maplibre-gl-worker.mjs`)
 const INDIA_BOUNDS: [[number, number], [number, number]] = [[68.0, 7.0], [97.0, 35.5]]
@@ -45,7 +45,7 @@ export default function IndiaMap({ mode = 'districts', sites, highlightSite, fly
       attributionControl: { compact: true },
       maxBounds: [[55, -5], [110, 45]],
       minZoom: 3.2,
-      maxZoom: 11,
+      maxZoom: 15,
       dragRotate: false,
       pitchWithRotate: false,
     })
@@ -82,8 +82,8 @@ export default function IndiaMap({ mode = 'districts', sites, highlightSite, fly
             'fill-opacity': [
               'case',
               ['boolean', ['feature-state', 'hover'], false], 0.95,
-              ['boolean', ['feature-state', 'selected'], false], 1,
-              0.72,
+              ['boolean', ['feature-state', 'selected'], false], 0.9,
+              ['interpolate', ['linear'], ['zoom'], 5, 0.72, 9, 0.5, 13, 0.3],
             ],
           },
         },
@@ -95,7 +95,7 @@ export default function IndiaMap({ mode = 'districts', sites, highlightSite, fly
           type: 'line',
           source: 'districts',
           paint: {
-            'line-color': '#1b1a17',
+            'line-color': '#0c1a1e',
             'line-opacity': [
               'case',
               ['boolean', ['feature-state', 'selected'], false], 0.9,
@@ -137,7 +137,7 @@ export default function IndiaMap({ mode = 'districts', sites, highlightSite, fly
           features: stations.map((s) => ({
             type: 'Feature',
             geometry: { type: 'Point', coordinates: [s.lon, s.lat] },
-            properties: { name: s.name, v: s.last_value ?? null },
+            properties: { name: s.name, v: s.last_value ?? null, date: s.last_date ?? null, provider: s.provider ?? null },
           })),
         },
       })
@@ -146,13 +146,30 @@ export default function IndiaMap({ mode = 'districts', sites, highlightSite, fly
         type: 'circle',
         source: 'stations',
         paint: {
-          'circle-radius': ['interpolate', ['linear'], ['zoom'], 4, 1.6, 8, 4],
-          'circle-color': '#1b1a17',
-          'circle-opacity': 0.85,
-          'circle-stroke-color': '#f5efe4',
-          'circle-stroke-width': 0.6,
+          'circle-radius': ['interpolate', ['linear'], ['zoom'], 4, 1.8, 8, 5, 12, 9],
+          'circle-color': ['case', ['==', ['get', 'v'], null], '#0c1a1e', ['interpolate', ['linear'], ['get', 'v'], 0, '#24a883', 30, '#7cc46a', 60, '#f2cf4a', 90, '#f0913a', 120, '#e2603f', 250, '#b8325a', 400, '#5a1f6e']],
+          'circle-opacity': 0.95,
+          'circle-stroke-color': '#0c1a1e',
+          'circle-stroke-width': ['interpolate', ['linear'], ['zoom'], 4, 0.4, 10, 1.2],
         },
       })
+      map.addLayer({
+        id: 'stations-label', type: 'symbol', source: 'stations', minzoom: 9,
+        layout: { 'text-field': ['case', ['==', ['get', 'v'], null], '', ['to-string', ['get', 'v']]], 'text-size': 11, 'text-font': ['Noto Sans Bold'], 'text-offset': [0, 1.1], 'text-anchor': 'top', 'text-allow-overlap': false },
+        paint: { 'text-color': '#0c1a1e', 'text-halo-color': '#f4f7f6', 'text-halo-width': 1.2 },
+      })
+      const popup = new Popup({ closeButton: false, closeOnClick: false, offset: 10, className: 'airgap-popup' })
+      map.on('mouseenter', 'stations', (e) => {
+        const f = e.features?.[0]
+        if (!f) return
+        const p = f.properties as { name: string; v: number | null; date: string | null; provider: string | null }
+        const [lon, lat] = (f.geometry as GeoJSON.Point).coordinates
+        popup.setLngLat([lon, lat]).setHTML(
+          `<div class="text-xs"><div class="font-medium">${p.name}</div><div class="num">${p.v != null ? `${p.v} µg/m³` : 'no recent data'}<span class="text-ink-3"> · measured ${p.date ?? ''}</span></div><div class="text-ink-3">${p.provider ?? ''}</div></div>`,
+        ).addTo(map)
+        map.getCanvas().style.cursor = 'pointer'
+      })
+      map.on('mouseleave', 'stations', () => { popup.remove(); map.getCanvas().style.cursor = '' })
     }
     if (mode === 'placement' && sites && !map.getSource('sites')) {
       map.addSource('sites', {
@@ -166,19 +183,19 @@ export default function IndiaMap({ mode = 'districts', sites, highlightSite, fly
           })),
         },
       })
-      map.addLayer({ id: 'sites-halo', type: 'circle', source: 'sites', paint: { 'circle-radius': 14, 'circle-color': '#e0a458', 'circle-opacity': 0.25 } })
+      map.addLayer({ id: 'sites-halo', type: 'circle', source: 'sites', paint: { 'circle-radius': 14, 'circle-color': '#5eead4', 'circle-opacity': 0.3 } })
       map.addLayer({
         id: 'sites',
         type: 'circle',
         source: 'sites',
-        paint: { 'circle-radius': 7, 'circle-color': '#e0a458', 'circle-stroke-color': '#1b1a17', 'circle-stroke-width': 1.4 },
+        paint: { 'circle-radius': 7, 'circle-color': '#5eead4', 'circle-stroke-color': '#0c1a1e', 'circle-stroke-width': 1.4 },
       })
       map.addLayer({
         id: 'sites-label',
         type: 'symbol',
         source: 'sites',
         layout: { 'text-field': ['to-string', ['get', 'rank']], 'text-size': 10, 'text-font': ['Noto Sans Bold'], 'text-allow-overlap': true },
-        paint: { 'text-color': '#1b1a17' },
+        paint: { 'text-color': '#0c1a1e' },
       })
       map.setPaintProperty('district-fill', 'fill-opacity', 0.45)
     }

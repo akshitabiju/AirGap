@@ -5,6 +5,7 @@ import IndiaMap from '../components/IndiaMap'
 import DetailPanel from '../components/DetailPanel'
 import Legend from '../components/Legend'
 import MapControls from '../components/MapControls'
+import MyAir from '../components/MyAir'
 import { useData } from '../lib/store'
 import { colorFor, fmt } from '../lib/scale'
 import { useReveal } from '../lib/useReveal'
@@ -44,9 +45,11 @@ export default function Landing() {
     <>
       <Hero onExplore={() => mapSection.current?.scrollIntoView({ behavior: 'smooth' })} onPick={onPick} />
 
+      <MyAir onLocate={(d) => { setSelected(d.id); setFlyTo({ lat: d.lat, lon: d.lon }); mapSection.current?.scrollIntoView({ behavior: 'smooth' }) }} />
+
       {/* live ticker */}
       {ticker.length > 0 && (
-        <div className="ticker mt-16 border-y border-line py-2.5 text-xs">
+        <div className="ticker mt-14 border-y border-line py-2.5 text-xs">
           <div className="ticker-track">
             {[...ticker, ...ticker].map((f, i) => (
               <button key={`${f.properties.id}-${i}`} onClick={() => { setSelected(f.properties.id); setFlyTo({ lat: f.properties.lat, lon: f.properties.lon }); mapSection.current?.scrollIntoView({ behavior: 'smooth' }) }} className="flex items-center gap-2 whitespace-nowrap text-ink-2 hover:text-ink">

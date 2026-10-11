@@ -28,7 +28,7 @@ function IndiaGlow() {
       const ox = (r.width - (lon1 - lon0) * s) / 2, oy = (r.height - (lat1 - lat0) * s * 1.05) / 2
       const X = (lon: number) => ox + (lon - lon0) * s
       const Y = (lat: number) => oy + (lat1 - lat) * s * 1.05
-      ctx.shadowColor = 'rgba(240,179,106,0.9)'; ctx.shadowBlur = 24
+      ctx.shadowColor = 'rgba(94,234,212,0.75)'; ctx.shadowBlur = 22
       for (const f of districts.features) {
         const g = f.geometry
         const polys = g.type === 'Polygon' ? [g.coordinates] : g.type === 'MultiPolygon' ? g.coordinates : []
@@ -40,7 +40,7 @@ function IndiaGlow() {
           ctx.fill()
         }
       }
-      ctx.shadowBlur = 0; ctx.globalAlpha = 0.5; ctx.strokeStyle = 'rgba(245,239,228,0.35)'; ctx.lineWidth = 0.4
+      ctx.shadowBlur = 0; ctx.globalAlpha = 0.5; ctx.strokeStyle = 'rgba(244,247,246,0.35)'; ctx.lineWidth = 0.4
       for (const f of districts.features) {
         const g = f.geometry
         const polys = g.type === 'Polygon' ? [g.coordinates] : g.type === 'MultiPolygon' ? g.coordinates : []
@@ -87,7 +87,7 @@ function Particles() {
         if (p.x < -0.02 || p.x > 1.02 || p.y < -0.02 || p.y > 1.02) { p.x = Math.random(); p.y = Math.random() }
         const warm = p.a > 0.75
         ctx.beginPath(); ctx.arc(p.x * w, p.y * h, warm ? 1.6 : 1, 0, Math.PI * 2)
-        ctx.fillStyle = warm ? `rgba(240,179,106,${0.35 + 0.4 * p.a})` : `rgba(245,239,228,${0.15 + 0.25 * p.a})`
+        ctx.fillStyle = warm ? `rgba(94,234,212,${0.35 + 0.4 * p.a})` : `rgba(244,247,246,${0.12 + 0.22 * p.a})`
         ctx.fill()
       }
     }
@@ -107,9 +107,9 @@ export default function Hero({ onExplore, onPick }: { onExplore: () => void; onP
   return (
     <section ref={host} className="hero-sky relative overflow-hidden text-cream" style={{ height: 'max(100svh, 720px)' }}>
       {/* atmosphere */}
-      <div className="haze haze-a" style={{ width: '70vw', height: '50vh', left: '-10vw', top: '35%', background: 'rgba(217,100,58,0.35)' }} />
-      <div className="haze haze-b" style={{ width: '60vw', height: '45vh', right: '-15vw', top: '20%', background: 'rgba(240,179,106,0.28)' }} />
-      <div className="haze haze-a" style={{ width: '40vw', height: '30vh', left: '30vw', top: '-10%', background: 'rgba(90,120,220,0.22)', animationDuration: '34s' }} />
+      <div className="haze haze-a" style={{ width: '70vw', height: '50vh', left: '-10vw', top: '35%', background: 'rgba(56,189,248,0.22)' }} />
+      <div className="haze haze-b" style={{ width: '60vw', height: '45vh', right: '-15vw', top: '20%', background: 'rgba(94,234,212,0.2)' }} />
+      <div className="haze haze-a" style={{ width: '40vw', height: '30vh', left: '30vw', top: '-10%', background: 'rgba(129,140,248,0.2)', animationDuration: '34s' }} />
       <Particles />
       {/* glowing India */}
       <div className="float-2 pointer-events-none absolute right-[-4%] top-[8%] h-[88%] w-[58%] opacity-90 lg:right-[2%] lg:w-[46%]">
@@ -118,7 +118,7 @@ export default function Hero({ onExplore, onPick }: { onExplore: () => void; onP
       {/* orbit ring */}
       <div className="float-3 pointer-events-none absolute right-[6%] top-[14%] hidden h-[62vh] w-[62vh] rounded-full border border-cream/10 lg:block">
         <div className="spin-slow absolute inset-0 rounded-full border border-dashed border-cream/15">
-          <span className="absolute -top-2 left-1/2 grid h-4 w-4 -translate-x-1/2 place-items-center rounded-full bg-haze shadow-[0_0_24px_6px_rgba(240,179,106,0.6)]" />
+          <span className="absolute -top-2 left-1/2 grid h-4 w-4 -translate-x-1/2 place-items-center rounded-full bg-haze shadow-[0_0_24px_6px_rgba(94,234,212,0.55)]" />
         </div>
       </div>
       <div className="pointer-events-none absolute inset-x-0 bottom-0 h-40 bg-gradient-to-t from-cream to-transparent" />
