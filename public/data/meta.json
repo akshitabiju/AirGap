@@ -1,0 +1,61 @@
+{
+  "generated_at": "2026-10-11T03:50:00+00:00",
+  "prediction_date": "2026-10-11",
+  "n_districts": 735,
+  "n_districts_predicted": 735,
+  "n_stations": 571,
+  "ground_truth": {
+    "stations": 571,
+    "location_days": 40160,
+    "city_groups": 306,
+    "sensor_failures": 0,
+    "date_min": "2026-07-11",
+    "date_max": "2026-10-10",
+    "fetched_at": "2026-10-11T03:33:37+00:00",
+    "min_hours_per_day": 16,
+    "history_days": 92
+  },
+  "sources": [
+    {
+      "name": "OpenAQ v3 (CPCB, DPCC and other providers)",
+      "url": "https://openaq.org",
+      "licence": "CC BY 4.0",
+      "role": "Ground-truth daily PM2.5 at monitors"
+    },
+    {
+      "name": "Copernicus CAMS global atmospheric composition, via Open-Meteo Air Quality API",
+      "url": "https://open-meteo.com/en/docs/air-quality-api",
+      "licence": "CC BY 4.0 (Open-Meteo); Copernicus licence",
+      "role": "Satellite-assimilated PM2.5, PM10, aerosol optical depth, dust (features + baseline)"
+    },
+    {
+      "name": "ERA5 reanalysis, via Open-Meteo Historical Weather API",
+      "url": "https://open-meteo.com/en/docs/historical-weather-api",
+      "licence": "CC BY 4.0 (Open-Meteo); Copernicus licence",
+      "role": "Daily weather features"
+    },
+    {
+      "name": "geoBoundaries IND ADM2",
+      "url": "https://www.geoboundaries.org",
+      "licence": "CC BY 4.0",
+      "role": "District polygons (735)"
+    },
+    {
+      "name": "GeoNames cities (pop >= 1,000)",
+      "url": "https://www.geonames.org",
+      "licence": "CC BY 4.0",
+      "role": "City locations and population for search and monitor placement"
+    },
+    {
+      "name": "OpenFreeMap / OpenStreetMap",
+      "url": "https://openfreemap.org",
+      "licence": "ODbL (OSM data)",
+      "role": "Basemap tiles"
+    }
+  ],
+  "district_pred_median": 29.7,
+  "district_pred_max": 64.0,
+  "districts_over_60": 3,
+  "districts_over_15": 681,
+  "districts_no_monitor_50km": 368
+}

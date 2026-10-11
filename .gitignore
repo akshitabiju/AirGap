@@ -1,0 +1,40 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+node_modules
+dist
+dist-ssr
+*.local
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# AirGap secrets & caches
+openaq.key
+*.key
+.env
+.env.*
+!.env.example
+data/raw/
+data/cache/
+data/*.parquet
+data/*.csv
+ml/__pycache__/
+**/__pycache__/
+infra/.deploy-state.json
+infra/lambda_build/
+infra/lambda.zip

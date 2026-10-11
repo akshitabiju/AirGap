@@ -1,0 +1,11 @@
+{
+  "stations": 571,
+  "location_days": 40160,
+  "city_groups": 306,
+  "sensor_failures": 0,
+  "date_min": "2026-07-11",
+  "date_max": "2026-10-10",
+  "fetched_at": "2026-10-11T03:33:37+00:00",
+  "min_hours_per_day": 16,
+  "history_days": 92
+}

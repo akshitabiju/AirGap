@@ -1,0 +1,5882 @@
+[
+  {
+    "district_id": 0,
+    "name": "Ashoknagar",
+    "shape_id": "76128533B75548370501185",
+    "lat": 24.6221,
+    "lon": 77.8739,
+    "area_km2": 4749.8
+  },
+  {
+    "district_id": 1,
+    "name": "Raisen",
+    "shape_id": "76128533B57893545331548",
+    "lat": 23.2651,
+    "lon": 78.1751,
+    "area_km2": 8524.2
+  },
+  {
+    "district_id": 2,
+    "name": "Chhindwara",
+    "shape_id": "76128533B70646408240587",
+    "lat": 22.1388,
+    "lon": 78.8113,
+    "area_km2": 11857.6
+  },
+  {
+    "district_id": 3,
+    "name": "Betul",
+    "shape_id": "76128533B82559220423608",
+    "lat": 21.8774,
+    "lon": 77.8774,
+    "area_km2": 10065.4
+  },
+  {
+    "district_id": 4,
+    "name": "Hoshangabad",
+    "shape_id": "76128533B45314020251888",
+    "lat": 22.5962,
+    "lon": 77.9286,
+    "area_km2": 6714.3
+  },
+  {
+    "district_id": 5,
+    "name": "Sehore",
+    "shape_id": "76128533B39959897010345",
+    "lat": 23.1115,
+    "lon": 77.0693,
+    "area_km2": 6583.0
+  },
+  {
+    "district_id": 6,
+    "name": "Jabalpur",
+    "shape_id": "76128533B27615708126939",
+    "lat": 23.2193,
+    "lon": 79.9832,
+    "area_km2": 5113.8
+  },
+  {
+    "district_id": 7,
+    "name": "Narsimhapur",
+    "shape_id": "76128533B20683890392439",
+    "lat": 22.9315,
+    "lon": 79.0892,
+    "area_km2": 5154.3
+  },
+  {
+    "district_id": 8,
+    "name": "Panna",
+    "shape_id": "76128533B81607600692021",
+    "lat": 24.4468,
+    "lon": 80.1478,
+    "area_km2": 7068.2
+  },
+  {
+    "district_id": 9,
+    "name": "Ujjain",
+    "shape_id": "76128533B89286042589317",
+    "lat": 23.2909,
+    "lon": 75.6273,
+    "area_km2": 6179.3
+  },
+  {
+    "district_id": 10,
+    "name": "Rewa",
+    "shape_id": "76128533B31161316175613",
+    "lat": 24.7486,
+    "lon": 81.6555,
+    "area_km2": 6362.3
+  },
+  {
+    "district_id": 11,
+    "name": "Dindori",
+    "shape_id": "76128533B20502827346807",
+    "lat": 22.903,
+    "lon": 80.8651,
+    "area_km2": 5689.2
+  },
+  {
+    "district_id": 12,
+    "name": "Balaghat",
+    "shape_id": "76128533B66134271591289",
+    "lat": 21.8599,
+    "lon": 80.3131,
+    "area_km2": 9373.2
+  },
+  {
+    "district_id": 13,
+    "name": "Barwani",
+    "shape_id": "76128533B668165975951",
+    "lat": 21.7506,
+    "lon": 74.8942,
+    "area_km2": 5426.2
+  },
+  {
+    "district_id": 14,
+    "name": "Satna",
+    "shape_id": "76128533B39705008578419",
+    "lat": 24.5789,
+    "lon": 80.8121,
+    "area_km2": 7586.0
+  },
+  {
+    "district_id": 15,
+    "name": "Chhatarpur",
+    "shape_id": "76128533B42922918567330",
+    "lat": 24.7602,
+    "lon": 79.6813,
+    "area_km2": 8789.9
+  },
+  {
+    "district_id": 16,
+    "name": "Indore",
+    "shape_id": "76128533B60360721573267",
+    "lat": 22.6981,
+    "lon": 75.8138,
+    "area_km2": 3905.4
+  },
+  {
+    "district_id": 17,
+    "name": "Ratlam",
+    "shape_id": "76128533B19341883513630",
+    "lat": 23.4987,
+    "lon": 74.9571,
+    "area_km2": 4882.1
+  },
+  {
+    "district_id": 18,
+    "name": "Harda",
+    "shape_id": "76128533B21179322085415",
+    "lat": 22.2414,
+    "lon": 77.1097,
+    "area_km2": 3376.4
+  },
+  {
+    "district_id": 19,
+    "name": "Sagar",
+    "shape_id": "76128533B30447764775083",
+    "lat": 23.8073,
+    "lon": 78.7617,
+    "area_km2": 10319.4
+  },
+  {
+    "district_id": 20,
+    "name": "Neemuch",
+    "shape_id": "76128533B77191913035963",
+    "lat": 24.6195,
+    "lon": 75.1821,
+    "area_km2": 4358.5
+  },
+  {
+    "district_id": 21,
+    "name": "Tikamgarh",
+    "shape_id": "76128533B1566053393466",
+    "lat": 24.852,
+    "lon": 79.0496,
+    "area_km2": 3719.5
+  },
+  {
+    "district_id": 22,
+    "name": "Guna",
+    "shape_id": "76128533B79048012717121",
+    "lat": 24.5,
+    "lon": 77.2607,
+    "area_km2": 6384.6
+  },
+  {
+    "district_id": 23,
+    "name": "Dewas",
+    "shape_id": "76128533B53549946596470",
+    "lat": 22.8038,
+    "lon": 76.2964,
+    "area_km2": 7038.6
+  },
+  {
+    "district_id": 24,
+    "name": "Mandsaur",
+    "shape_id": "76128533B25679991785711",
+    "lat": 24.2621,
+    "lon": 75.3916,
+    "area_km2": 5545.9
+  },
+  {
+    "district_id": 25,
+    "name": "Khargone (West Nimar)",
+    "shape_id": "76128533B69481535535995",
+    "lat": 21.9564,
+    "lon": 75.7545,
+    "area_km2": 8042.3
+  },
+  {
+    "district_id": 26,
+    "name": "Sheopur",
+    "shape_id": "76128533B82240600990321",
+    "lat": 25.7075,
+    "lon": 76.8834,
+    "area_km2": 6711.3
+  },
+  {
+    "district_id": 27,
+    "name": "Morena",
+    "shape_id": "76128533B12343314564708",
+    "lat": 26.3612,
+    "lon": 77.8534,
+    "area_km2": 5087.2
+  },
+  {
+    "district_id": 28,
+    "name": "Bhind",
+    "shape_id": "76128533B57712033428660",
+    "lat": 26.3489,
+    "lon": 78.6964,
+    "area_km2": 4494.4
+  },
+  {
+    "district_id": 29,
+    "name": "Jhabua",
+    "shape_id": "76128533B67004768724668",
+    "lat": 22.8818,
+    "lon": 74.7284,
+    "area_km2": 3487.8
+  },
+  {
+    "district_id": 30,
+    "name": "Seoni",
+    "shape_id": "76128533B78482805703540",
+    "lat": 22.2724,
+    "lon": 79.7214,
+    "area_km2": 8689.0
+  },
+  {
+    "district_id": 31,
+    "name": "Khandwa (East Nimar)",
+    "shape_id": "76128533B71271011331008",
+    "lat": 21.9611,
+    "lon": 76.5334,
+    "area_km2": 7583.6
+  },
+  {
+    "district_id": 32,
+    "name": "Umaria",
+    "shape_id": "76128533B4466876522971",
+    "lat": 23.6349,
+    "lon": 80.9439,
+    "area_km2": 4587.8
+  },
+  {
+    "district_id": 33,
+    "name": "Gwalior",
+    "shape_id": "76128533B90551733723251",
+    "lat": 26.0182,
+    "lon": 78.1555,
+    "area_km2": 4580.9
+  },
+  {
+    "district_id": 34,
+    "name": "Damoh",
+    "shape_id": "76128533B44250373880839",
+    "lat": 23.7956,
+    "lon": 79.5439,
+    "area_km2": 7379.7
+  },
+  {
+    "district_id": 35,
+    "name": "Dhar",
+    "shape_id": "76128533B42880544505675",
+    "lat": 22.576,
+    "lon": 75.2282,
+    "area_km2": 8187.7
+  },
+  {
+    "district_id": 36,
+    "name": "Katni",
+    "shape_id": "76128533B16674973717653",
+    "lat": 23.7128,
+    "lon": 80.2612,
+    "area_km2": 5047.0
+  },
+  {
+    "district_id": 37,
+    "name": "Sidhi",
+    "shape_id": "76128533B53791014455989",
+    "lat": 24.2109,
+    "lon": 81.6812,
+    "area_km2": 4567.6
+  },
+  {
+    "district_id": 38,
+    "name": "Alirajpur",
+    "shape_id": "76128533B35167844027544",
+    "lat": 22.2845,
+    "lon": 74.3571,
+    "area_km2": 3335.9
+  },
+  {
+    "district_id": 39,
+    "name": "Singrauli",
+    "shape_id": "76128533B50014751336341",
+    "lat": 24.2381,
+    "lon": 82.3302,
+    "area_km2": 6002.8
+  },
+  {
+    "district_id": 40,
+    "name": "Bhopal",
+    "shape_id": "76128533B22439249004073",
+    "lat": 23.4828,
+    "lon": 77.3958,
+    "area_km2": 2778.9
+  },
+  {
+    "district_id": 41,
+    "name": "Rajgarh",
+    "shape_id": "76128533B28521131010314",
+    "lat": 23.8663,
+    "lon": 76.777,
+    "area_km2": 6219.5
+  },
+  {
+    "district_id": 42,
+    "name": "Mandla",
+    "shape_id": "76128533B79087524886024",
+    "lat": 22.6799,
+    "lon": 80.5837,
+    "area_km2": 7339.0
+  },
+  {
+    "district_id": 43,
+    "name": "Shajapur",
+    "shape_id": "76128533B30477486088156",
+    "lat": 23.4103,
+    "lon": 76.6073,
+    "area_km2": 3465.3
+  },
+  {
+    "district_id": 44,
+    "name": "Shivpuri",
+    "shape_id": "76128533B66335428496945",
+    "lat": 25.3721,
+    "lon": 77.7985,
+    "area_km2": 10555.6
+  },
+  {
+    "district_id": 45,
+    "name": "Datia",
+    "shape_id": "76128533B80958502091898",
+    "lat": 25.9178,
+    "lon": 78.6672,
+    "area_km2": 2523.2
+  },
+  {
+    "district_id": 46,
+    "name": "Burhanpur",
+    "shape_id": "76128533B37096001761063",
+    "lat": 21.3307,
+    "lon": 76.3736,
+    "area_km2": 3071.8
+  },
+  {
+    "district_id": 47,
+    "name": "Anuppur",
+    "shape_id": "76128533B25468964623139",
+    "lat": 23.0316,
+    "lon": 81.7607,
+    "area_km2": 3903.0
+  },
+  {
+    "district_id": 48,
+    "name": "Shahdol",
+    "shape_id": "76128533B79303776608295",
+    "lat": 23.6389,
+    "lon": 81.4188,
+    "area_km2": 5845.8
+  },
+  {
+    "district_id": 49,
+    "name": "Vidisha",
+    "shape_id": "76128533B64834018186186",
+    "lat": 23.8439,
+    "lon": 77.8393,
+    "area_km2": 7335.3
+  },
+  {
+    "district_id": 50,
+    "name": "Una",
+    "shape_id": "76128533B75262864015847",
+    "lat": 31.5804,
+    "lon": 76.2397,
+    "area_km2": 1545.8
+  },
+  {
+    "district_id": 51,
+    "name": "Solan",
+    "shape_id": "76128533B58569599021232",
+    "lat": 31.0595,
+    "lon": 76.8527,
+    "area_km2": 1943.4
+  },
+  {
+    "district_id": 52,
+    "name": "Sirmaur",
+    "shape_id": "76128533B11802210119774",
+    "lat": 30.7012,
+    "lon": 77.449,
+    "area_km2": 2843.5
+  },
+  {
+    "district_id": 53,
+    "name": "Kinnaur",
+    "shape_id": "76128533B50011981829203",
+    "lat": 31.5873,
+    "lon": 78.3323,
+    "area_km2": 6502.6
+  },
+  {
+    "district_id": 54,
+    "name": "Kullu",
+    "shape_id": "76128533B97425778881707",
+    "lat": 31.8802,
+    "lon": 77.4543,
+    "area_km2": 5528.6
+  },
+  {
+    "district_id": 55,
+    "name": "Chamba",
+    "shape_id": "76128533B58537895532859",
+    "lat": 32.6947,
+    "lon": 76.1702,
+    "area_km2": 6507.5
+  },
+  {
+    "district_id": 56,
+    "name": "Shimla",
+    "shape_id": "76128533B77537928419507",
+    "lat": 31.2367,
+    "lon": 77.7165,
+    "area_km2": 5180.6
+  },
+  {
+    "district_id": 57,
+    "name": "Bilaspur",
+    "shape_id": "76128533B85695392289827",
+    "lat": 31.4011,
+    "lon": 76.6418,
+    "area_km2": 1171.6
+  },
+  {
+    "district_id": 58,
+    "name": "Kangra",
+    "shape_id": "76128533B13697452453823",
+    "lat": 32.0787,
+    "lon": 76.2707,
+    "area_km2": 5727.6
+  },
+  {
+    "district_id": 59,
+    "name": "Lahul & Spiti",
+    "shape_id": "76128533B75359793481950",
+    "lat": 32.4988,
+    "lon": 77.5848,
+    "area_km2": 13865.8
+  },
+  {
+    "district_id": 60,
+    "name": "Mandi",
+    "shape_id": "76128533B23735146933631",
+    "lat": 31.6417,
+    "lon": 77.0109,
+    "area_km2": 3965.4
+  },
+  {
+    "district_id": 61,
+    "name": "Hamirpur",
+    "shape_id": "76128533B35956162202704",
+    "lat": 31.6545,
+    "lon": 76.5402,
+    "area_km2": 1127.2
+  },
+  {
+    "district_id": 62,
+    "name": "DATA NOT AVAILABLE",
+    "shape_id": "76128533B2782141712775",
+    "lat": 34.9239,
+    "lon": 75.3961,
+    "area_km2": 86671.6
+  },
+  {
+    "district_id": 63,
+    "name": "Anantnag",
+    "shape_id": "76128533B6393836306469",
+    "lat": 33.7969,
+    "lon": 75.2821,
+    "area_km2": 2751.9
+  },
+  {
+    "district_id": 64,
+    "name": "Baramula",
+    "shape_id": "76128533B15567489974292",
+    "lat": 34.1141,
+    "lon": 74.3237,
+    "area_km2": 1961.8
+  },
+  {
+    "district_id": 65,
+    "name": "Kulgam",
+    "shape_id": "76128533B87327155385261",
+    "lat": 33.6231,
+    "lon": 74.6858,
+    "area_km2": 1203.4
+  },
+  {
+    "district_id": 66,
+    "name": "Shupiyan",
+    "shape_id": "76128533B37825396764028",
+    "lat": 33.7009,
+    "lon": 74.8118,
+    "area_km2": 453.9
+  },
+  {
+    "district_id": 67,
+    "name": "Reasi",
+    "shape_id": "76128533B50784044604286",
+    "lat": 33.2012,
+    "lon": 74.9066,
+    "area_km2": 2099.6
+  },
+  {
+    "district_id": 68,
+    "name": "Rajouri",
+    "shape_id": "76128533B45655211862788",
+    "lat": 33.2386,
+    "lon": 74.3322,
+    "area_km2": 2507.4
+  },
+  {
+    "district_id": 69,
+    "name": "Jammu",
+    "shape_id": "76128533B3371867518692",
+    "lat": 32.7584,
+    "lon": 74.7772,
+    "area_km2": 2103.6
+  },
+  {
+    "district_id": 70,
+    "name": "Leh(Ladakh)",
+    "shape_id": "76128533B57183548666997",
+    "lat": 34.168,
+    "lon": 78.0887,
+    "area_km2": 80682.5
+  },
+  {
+    "district_id": 71,
+    "name": "Srinagar",
+    "shape_id": "76128533B32249045995424",
+    "lat": 34.0815,
+    "lon": 74.9333,
+    "area_km2": 514.0
+  },
+  {
+    "district_id": 72,
+    "name": "Doda",
+    "shape_id": "76128533B48708628358161",
+    "lat": 33.135,
+    "lon": 75.6176,
+    "area_km2": 2364.1
+  },
+  {
+    "district_id": 73,
+    "name": "Pulwama",
+    "shape_id": "76128533B74958462315105",
+    "lat": 33.9131,
+    "lon": 75.0557,
+    "area_km2": 830.0
+  },
+  {
+    "district_id": 74,
+    "name": "Ramban",
+    "shape_id": "76128533B92985585225784",
+    "lat": 33.3189,
+    "lon": 75.2481,
+    "area_km2": 1023.2
+  },
+  {
+    "district_id": 75,
+    "name": "Ganderbal",
+    "shape_id": "76128533B20504715877560",
+    "lat": 34.2716,
+    "lon": 75.0695,
+    "area_km2": 1451.4
+  },
+  {
+    "district_id": 76,
+    "name": "Udhampur",
+    "shape_id": "76128533B31127900859310",
+    "lat": 32.9139,
+    "lon": 75.3139,
+    "area_km2": 2366.8
+  },
+  {
+    "district_id": 77,
+    "name": "Badgam",
+    "shape_id": "76128533B88214376170788",
+    "lat": 33.8617,
+    "lon": 74.6734,
+    "area_km2": 1133.6
+  },
+  {
+    "district_id": 78,
+    "name": "Punch",
+    "shape_id": "76128533B32998994032811",
+    "lat": 33.6587,
+    "lon": 74.2775,
+    "area_km2": 1993.1
+  },
+  {
+    "district_id": 79,
+    "name": "Kupwara",
+    "shape_id": "76128533B68195849750399",
+    "lat": 34.4885,
+    "lon": 74.1935,
+    "area_km2": 2841.0
+  },
+  {
+    "district_id": 80,
+    "name": "Samba",
+    "shape_id": "76128533B49429513424897",
+    "lat": 32.6259,
+    "lon": 75.0908,
+    "area_km2": 834.6
+  },
+  {
+    "district_id": 81,
+    "name": "Bandipore",
+    "shape_id": "76128533B41744580856133",
+    "lat": 34.4468,
+    "lon": 74.9025,
+    "area_km2": 2990.1
+  },
+  {
+    "district_id": 82,
+    "name": "Kathua",
+    "shape_id": "76128533B79652855441225",
+    "lat": 32.5886,
+    "lon": 75.6205,
+    "area_km2": 2723.1
+  },
+  {
+    "district_id": 83,
+    "name": "Kargil",
+    "shape_id": "76128533B47664895117076",
+    "lat": 33.8141,
+    "lon": 76.4384,
+    "area_km2": 14842.0
+  },
+  {
+    "district_id": 84,
+    "name": "Kishtwar",
+    "shape_id": "76128533B20458430922604",
+    "lat": 33.6195,
+    "lon": 75.8859,
+    "area_km2": 7927.2
+  },
+  {
+    "district_id": 85,
+    "name": "Daman",
+    "shape_id": "76128533B15180319517641",
+    "lat": 20.4024,
+    "lon": 72.8656,
+    "area_km2": 93.3
+  },
+  {
+    "district_id": 86,
+    "name": "Diu",
+    "shape_id": "76128533B56857410767766",
+    "lat": 20.7237,
+    "lon": 70.9313,
+    "area_km2": 49.5
+  },
+  {
+    "district_id": 87,
+    "name": "Bhavnagar",
+    "shape_id": "76128533B93450974047240",
+    "lat": 21.5694,
+    "lon": 71.9106,
+    "area_km2": 6789.4
+  },
+  {
+    "district_id": 88,
+    "name": "Ahmadabad",
+    "shape_id": "76128533B93113981386565",
+    "lat": 22.7274,
+    "lon": 72.3103,
+    "area_km2": 7290.6
+  },
+  {
+    "district_id": 89,
+    "name": "Chhota Udaipur",
+    "shape_id": "76128533B69417260894674",
+    "lat": 22.22,
+    "lon": 73.7802,
+    "area_km2": 3481.6
+  },
+  {
+    "district_id": 90,
+    "name": "Batod",
+    "shape_id": "76128533B48885555323596",
+    "lat": 22.046,
+    "lon": 71.6756,
+    "area_km2": 2641.8
+  },
+  {
+    "district_id": 91,
+    "name": "Vadodara",
+    "shape_id": "76128533B33151011563565",
+    "lat": 22.3161,
+    "lon": 73.3055,
+    "area_km2": 4180.3
+  },
+  {
+    "district_id": 92,
+    "name": "Aravali",
+    "shape_id": "76128533B62153454383166",
+    "lat": 23.4873,
+    "lon": 73.4002,
+    "area_km2": 3278.7
+  },
+  {
+    "district_id": 93,
+    "name": "Sabar Kantha",
+    "shape_id": "76128533B35129325000613",
+    "lat": 23.8659,
+    "lon": 73.0134,
+    "area_km2": 4176.7
+  },
+  {
+    "district_id": 94,
+    "name": "Banas Kantha",
+    "shape_id": "76128533B52902360321344",
+    "lat": 24.2668,
+    "lon": 72.1715,
+    "area_km2": 10699.8
+  },
+  {
+    "district_id": 95,
+    "name": "Surendranagar",
+    "shape_id": "76128533B7851306475665",
+    "lat": 22.8277,
+    "lon": 71.6102,
+    "area_km2": 9242.6
+  },
+  {
+    "district_id": 96,
+    "name": "Anand",
+    "shape_id": "76128533B69438085511257",
+    "lat": 22.4906,
+    "lon": 72.761,
+    "area_km2": 2822.2
+  },
+  {
+    "district_id": 97,
+    "name": "Narmada",
+    "shape_id": "76128533B46866455993508",
+    "lat": 21.7372,
+    "lon": 73.6279,
+    "area_km2": 2829.9
+  },
+  {
+    "district_id": 98,
+    "name": "Amreli",
+    "shape_id": "76128533B43737470294384",
+    "lat": 21.423,
+    "lon": 71.2791,
+    "area_km2": 7394.6
+  },
+  {
+    "district_id": 99,
+    "name": "Dohad",
+    "shape_id": "76128533B70576899889534",
+    "lat": 22.9193,
+    "lon": 74.1379,
+    "area_km2": 3654.6
+  },
+  {
+    "district_id": 100,
+    "name": "Rajkot",
+    "shape_id": "76128533B74992405432705",
+    "lat": 22.064,
+    "lon": 71.0272,
+    "area_km2": 7669.5
+  },
+  {
+    "district_id": 101,
+    "name": "Kachchh",
+    "shape_id": "76128533B91881382098572",
+    "lat": 23.7103,
+    "lon": 69.8224,
+    "area_km2": 42806.9
+  },
+  {
+    "district_id": 102,
+    "name": "The Dangs",
+    "shape_id": "76128533B16271917438029",
+    "lat": 20.7789,
+    "lon": 73.7125,
+    "area_km2": 1733.9
+  },
+  {
+    "district_id": 103,
+    "name": "Mahesana",
+    "shape_id": "76128533B81661995166840",
+    "lat": 23.567,
+    "lon": 72.3624,
+    "area_km2": 4409.5
+  },
+  {
+    "district_id": 104,
+    "name": "Patan",
+    "shape_id": "76128533B42839853072341",
+    "lat": 23.7711,
+    "lon": 71.7859,
+    "area_km2": 5614.0
+  },
+  {
+    "district_id": 105,
+    "name": "Bharuch",
+    "shape_id": "76128533B63599385776584",
+    "lat": 21.812,
+    "lon": 72.9488,
+    "area_km2": 5342.8
+  },
+  {
+    "district_id": 106,
+    "name": "Gir Somnath",
+    "shape_id": "76128533B45037556977273",
+    "lat": 20.9905,
+    "lon": 70.6881,
+    "area_km2": 3789.9
+  },
+  {
+    "district_id": 107,
+    "name": "Junagadh",
+    "shape_id": "76128533B40923846274136",
+    "lat": 21.34,
+    "lon": 70.4209,
+    "area_km2": 5087.2
+  },
+  {
+    "district_id": 108,
+    "name": "Devbhumi Dwarka",
+    "shape_id": "76128533B74381554567803",
+    "lat": 22.1367,
+    "lon": 69.4289,
+    "area_km2": 4328.6
+  },
+  {
+    "district_id": 109,
+    "name": "Navsari",
+    "shape_id": "76128533B6397758882978",
+    "lat": 20.826,
+    "lon": 73.0348,
+    "area_km2": 2209.1
+  },
+  {
+    "district_id": 110,
+    "name": "Surat",
+    "shape_id": "76128533B97372652494648",
+    "lat": 21.1889,
+    "lon": 72.9508,
+    "area_km2": 4369.1
+  },
+  {
+    "district_id": 111,
+    "name": "Jamnagar",
+    "shape_id": "76128533B35205406647638",
+    "lat": 22.3172,
+    "lon": 70.1054,
+    "area_km2": 6399.5
+  },
+  {
+    "district_id": 112,
+    "name": "Tapi",
+    "shape_id": "76128533B12519626815499",
+    "lat": 21.1894,
+    "lon": 73.5567,
+    "area_km2": 3229.6
+  },
+  {
+    "district_id": 113,
+    "name": "Porbandar",
+    "shape_id": "76128533B84417945851362",
+    "lat": 21.6047,
+    "lon": 69.8529,
+    "area_km2": 2306.7
+  },
+  {
+    "district_id": 114,
+    "name": "Valsad",
+    "shape_id": "76128533B60261306484775",
+    "lat": 20.4343,
+    "lon": 73.1653,
+    "area_km2": 2952.4
+  },
+  {
+    "district_id": 115,
+    "name": "Gandhinagar",
+    "shape_id": "76128533B7606365706860",
+    "lat": 23.2803,
+    "lon": 72.6673,
+    "area_km2": 2131.8
+  },
+  {
+    "district_id": 116,
+    "name": "Mahisagar",
+    "shape_id": "76128533B49615943426842",
+    "lat": 23.1907,
+    "lon": 73.6578,
+    "area_km2": 2513.6
+  },
+  {
+    "district_id": 117,
+    "name": "Morbi",
+    "shape_id": "76128533B2080752988715",
+    "lat": 22.7977,
+    "lon": 70.8885,
+    "area_km2": 4857.3
+  },
+  {
+    "district_id": 118,
+    "name": "Panch Mahals",
+    "shape_id": "76128533B16476001647323",
+    "lat": 22.6972,
+    "lon": 73.6096,
+    "area_km2": 3336.8
+  },
+  {
+    "district_id": 119,
+    "name": "Kheda",
+    "shape_id": "76128533B39046535416628",
+    "lat": 22.8527,
+    "lon": 72.9988,
+    "area_km2": 3411.6
+  },
+  {
+    "district_id": 120,
+    "name": "Dadra & Nagar Haveli",
+    "shape_id": "76128533B43252171579976",
+    "lat": 20.2071,
+    "lon": 73.0093,
+    "area_km2": 489.0
+  },
+  {
+    "district_id": 121,
+    "name": "Prakasam",
+    "shape_id": "76128533B95075104846315",
+    "lat": 15.6569,
+    "lon": 79.5203,
+    "area_km2": 17835.7
+  },
+  {
+    "district_id": 122,
+    "name": "Krishna",
+    "shape_id": "76128533B4481773749911",
+    "lat": 16.4252,
+    "lon": 81.0665,
+    "area_km2": 8691.6
+  },
+  {
+    "district_id": 123,
+    "name": "East Godavari",
+    "shape_id": "76128533B29138015770556",
+    "lat": 17.1682,
+    "lon": 82.0684,
+    "area_km2": 10711.8
+  },
+  {
+    "district_id": 124,
+    "name": "Visakhapatnam",
+    "shape_id": "76128533B71485440235524",
+    "lat": 17.9009,
+    "lon": 82.5664,
+    "area_km2": 11421.4
+  },
+  {
+    "district_id": 125,
+    "name": "Sri Potti Sriramulu Nellore",
+    "shape_id": "76128533B55622097933343",
+    "lat": 14.2949,
+    "lon": 79.7808,
+    "area_km2": 13317.8
+  },
+  {
+    "district_id": 126,
+    "name": "Chittoor",
+    "shape_id": "76128533B22471914548132",
+    "lat": 13.337,
+    "lon": 78.9215,
+    "area_km2": 15275.5
+  },
+  {
+    "district_id": 127,
+    "name": "Srikakulam",
+    "shape_id": "76128533B59405966069108",
+    "lat": 18.6303,
+    "lon": 83.9748,
+    "area_km2": 5940.7
+  },
+  {
+    "district_id": 128,
+    "name": "Kurnool",
+    "shape_id": "76128533B28294794137747",
+    "lat": 15.5558,
+    "lon": 77.9049,
+    "area_km2": 17893.2
+  },
+  {
+    "district_id": 129,
+    "name": "Guntur",
+    "shape_id": "76128533B72541188260561",
+    "lat": 16.2681,
+    "lon": 80.1893,
+    "area_km2": 11593.7
+  },
+  {
+    "district_id": 130,
+    "name": "Vizianagaram",
+    "shape_id": "76128533B36164606132718",
+    "lat": 18.4953,
+    "lon": 83.3118,
+    "area_km2": 6190.1
+  },
+  {
+    "district_id": 131,
+    "name": "Anantapur",
+    "shape_id": "76128533B52664671961643",
+    "lat": 14.458,
+    "lon": 77.5101,
+    "area_km2": 19384.8
+  },
+  {
+    "district_id": 132,
+    "name": "West Godavari",
+    "shape_id": "76128533B19792346411952",
+    "lat": 16.9114,
+    "lon": 81.368,
+    "area_km2": 7911.5
+  },
+  {
+    "district_id": 133,
+    "name": "Kadapa(YSR)",
+    "shape_id": "76128533B72109128179340",
+    "lat": 14.4812,
+    "lon": 78.6596,
+    "area_km2": 15103.9
+  },
+  {
+    "district_id": 134,
+    "name": "Jamtara",
+    "shape_id": "76128533B17261532861377",
+    "lat": 23.9919,
+    "lon": 86.928,
+    "area_km2": 1964.6
+  },
+  {
+    "district_id": 135,
+    "name": "Saraikela-Kharsawan",
+    "shape_id": "76128533B50275440439236",
+    "lat": 22.8189,
+    "lon": 85.9175,
+    "area_km2": 2658.3
+  },
+  {
+    "district_id": 136,
+    "name": "Simdega",
+    "shape_id": "76128533B15601995412161",
+    "lat": 22.568,
+    "lon": 84.5438,
+    "area_km2": 3747.3
+  },
+  {
+    "district_id": 137,
+    "name": "Latehar",
+    "shape_id": "76128533B35143550659673",
+    "lat": 23.6684,
+    "lon": 84.2608,
+    "area_km2": 4129.0
+  },
+  {
+    "district_id": 138,
+    "name": "Khunti",
+    "shape_id": "76128533B27414563922025",
+    "lat": 22.9242,
+    "lon": 85.2565,
+    "area_km2": 2630.7
+  },
+  {
+    "district_id": 139,
+    "name": "Pashchimi Singhbhum",
+    "shape_id": "76128533B60893804631193",
+    "lat": 22.4286,
+    "lon": 85.5323,
+    "area_km2": 7246.7
+  },
+  {
+    "district_id": 140,
+    "name": "Hazaribagh",
+    "shape_id": "76128533B1222571856670",
+    "lat": 23.9977,
+    "lon": 85.5394,
+    "area_km2": 4129.9
+  },
+  {
+    "district_id": 141,
+    "name": "Chatra",
+    "shape_id": "76128533B44632955875385",
+    "lat": 24.11,
+    "lon": 84.8625,
+    "area_km2": 3825.9
+  },
+  {
+    "district_id": 142,
+    "name": "Purbi Singhbhum",
+    "shape_id": "76128533B18931932305748",
+    "lat": 22.6162,
+    "lon": 86.3861,
+    "area_km2": 3585.8
+  },
+  {
+    "district_id": 143,
+    "name": "Kodarma",
+    "shape_id": "76128533B43180268042348",
+    "lat": 24.5388,
+    "lon": 85.6736,
+    "area_km2": 1796.1
+  },
+  {
+    "district_id": 144,
+    "name": "Giridih",
+    "shape_id": "76128533B75529869544465",
+    "lat": 24.3342,
+    "lon": 86.1645,
+    "area_km2": 5158.5
+  },
+  {
+    "district_id": 145,
+    "name": "Lohardaga",
+    "shape_id": "76128533B35439951183692",
+    "lat": 23.4798,
+    "lon": 84.6919,
+    "area_km2": 1861.1
+  },
+  {
+    "district_id": 146,
+    "name": "Sahibganj",
+    "shape_id": "76128533B49805675626253",
+    "lat": 25.0253,
+    "lon": 87.6957,
+    "area_km2": 2131.2
+  },
+  {
+    "district_id": 147,
+    "name": "Godda",
+    "shape_id": "76128533B58697472287618",
+    "lat": 24.8667,
+    "lon": 87.3105,
+    "area_km2": 2312.9
+  },
+  {
+    "district_id": 148,
+    "name": "Palamu",
+    "shape_id": "76128533B6050540865870",
+    "lat": 24.2197,
+    "lon": 84.175,
+    "area_km2": 4458.9
+  },
+  {
+    "district_id": 149,
+    "name": "Dhanbad",
+    "shape_id": "76128533B94847743365739",
+    "lat": 23.8375,
+    "lon": 86.4682,
+    "area_km2": 2138.8
+  },
+  {
+    "district_id": 150,
+    "name": "Dumka",
+    "shape_id": "76128533B18802630191461",
+    "lat": 24.3115,
+    "lon": 87.3114,
+    "area_km2": 3782.3
+  },
+  {
+    "district_id": 151,
+    "name": "Bokaro",
+    "shape_id": "76128533B30016122738302",
+    "lat": 23.6927,
+    "lon": 85.9837,
+    "area_km2": 2888.9
+  },
+  {
+    "district_id": 152,
+    "name": "Deoghar",
+    "shape_id": "76128533B90068096507942",
+    "lat": 24.3325,
+    "lon": 86.7142,
+    "area_km2": 2339.9
+  },
+  {
+    "district_id": 153,
+    "name": "Gumla",
+    "shape_id": "76128533B80916614857890",
+    "lat": 23.1621,
+    "lon": 84.4656,
+    "area_km2": 5081.1
+  },
+  {
+    "district_id": 154,
+    "name": "Ramgarh",
+    "shape_id": "76128533B79263581040575",
+    "lat": 23.7004,
+    "lon": 85.5136,
+    "area_km2": 1279.0
+  },
+  {
+    "district_id": 155,
+    "name": "Garhwa",
+    "shape_id": "76128533B12294379827032",
+    "lat": 24.0513,
+    "lon": 83.6532,
+    "area_km2": 4136.1
+  },
+  {
+    "district_id": 156,
+    "name": "Ranchi",
+    "shape_id": "76128533B71439508543442",
+    "lat": 23.3006,
+    "lon": 85.3883,
+    "area_km2": 5126.4
+  },
+  {
+    "district_id": 157,
+    "name": "Pakur",
+    "shape_id": "76128533B45381195840581",
+    "lat": 24.532,
+    "lon": 87.5965,
+    "area_km2": 1823.3
+  },
+  {
+    "district_id": 158,
+    "name": "Arwal",
+    "shape_id": "76128533B45623818137574",
+    "lat": 25.1943,
+    "lon": 84.6871,
+    "area_km2": 613.8
+  },
+  {
+    "district_id": 159,
+    "name": "Bhagalpur",
+    "shape_id": "76128533B83462627230182",
+    "lat": 25.2793,
+    "lon": 87.124,
+    "area_km2": 2595.5
+  },
+  {
+    "district_id": 160,
+    "name": "Purnia",
+    "shape_id": "76128533B32499449492865",
+    "lat": 25.7876,
+    "lon": 87.4186,
+    "area_km2": 3178.4
+  },
+  {
+    "district_id": 161,
+    "name": "Madhepura",
+    "shape_id": "76128533B29293163114565",
+    "lat": 25.7701,
+    "lon": 86.9323,
+    "area_km2": 2083.3
+  },
+  {
+    "district_id": 162,
+    "name": "Kishanganj",
+    "shape_id": "76128533B65773363805797",
+    "lat": 26.2514,
+    "lon": 87.9078,
+    "area_km2": 1968.2
+  },
+  {
+    "district_id": 163,
+    "name": "Gaya",
+    "shape_id": "76128533B91871300208785",
+    "lat": 24.6903,
+    "lon": 85.0144,
+    "area_km2": 5022.3
+  },
+  {
+    "district_id": 164,
+    "name": "Banka",
+    "shape_id": "76128533B54517225652088",
+    "lat": 24.8326,
+    "lon": 86.8172,
+    "area_km2": 3101.2
+  },
+  {
+    "district_id": 165,
+    "name": "Aurangabad",
+    "shape_id": "76128533B21485639457044",
+    "lat": 24.8123,
+    "lon": 84.4269,
+    "area_km2": 3493.3
+  },
+  {
+    "district_id": 166,
+    "name": "Nawada",
+    "shape_id": "76128533B36625800127334",
+    "lat": 24.834,
+    "lon": 85.6523,
+    "area_km2": 2504.0
+  },
+  {
+    "district_id": 167,
+    "name": "Araria",
+    "shape_id": "76128533B4745348385341",
+    "lat": 26.231,
+    "lon": 87.3783,
+    "area_km2": 2785.1
+  },
+  {
+    "district_id": 168,
+    "name": "Pashchim Champaran",
+    "shape_id": "76128533B17762399278073",
+    "lat": 27.0427,
+    "lon": 84.3503,
+    "area_km2": 5227.3
+  },
+  {
+    "district_id": 169,
+    "name": "Muzaffarpur",
+    "shape_id": "76128533B88481188307630",
+    "lat": 26.1573,
+    "lon": 85.3158,
+    "area_km2": 3146.3
+  },
+  {
+    "district_id": 170,
+    "name": "Saran",
+    "shape_id": "76128533B19903856317609",
+    "lat": 25.9144,
+    "lon": 84.7786,
+    "area_km2": 2574.7
+  },
+  {
+    "district_id": 171,
+    "name": "Sheikhpura",
+    "shape_id": "76128533B29672216830072",
+    "lat": 25.1159,
+    "lon": 85.8635,
+    "area_km2": 522.6
+  },
+  {
+    "district_id": 172,
+    "name": "Jehanabad",
+    "shape_id": "76128533B24101991435637",
+    "lat": 25.1559,
+    "lon": 85.0266,
+    "area_km2": 848.2
+  },
+  {
+    "district_id": 173,
+    "name": "Saharsa",
+    "shape_id": "76128533B24755983727265",
+    "lat": 25.8261,
+    "lon": 86.6098,
+    "area_km2": 1598.1
+  },
+  {
+    "district_id": 174,
+    "name": "Gopalganj",
+    "shape_id": "76128533B93214480696409",
+    "lat": 26.4093,
+    "lon": 84.3615,
+    "area_km2": 2021.0
+  },
+  {
+    "district_id": 175,
+    "name": "Vaishali",
+    "shape_id": "76128533B91445917652173",
+    "lat": 25.7639,
+    "lon": 85.3914,
+    "area_km2": 2057.4
+  },
+  {
+    "district_id": 176,
+    "name": "Siwan",
+    "shape_id": "76128533B14033116794334",
+    "lat": 26.1255,
+    "lon": 84.3662,
+    "area_km2": 1960.9
+  },
+  {
+    "district_id": 177,
+    "name": "Sheohar",
+    "shape_id": "76128533B74961596993088",
+    "lat": 26.4846,
+    "lon": 85.2775,
+    "area_km2": 462.9
+  },
+  {
+    "district_id": 178,
+    "name": "Buxar",
+    "shape_id": "76128533B12244320360965",
+    "lat": 25.4925,
+    "lon": 84.096,
+    "area_km2": 1575.8
+  },
+  {
+    "district_id": 179,
+    "name": "Madhubani",
+    "shape_id": "76128533B90384580518633",
+    "lat": 26.3479,
+    "lon": 86.2292,
+    "area_km2": 3515.3
+  },
+  {
+    "district_id": 180,
+    "name": "Supaul",
+    "shape_id": "76128533B62794162648247",
+    "lat": 26.2892,
+    "lon": 86.7985,
+    "area_km2": 2433.2
+  },
+  {
+    "district_id": 181,
+    "name": "Patna",
+    "shape_id": "76128533B60721316645780",
+    "lat": 25.4829,
+    "lon": 85.1832,
+    "area_km2": 3325.2
+  },
+  {
+    "district_id": 182,
+    "name": "Bhojpur",
+    "shape_id": "76128533B66426066081507",
+    "lat": 25.456,
+    "lon": 84.5613,
+    "area_km2": 2624.5
+  },
+  {
+    "district_id": 183,
+    "name": "Darbhanga",
+    "shape_id": "76128533B12694285477701",
+    "lat": 26.0833,
+    "lon": 86.0262,
+    "area_km2": 2483.4
+  },
+  {
+    "district_id": 184,
+    "name": "Samastipur",
+    "shape_id": "76128533B66790149147330",
+    "lat": 25.7703,
+    "lon": 85.863,
+    "area_km2": 2711.4
+  },
+  {
+    "district_id": 185,
+    "name": "Kaimur (Bhabua)",
+    "shape_id": "76128533B78904410352326",
+    "lat": 24.9735,
+    "lon": 83.5779,
+    "area_km2": 3318.4
+  },
+  {
+    "district_id": 186,
+    "name": "Rohtas",
+    "shape_id": "76128533B33458049385696",
+    "lat": 24.9399,
+    "lon": 84.0201,
+    "area_km2": 3903.8
+  },
+  {
+    "district_id": 187,
+    "name": "Khagaria",
+    "shape_id": "76128533B78970756356546",
+    "lat": 25.487,
+    "lon": 86.68,
+    "area_km2": 1507.4
+  },
+  {
+    "district_id": 188,
+    "name": "Munger",
+    "shape_id": "76128533B40868676647207",
+    "lat": 25.212,
+    "lon": 86.5196,
+    "area_km2": 1452.1
+  },
+  {
+    "district_id": 189,
+    "name": "Sitamarhi",
+    "shape_id": "76128533B21922686388534",
+    "lat": 26.5748,
+    "lon": 85.599,
+    "area_km2": 2124.9
+  },
+  {
+    "district_id": 190,
+    "name": "Purba Champaran",
+    "shape_id": "76128533B49017555803526",
+    "lat": 26.6217,
+    "lon": 84.8976,
+    "area_km2": 4217.5
+  },
+  {
+    "district_id": 191,
+    "name": "Lakhisarai",
+    "shape_id": "76128533B98985252129882",
+    "lat": 25.1445,
+    "lon": 86.1569,
+    "area_km2": 1170.4
+  },
+  {
+    "district_id": 192,
+    "name": "Jamui",
+    "shape_id": "76128533B16781044866906",
+    "lat": 24.7527,
+    "lon": 86.2693,
+    "area_km2": 3046.5
+  },
+  {
+    "district_id": 193,
+    "name": "Begusarai",
+    "shape_id": "76128533B5855800361016",
+    "lat": 25.5021,
+    "lon": 86.071,
+    "area_km2": 2080.7
+  },
+  {
+    "district_id": 194,
+    "name": "Nalanda",
+    "shape_id": "76128533B51363853289247",
+    "lat": 25.2094,
+    "lon": 85.4498,
+    "area_km2": 2130.4
+  },
+  {
+    "district_id": 195,
+    "name": "Katihar",
+    "shape_id": "76128533B27432148084533",
+    "lat": 25.5558,
+    "lon": 87.6487,
+    "area_km2": 3053.3
+  },
+  {
+    "district_id": 196,
+    "name": "Gurgaon",
+    "shape_id": "76128533B67580812983244",
+    "lat": 28.3733,
+    "lon": 76.9435,
+    "area_km2": 1244.6
+  },
+  {
+    "district_id": 197,
+    "name": "Yamunanagar",
+    "shape_id": "76128533B23956636471502",
+    "lat": 30.2152,
+    "lon": 77.3263,
+    "area_km2": 1727.6
+  },
+  {
+    "district_id": 198,
+    "name": "Palwal",
+    "shape_id": "76128533B71088079535368",
+    "lat": 28.0619,
+    "lon": 77.3239,
+    "area_km2": 1349.9
+  },
+  {
+    "district_id": 199,
+    "name": "Panchkula",
+    "shape_id": "76128533B58876508630362",
+    "lat": 30.6886,
+    "lon": 76.9949,
+    "area_km2": 917.8
+  },
+  {
+    "district_id": 200,
+    "name": "Mewat",
+    "shape_id": "76128533B80016894369263",
+    "lat": 27.9879,
+    "lon": 77.0498,
+    "area_km2": 1545.1
+  },
+  {
+    "district_id": 201,
+    "name": "Jhajjar",
+    "shape_id": "76128533B70554191137208",
+    "lat": 28.6103,
+    "lon": 76.6702,
+    "area_km2": 1914.3
+  },
+  {
+    "district_id": 202,
+    "name": "Bhiwani",
+    "shape_id": "76128533B42646400584570",
+    "lat": 28.732,
+    "lon": 75.9673,
+    "area_km2": 4650.2
+  },
+  {
+    "district_id": 203,
+    "name": "Kaithal",
+    "shape_id": "76128533B64596101949699",
+    "lat": 29.8572,
+    "lon": 76.4698,
+    "area_km2": 2291.4
+  },
+  {
+    "district_id": 204,
+    "name": "Sonipat",
+    "shape_id": "76128533B69536039643660",
+    "lat": 29.0509,
+    "lon": 76.938,
+    "area_km2": 2110.0
+  },
+  {
+    "district_id": 205,
+    "name": "Karnal",
+    "shape_id": "76128533B6330405394721",
+    "lat": 29.7159,
+    "lon": 76.9074,
+    "area_km2": 2496.9
+  },
+  {
+    "district_id": 206,
+    "name": "Kurukshetra",
+    "shape_id": "76128533B94710820075529",
+    "lat": 30.0604,
+    "lon": 76.7646,
+    "area_km2": 1671.5
+  },
+  {
+    "district_id": 207,
+    "name": "Jind",
+    "shape_id": "76128533B45106682783501",
+    "lat": 29.4517,
+    "lon": 76.3751,
+    "area_km2": 2772.8
+  },
+  {
+    "district_id": 208,
+    "name": "Panipat",
+    "shape_id": "76128533B86048662040782",
+    "lat": 29.3368,
+    "lon": 76.9037,
+    "area_km2": 1264.1
+  },
+  {
+    "district_id": 209,
+    "name": "Mahendragarh",
+    "shape_id": "76128533B64161607349718",
+    "lat": 28.1326,
+    "lon": 76.1708,
+    "area_km2": 1948.8
+  },
+  {
+    "district_id": 210,
+    "name": "Fatehabad",
+    "shape_id": "76128533B10727492375508",
+    "lat": 29.5348,
+    "lon": 75.5755,
+    "area_km2": 2427.7
+  },
+  {
+    "district_id": 211,
+    "name": "Faridabad",
+    "shape_id": "76128533B40638696154891",
+    "lat": 28.3551,
+    "lon": 77.3268,
+    "area_km2": 744.4
+  },
+  {
+    "district_id": 212,
+    "name": "Sirsa",
+    "shape_id": "76128533B84837672903805",
+    "lat": 29.6106,
+    "lon": 74.9018,
+    "area_km2": 4272.4
+  },
+  {
+    "district_id": 213,
+    "name": "Hisar",
+    "shape_id": "76128533B22732185131019",
+    "lat": 29.239,
+    "lon": 75.8189,
+    "area_km2": 4185.7
+  },
+  {
+    "district_id": 214,
+    "name": "Rewari",
+    "shape_id": "76128533B22722327711505",
+    "lat": 28.2149,
+    "lon": 76.5803,
+    "area_km2": 1534.6
+  },
+  {
+    "district_id": 215,
+    "name": "Rohtak",
+    "shape_id": "76128533B12244045944458",
+    "lat": 28.8868,
+    "lon": 76.5563,
+    "area_km2": 1755.5
+  },
+  {
+    "district_id": 216,
+    "name": "Ambala",
+    "shape_id": "76128533B95049353851516",
+    "lat": 30.3432,
+    "lon": 76.9563,
+    "area_km2": 1463.7
+  },
+  {
+    "district_id": 217,
+    "name": "Chandigarh",
+    "shape_id": "76128533B56050914259601",
+    "lat": 30.7257,
+    "lon": 76.7883,
+    "area_km2": 114.6
+  },
+  {
+    "district_id": 218,
+    "name": "North Goa",
+    "shape_id": "76128533B1711704044407",
+    "lat": 15.537,
+    "lon": 74.0182,
+    "area_km2": 1723.7
+  },
+  {
+    "district_id": 219,
+    "name": "South Goa",
+    "shape_id": "76128533B63117839967753",
+    "lat": 15.1911,
+    "lon": 74.1253,
+    "area_km2": 1941.7
+  },
+  {
+    "district_id": 220,
+    "name": "North  & Middle Andaman",
+    "shape_id": "76128533B28397307540277",
+    "lat": 12.1869,
+    "lon": 92.8111,
+    "area_km2": 3410.7
+  },
+  {
+    "district_id": 221,
+    "name": "South Andaman",
+    "shape_id": "76128533B22587307937261",
+    "lat": 10.701,
+    "lon": 92.4881,
+    "area_km2": 2427.3
+  },
+  {
+    "district_id": 222,
+    "name": "Nicobars",
+    "shape_id": "76128533B33103505211400",
+    "lat": 6.9972,
+    "lon": 93.8109,
+    "area_km2": 1650.7
+  },
+  {
+    "district_id": 223,
+    "name": "Lohit",
+    "shape_id": "76128533B6828791241172",
+    "lat": 27.9497,
+    "lon": 96.287,
+    "area_km2": 2811.6
+  },
+  {
+    "district_id": 224,
+    "name": "West Siang",
+    "shape_id": "76128533B95764075909869",
+    "lat": 28.2781,
+    "lon": 94.6613,
+    "area_km2": 2260.6
+  },
+  {
+    "district_id": 225,
+    "name": "Upper Subansiri",
+    "shape_id": "76128533B84689409020934",
+    "lat": 28.2374,
+    "lon": 94.1109,
+    "area_km2": 6262.1
+  },
+  {
+    "district_id": 226,
+    "name": "Changlang",
+    "shape_id": "76128533B9558749744242",
+    "lat": 27.2859,
+    "lon": 96.0724,
+    "area_km2": 4878.8
+  },
+  {
+    "district_id": 227,
+    "name": "Longding",
+    "shape_id": "76128533B22715430000002",
+    "lat": 26.8883,
+    "lon": 95.3052,
+    "area_km2": 851.5
+  },
+  {
+    "district_id": 228,
+    "name": "Lower Subansiri",
+    "shape_id": "76128533B90913053845537",
+    "lat": 27.5647,
+    "lon": 93.7822,
+    "area_km2": 1361.6
+  },
+  {
+    "district_id": 229,
+    "name": "East Kameng",
+    "shape_id": "76128533B76129461078086",
+    "lat": 27.5504,
+    "lon": 92.9798,
+    "area_km2": 4478.7
+  },
+  {
+    "district_id": 230,
+    "name": "Upper Siang",
+    "shape_id": "76128533B76058958071350",
+    "lat": 28.7381,
+    "lon": 95.0617,
+    "area_km2": 6962.2
+  },
+  {
+    "district_id": 231,
+    "name": "Anjaw",
+    "shape_id": "76128533B55878637000592",
+    "lat": 28.0334,
+    "lon": 96.8419,
+    "area_km2": 6046.5
+  },
+  {
+    "district_id": 232,
+    "name": "Siang",
+    "shape_id": "76128533B95910687666425",
+    "lat": 28.2996,
+    "lon": 95.0187,
+    "area_km2": 1334.3
+  },
+  {
+    "district_id": 233,
+    "name": "Dibang Valley",
+    "shape_id": "76128533B11651252780045",
+    "lat": 28.8689,
+    "lon": 95.9383,
+    "area_km2": 9555.2
+  },
+  {
+    "district_id": 234,
+    "name": "Kurung Kumey",
+    "shape_id": "76128533B31405919461443",
+    "lat": 27.9828,
+    "lon": 93.1671,
+    "area_km2": 4583.6
+  },
+  {
+    "district_id": 235,
+    "name": "West Kameng",
+    "shape_id": "76128533B61235952222315",
+    "lat": 27.3211,
+    "lon": 92.4504,
+    "area_km2": 5102.1
+  },
+  {
+    "district_id": 236,
+    "name": "Lower Dibang Valley",
+    "shape_id": "76128533B38784530776316",
+    "lat": 28.227,
+    "lon": 95.8992,
+    "area_km2": 3590.6
+  },
+  {
+    "district_id": 237,
+    "name": "Tawang",
+    "shape_id": "76128533B18668117085772",
+    "lat": 27.6541,
+    "lon": 91.9373,
+    "area_km2": 2322.0
+  },
+  {
+    "district_id": 238,
+    "name": "Papum Pare",
+    "shape_id": "76128533B17472905712757",
+    "lat": 27.2922,
+    "lon": 93.6133,
+    "area_km2": 3432.6
+  },
+  {
+    "district_id": 239,
+    "name": "Goalpara",
+    "shape_id": "76128533B91472319248603",
+    "lat": 26.0631,
+    "lon": 90.5322,
+    "area_km2": 1980.2
+  },
+  {
+    "district_id": 240,
+    "name": "Nalbari",
+    "shape_id": "76128533B40995085026980",
+    "lat": 26.3631,
+    "lon": 91.3967,
+    "area_km2": 1057.0
+  },
+  {
+    "district_id": 241,
+    "name": "Dhubri",
+    "shape_id": "76128533B25835998628545",
+    "lat": 26.1604,
+    "lon": 90.0885,
+    "area_km2": 1794.7
+  },
+  {
+    "district_id": 242,
+    "name": "Sivasagar",
+    "shape_id": "76128533B21722277889516",
+    "lat": 26.9771,
+    "lon": 94.6047,
+    "area_km2": 1530.1
+  },
+  {
+    "district_id": 243,
+    "name": "Karimganj",
+    "shape_id": "76128533B23092176497025",
+    "lat": 24.584,
+    "lon": 92.3729,
+    "area_km2": 1855.9
+  },
+  {
+    "district_id": 244,
+    "name": "Tinsukia",
+    "shape_id": "76128533B8920527783032",
+    "lat": 27.598,
+    "lon": 95.5603,
+    "area_km2": 3913.0
+  },
+  {
+    "district_id": 245,
+    "name": "Hailakandi",
+    "shape_id": "76128533B16749627383755",
+    "lat": 24.5067,
+    "lon": 92.6304,
+    "area_km2": 1295.7
+  },
+  {
+    "district_id": 246,
+    "name": "Chirang",
+    "shape_id": "76128533B56012535339305",
+    "lat": 26.6539,
+    "lon": 90.6284,
+    "area_km2": 1589.9
+  },
+  {
+    "district_id": 247,
+    "name": "Dhemaji",
+    "shape_id": "76128533B50650763703739",
+    "lat": 27.544,
+    "lon": 94.5545,
+    "area_km2": 2647.8
+  },
+  {
+    "district_id": 248,
+    "name": "Morigaon",
+    "shape_id": "76128533B17968019348564",
+    "lat": 26.2718,
+    "lon": 92.2844,
+    "area_km2": 1511.9
+  },
+  {
+    "district_id": 249,
+    "name": "Karbi Anglong East",
+    "shape_id": "76128533B38548995376745",
+    "lat": 26.0619,
+    "lon": 93.4556,
+    "area_km2": 7326.3
+  },
+  {
+    "district_id": 250,
+    "name": "Lakhimpur",
+    "shape_id": "76128533B85627242103654",
+    "lat": 27.151,
+    "lon": 94.1648,
+    "area_km2": 2869.1
+  },
+  {
+    "district_id": 251,
+    "name": "Bongaigaon",
+    "shape_id": "76128533B46490409917345",
+    "lat": 26.3676,
+    "lon": 90.6407,
+    "area_km2": 1101.1
+  },
+  {
+    "district_id": 252,
+    "name": "Baksa",
+    "shape_id": "76128533B8221925175605",
+    "lat": 26.6392,
+    "lon": 91.4543,
+    "area_km2": 2404.4
+  },
+  {
+    "district_id": 253,
+    "name": "Nagaon",
+    "shape_id": "76128533B13437137070957",
+    "lat": 26.3315,
+    "lon": 92.7456,
+    "area_km2": 2518.0
+  },
+  {
+    "district_id": 254,
+    "name": "Cachar",
+    "shape_id": "76128533B26964150246712",
+    "lat": 24.759,
+    "lon": 92.8818,
+    "area_km2": 3816.6
+  },
+  {
+    "district_id": 255,
+    "name": "Darrang",
+    "shape_id": "76128533B96719327593873",
+    "lat": 26.4337,
+    "lon": 92.014,
+    "area_km2": 1648.2
+  },
+  {
+    "district_id": 256,
+    "name": "Kamrup",
+    "shape_id": "76128533B66682530790248",
+    "lat": 26.1487,
+    "lon": 91.2346,
+    "area_km2": 2947.3
+  },
+  {
+    "district_id": 257,
+    "name": "Dibrugarh",
+    "shape_id": "76128533B57825981663822",
+    "lat": 27.3736,
+    "lon": 95.0452,
+    "area_km2": 3355.5
+  },
+  {
+    "district_id": 258,
+    "name": "Barpeta",
+    "shape_id": "76128533B47772746709007",
+    "lat": 26.3548,
+    "lon": 91.0354,
+    "area_km2": 2357.9
+  },
+  {
+    "district_id": 259,
+    "name": "Sonitpur",
+    "shape_id": "76128533B41005496708834",
+    "lat": 26.7661,
+    "lon": 92.7119,
+    "area_km2": 3490.3
+  },
+  {
+    "district_id": 260,
+    "name": "Udalguri",
+    "shape_id": "76128533B20307518801538",
+    "lat": 26.703,
+    "lon": 92.0389,
+    "area_km2": 2060.9
+  },
+  {
+    "district_id": 261,
+    "name": "Golaghat",
+    "shape_id": "76128533B55519385298440",
+    "lat": 26.2958,
+    "lon": 93.9928,
+    "area_km2": 3204.6
+  },
+  {
+    "district_id": 262,
+    "name": "Kamrup Metropolitan",
+    "shape_id": "76128533B38230828972906",
+    "lat": 26.0733,
+    "lon": 92.02,
+    "area_km2": 1134.7
+  },
+  {
+    "district_id": 263,
+    "name": "Dima Hasao",
+    "shape_id": "76128533B66125202864966",
+    "lat": 25.3937,
+    "lon": 93.0825,
+    "area_km2": 4925.1
+  },
+  {
+    "district_id": 264,
+    "name": "Kokrajhar",
+    "shape_id": "76128533B91480770176940",
+    "lat": 26.5258,
+    "lon": 90.1383,
+    "area_km2": 3098.5
+  },
+  {
+    "district_id": 265,
+    "name": "Jorhat",
+    "shape_id": "76128533B334793883930",
+    "lat": 26.6531,
+    "lon": 94.2727,
+    "area_km2": 1903.6
+  },
+  {
+    "district_id": 266,
+    "name": "Yanam",
+    "shape_id": "76128533B83105693975079",
+    "lat": 16.6852,
+    "lon": 82.2688,
+    "area_km2": 58.9
+  },
+  {
+    "district_id": 267,
+    "name": "Karaikal",
+    "shape_id": "76128533B62624361588317",
+    "lat": 10.9203,
+    "lon": 79.831,
+    "area_km2": 80.4
+  },
+  {
+    "district_id": 268,
+    "name": "Puducherry",
+    "shape_id": "76128533B29873478326363",
+    "lat": 11.9256,
+    "lon": 79.7812,
+    "area_km2": 385.2
+  },
+  {
+    "district_id": 269,
+    "name": "Mahe",
+    "shape_id": "76128533B41246169049488",
+    "lat": 11.6989,
+    "lon": 75.5373,
+    "area_km2": 9.1
+  },
+  {
+    "district_id": 270,
+    "name": "Lunglei",
+    "shape_id": "76128533B97836280165555",
+    "lat": 22.9445,
+    "lon": 92.629,
+    "area_km2": 3578.3
+  },
+  {
+    "district_id": 271,
+    "name": "Kolasib",
+    "shape_id": "76128533B38141181853016",
+    "lat": 24.1724,
+    "lon": 92.7074,
+    "area_km2": 1700.5
+  },
+  {
+    "district_id": 272,
+    "name": "Lawngtlai",
+    "shape_id": "76128533B70210707786180",
+    "lat": 22.3739,
+    "lon": 92.7289,
+    "area_km2": 2457.9
+  },
+  {
+    "district_id": 273,
+    "name": "Saiha",
+    "shape_id": "76128533B35468154415031",
+    "lat": 22.2915,
+    "lon": 93.0086,
+    "area_km2": 1525.1
+  },
+  {
+    "district_id": 274,
+    "name": "Champhai",
+    "shape_id": "76128533B39039541714099",
+    "lat": 23.197,
+    "lon": 93.2593,
+    "area_km2": 1535.4
+  },
+  {
+    "district_id": 275,
+    "name": "Serchhip",
+    "shape_id": "76128533B49456368048033",
+    "lat": 23.2766,
+    "lon": 92.8331,
+    "area_km2": 1378.8
+  },
+  {
+    "district_id": 276,
+    "name": "Aizawl",
+    "shape_id": "76128533B34203923268864",
+    "lat": 23.8627,
+    "lon": 92.8856,
+    "area_km2": 2626.0
+  },
+  {
+    "district_id": 277,
+    "name": "Mamit",
+    "shape_id": "76128533B77336742344288",
+    "lat": 23.7565,
+    "lon": 92.4357,
+    "area_km2": 2906.0
+  },
+  {
+    "district_id": 278,
+    "name": "Chandel",
+    "shape_id": "76128533B59855617266389",
+    "lat": 24.1625,
+    "lon": 94.0048,
+    "area_km2": 2134.3
+  },
+  {
+    "district_id": 279,
+    "name": "Tamenglong",
+    "shape_id": "76128533B11421856387892",
+    "lat": 25.0678,
+    "lon": 93.5464,
+    "area_km2": 2949.9
+  },
+  {
+    "district_id": 280,
+    "name": "Ukhrul",
+    "shape_id": "76128533B44190672061408",
+    "lat": 25.3067,
+    "lon": 94.475,
+    "area_km2": 2250.5
+  },
+  {
+    "district_id": 281,
+    "name": "Bishnupur",
+    "shape_id": "76128533B14403163214152",
+    "lat": 24.5157,
+    "lon": 93.7919,
+    "area_km2": 436.2
+  },
+  {
+    "district_id": 282,
+    "name": "Churachandpur",
+    "shape_id": "76128533B50969226102213",
+    "lat": 24.2845,
+    "lon": 93.6833,
+    "area_km2": 2547.0
+  },
+  {
+    "district_id": 283,
+    "name": "Thoubal",
+    "shape_id": "76128533B44197302080139",
+    "lat": 24.6281,
+    "lon": 94.004,
+    "area_km2": 370.0
+  },
+  {
+    "district_id": 284,
+    "name": "Imphal East",
+    "shape_id": "76128533B30779259886340",
+    "lat": 24.8677,
+    "lon": 94.0186,
+    "area_km2": 381.0
+  },
+  {
+    "district_id": 285,
+    "name": "Kangpokpi",
+    "shape_id": "76128533B56326354019534",
+    "lat": 25.0062,
+    "lon": 93.8375,
+    "area_km2": 1827.0
+  },
+  {
+    "district_id": 286,
+    "name": "Imphal West",
+    "shape_id": "76128533B99807650893733",
+    "lat": 24.7627,
+    "lon": 93.8575,
+    "area_km2": 506.3
+  },
+  {
+    "district_id": 287,
+    "name": "Mon",
+    "shape_id": "76128533B23611090346849",
+    "lat": 26.6513,
+    "lon": 95.0097,
+    "area_km2": 2175.0
+  },
+  {
+    "district_id": 288,
+    "name": "Tuensang",
+    "shape_id": "76128533B82052450002431",
+    "lat": 26.169,
+    "lon": 94.9223,
+    "area_km2": 2265.0
+  },
+  {
+    "district_id": 289,
+    "name": "Mokokchung",
+    "shape_id": "76128533B82793215586362",
+    "lat": 26.4929,
+    "lon": 94.5327,
+    "area_km2": 1629.0
+  },
+  {
+    "district_id": 290,
+    "name": "Longleng",
+    "shape_id": "76128533B66411945144923",
+    "lat": 26.602,
+    "lon": 94.8175,
+    "area_km2": 511.4
+  },
+  {
+    "district_id": 291,
+    "name": "Phek",
+    "shape_id": "76128533B13733639953372",
+    "lat": 25.6453,
+    "lon": 94.382,
+    "area_km2": 1899.7
+  },
+  {
+    "district_id": 292,
+    "name": "Kohima",
+    "shape_id": "76128533B53671786151110",
+    "lat": 25.7735,
+    "lon": 94.1329,
+    "area_km2": 1454.6
+  },
+  {
+    "district_id": 293,
+    "name": "Wokha",
+    "shape_id": "76128533B67210465807627",
+    "lat": 26.276,
+    "lon": 94.2193,
+    "area_km2": 1505.4
+  },
+  {
+    "district_id": 294,
+    "name": "Zunheboto",
+    "shape_id": "76128533B58058152513003",
+    "lat": 26.0213,
+    "lon": 94.5165,
+    "area_km2": 1621.8
+  },
+  {
+    "district_id": 295,
+    "name": "Kiphire",
+    "shape_id": "76128533B49100243723360",
+    "lat": 25.8026,
+    "lon": 94.8668,
+    "area_km2": 1149.0
+  },
+  {
+    "district_id": 296,
+    "name": "Dimapur",
+    "shape_id": "76128533B85747247216737",
+    "lat": 25.8275,
+    "lon": 93.9048,
+    "area_km2": 825.3
+  },
+  {
+    "district_id": 297,
+    "name": "Peren",
+    "shape_id": "76128533B2970909480221",
+    "lat": 25.4464,
+    "lon": 93.6168,
+    "area_km2": 1799.3
+  },
+  {
+    "district_id": 298,
+    "name": "Khowai",
+    "shape_id": "76128533B67044589012853",
+    "lat": 23.9567,
+    "lon": 91.647,
+    "area_km2": 1048.9
+  },
+  {
+    "district_id": 299,
+    "name": "Sipahijula",
+    "shape_id": "76128533B43965372582859",
+    "lat": 23.5345,
+    "lon": 91.3056,
+    "area_km2": 1074.5
+  },
+  {
+    "district_id": 300,
+    "name": "West Tripura",
+    "shape_id": "76128533B97225684979956",
+    "lat": 23.9176,
+    "lon": 91.391,
+    "area_km2": 943.4
+  },
+  {
+    "district_id": 301,
+    "name": "Dhalai",
+    "shape_id": "76128533B42970684683247",
+    "lat": 23.8356,
+    "lon": 91.9775,
+    "area_km2": 2171.7
+  },
+  {
+    "district_id": 302,
+    "name": "Unokoti",
+    "shape_id": "76128533B4720703924950",
+    "lat": 24.1905,
+    "lon": 92.0425,
+    "area_km2": 658.9
+  },
+  {
+    "district_id": 303,
+    "name": "North Tripura",
+    "shape_id": "76128533B77134386587213",
+    "lat": 24.0958,
+    "lon": 92.2381,
+    "area_km2": 1359.6
+  },
+  {
+    "district_id": 304,
+    "name": "Gomati",
+    "shape_id": "76128533B94126463611805",
+    "lat": 23.4263,
+    "lon": 91.6376,
+    "area_km2": 1623.0
+  },
+  {
+    "district_id": 305,
+    "name": "South Tripura",
+    "shape_id": "76128533B67748245133340",
+    "lat": 23.1813,
+    "lon": 91.6413,
+    "area_km2": 1474.9
+  },
+  {
+    "district_id": 306,
+    "name": "South Garo Hills",
+    "shape_id": "76128533B79750857313751",
+    "lat": 25.3433,
+    "lon": 90.5743,
+    "area_km2": 1961.6
+  },
+  {
+    "district_id": 307,
+    "name": "Ribhoi",
+    "shape_id": "76128533B70570208114113",
+    "lat": 25.8621,
+    "lon": 91.8404,
+    "area_km2": 2460.8
+  },
+  {
+    "district_id": 308,
+    "name": "East Khasi Hills",
+    "shape_id": "76128533B49246671500878",
+    "lat": 25.406,
+    "lon": 91.8449,
+    "area_km2": 2765.8
+  },
+  {
+    "district_id": 309,
+    "name": "West Khasi Hills",
+    "shape_id": "76128533B42153891534463",
+    "lat": 25.574,
+    "lon": 91.276,
+    "area_km2": 3844.9
+  },
+  {
+    "district_id": 310,
+    "name": "South West Khasi Hills",
+    "shape_id": "76128533B27102120636500",
+    "lat": 25.3195,
+    "lon": 91.3287,
+    "area_km2": 1348.6
+  },
+  {
+    "district_id": 311,
+    "name": "West Garo Hills",
+    "shape_id": "76128533B96195300293897",
+    "lat": 25.6056,
+    "lon": 90.2209,
+    "area_km2": 2890.6
+  },
+  {
+    "district_id": 312,
+    "name": "South West Garo Hills",
+    "shape_id": "76128533B52906466328910",
+    "lat": 25.4399,
+    "lon": 89.9486,
+    "area_km2": 587.4
+  },
+  {
+    "district_id": 313,
+    "name": "East Jaintia Hills",
+    "shape_id": "76128533B70185077694103",
+    "lat": 25.2752,
+    "lon": 92.4913,
+    "area_km2": 2082.1
+  },
+  {
+    "district_id": 314,
+    "name": "West Jaintia Hills",
+    "shape_id": "76128533B84622469201834",
+    "lat": 25.433,
+    "lon": 92.1929,
+    "area_km2": 1733.9
+  },
+  {
+    "district_id": 315,
+    "name": "East Garo Hills",
+    "shape_id": "76128533B40535123096970",
+    "lat": 25.6361,
+    "lon": 90.6711,
+    "area_km2": 1768.3
+  },
+  {
+    "district_id": 316,
+    "name": "North Garo Hills",
+    "shape_id": "76128533B35759455556328",
+    "lat": 25.8679,
+    "lon": 90.7175,
+    "area_km2": 1052.2
+  },
+  {
+    "district_id": 317,
+    "name": "Bemetra",
+    "shape_id": "76128533B73736605657091",
+    "lat": 21.6778,
+    "lon": 81.4328,
+    "area_km2": 2630.5
+  },
+  {
+    "district_id": 318,
+    "name": "Bastar",
+    "shape_id": "76128533B47840093719460",
+    "lat": 19.1207,
+    "lon": 81.829,
+    "area_km2": 5228.5
+  },
+  {
+    "district_id": 319,
+    "name": "Mungeli",
+    "shape_id": "76128533B17292264941997",
+    "lat": 22.1977,
+    "lon": 81.6305,
+    "area_km2": 2560.7
+  },
+  {
+    "district_id": 320,
+    "name": "Bilaspur",
+    "shape_id": "76128533B81964529079574",
+    "lat": 22.1748,
+    "lon": 82.0938,
+    "area_km2": 4269.2
+  },
+  {
+    "district_id": 321,
+    "name": "Gariaband",
+    "shape_id": "76128533B93063337202124",
+    "lat": 20.4419,
+    "lon": 82.2469,
+    "area_km2": 4895.3
+  },
+  {
+    "district_id": 322,
+    "name": "Kabeerdham",
+    "shape_id": "76128533B48077510234542",
+    "lat": 22.1131,
+    "lon": 81.2499,
+    "area_km2": 4247.3
+  },
+  {
+    "district_id": 323,
+    "name": "Sukma",
+    "shape_id": "76128533B53316015271969",
+    "lat": 18.2813,
+    "lon": 81.326,
+    "area_km2": 5684.8
+  },
+  {
+    "district_id": 324,
+    "name": "Uttar Bastar Kanker",
+    "shape_id": "76128533B26755490628656",
+    "lat": 20.1181,
+    "lon": 80.9796,
+    "area_km2": 7244.6
+  },
+  {
+    "district_id": 325,
+    "name": "Dakshin Bastar Dantewada",
+    "shape_id": "76128533B14292125820380",
+    "lat": 18.8206,
+    "lon": 81.4046,
+    "area_km2": 2879.0
+  },
+  {
+    "district_id": 326,
+    "name": "Surguja",
+    "shape_id": "76128533B52487813780503",
+    "lat": 22.9432,
+    "lon": 83.0491,
+    "area_km2": 4908.1
+  },
+  {
+    "district_id": 327,
+    "name": "Balrampur",
+    "shape_id": "76128533B14598081584747",
+    "lat": 23.6282,
+    "lon": 83.4832,
+    "area_km2": 7714.3
+  },
+  {
+    "district_id": 328,
+    "name": "Kondagaon",
+    "shape_id": "76128533B12144400448811",
+    "lat": 19.7117,
+    "lon": 81.756,
+    "area_km2": 5204.3
+  },
+  {
+    "district_id": 329,
+    "name": "Narayanpur",
+    "shape_id": "76128533B89979485471283",
+    "lat": 19.5835,
+    "lon": 81.1084,
+    "area_km2": 3849.0
+  },
+  {
+    "district_id": 330,
+    "name": "Durg",
+    "shape_id": "76128533B15993411864574",
+    "lat": 21.1817,
+    "lon": 81.4117,
+    "area_km2": 2285.9
+  },
+  {
+    "district_id": 331,
+    "name": "Surajpur",
+    "shape_id": "76128533B46979893461805",
+    "lat": 23.4252,
+    "lon": 83.0161,
+    "area_km2": 3167.3
+  },
+  {
+    "district_id": 332,
+    "name": "Bijapur",
+    "shape_id": "76128533B66145460152555",
+    "lat": 18.7742,
+    "lon": 80.7454,
+    "area_km2": 9191.7
+  },
+  {
+    "district_id": 333,
+    "name": "Raipur",
+    "shape_id": "76128533B57691508962219",
+    "lat": 21.284,
+    "lon": 81.82,
+    "area_km2": 2890.3
+  },
+  {
+    "district_id": 334,
+    "name": "Baloda Bazar",
+    "shape_id": "76128533B54306414631532",
+    "lat": 21.5279,
+    "lon": 82.3752,
+    "area_km2": 3989.8
+  },
+  {
+    "district_id": 335,
+    "name": "Balod",
+    "shape_id": "76128533B90169585758701",
+    "lat": 20.7292,
+    "lon": 81.1472,
+    "area_km2": 3433.3
+  },
+  {
+    "district_id": 336,
+    "name": "Koriya",
+    "shape_id": "76128533B1621599562140",
+    "lat": 23.4311,
+    "lon": 82.3201,
+    "area_km2": 6649.2
+  },
+  {
+    "district_id": 337,
+    "name": "Dhamtari",
+    "shape_id": "76128533B71714250401862",
+    "lat": 20.541,
+    "lon": 81.7167,
+    "area_km2": 4072.7
+  },
+  {
+    "district_id": 338,
+    "name": "Korba",
+    "shape_id": "76128533B89438858641946",
+    "lat": 22.52,
+    "lon": 82.6364,
+    "area_km2": 6634.7
+  },
+  {
+    "district_id": 339,
+    "name": "Raigarh",
+    "shape_id": "76128533B67018657649043",
+    "lat": 22.0666,
+    "lon": 83.3091,
+    "area_km2": 7053.2
+  },
+  {
+    "district_id": 340,
+    "name": "Jashpur",
+    "shape_id": "76128533B53609934827566",
+    "lat": 22.7705,
+    "lon": 83.9746,
+    "area_km2": 5832.1
+  },
+  {
+    "district_id": 341,
+    "name": "Mahasamund",
+    "shape_id": "76128533B9759621355294",
+    "lat": 21.1842,
+    "lon": 82.6156,
+    "area_km2": 4676.2
+  },
+  {
+    "district_id": 342,
+    "name": "Janjgir-Champa",
+    "shape_id": "76128533B6310527412636",
+    "lat": 21.9449,
+    "lon": 82.7032,
+    "area_km2": 4548.7
+  },
+  {
+    "district_id": 343,
+    "name": "Rajnandgaon",
+    "shape_id": "76128533B25020556592153",
+    "lat": 20.9723,
+    "lon": 80.6975,
+    "area_km2": 8101.0
+  },
+  {
+    "district_id": 344,
+    "name": "Nainital",
+    "shape_id": "76128533B50374927918374",
+    "lat": 29.2939,
+    "lon": 79.4343,
+    "area_km2": 4047.9
+  },
+  {
+    "district_id": 345,
+    "name": "Dehradun",
+    "shape_id": "76128533B67005208112053",
+    "lat": 30.4758,
+    "lon": 77.8616,
+    "area_km2": 3101.7
+  },
+  {
+    "district_id": 346,
+    "name": "Almora",
+    "shape_id": "76128533B74917207853309",
+    "lat": 29.6992,
+    "lon": 79.4353,
+    "area_km2": 3125.6
+  },
+  {
+    "district_id": 347,
+    "name": "Champawat",
+    "shape_id": "76128533B2761749808956",
+    "lat": 29.2364,
+    "lon": 80.1036,
+    "area_km2": 1745.5
+  },
+  {
+    "district_id": 348,
+    "name": "Uttarkashi",
+    "shape_id": "76128533B81694682724865",
+    "lat": 30.9573,
+    "lon": 78.6316,
+    "area_km2": 7980.3
+  },
+  {
+    "district_id": 349,
+    "name": "Garhwal",
+    "shape_id": "76128533B46926146855114",
+    "lat": 29.8427,
+    "lon": 78.7102,
+    "area_km2": 5309.5
+  },
+  {
+    "district_id": 350,
+    "name": "Hardwar",
+    "shape_id": "76128533B87833640460819",
+    "lat": 29.8886,
+    "lon": 78.0069,
+    "area_km2": 2310.4
+  },
+  {
+    "district_id": 351,
+    "name": "Rudraprayag",
+    "shape_id": "76128533B46038384763988",
+    "lat": 30.4858,
+    "lon": 79.0304,
+    "area_km2": 1943.1
+  },
+  {
+    "district_id": 352,
+    "name": "Tehri Garhwal",
+    "shape_id": "76128533B61134942989820",
+    "lat": 30.4607,
+    "lon": 78.4875,
+    "area_km2": 3930.1
+  },
+  {
+    "district_id": 353,
+    "name": "Bageshwar",
+    "shape_id": "76128533B64217423710469",
+    "lat": 29.9886,
+    "lon": 79.7748,
+    "area_km2": 2280.6
+  },
+  {
+    "district_id": 354,
+    "name": "Pithoragarh",
+    "shape_id": "76128533B38561771925520",
+    "lat": 30.1233,
+    "lon": 80.4791,
+    "area_km2": 7183.0
+  },
+  {
+    "district_id": 355,
+    "name": "Chamoli",
+    "shape_id": "76128533B69844709752120",
+    "lat": 30.5011,
+    "lon": 79.6199,
+    "area_km2": 7897.2
+  },
+  {
+    "district_id": 356,
+    "name": "Udham Singh Nagar",
+    "shape_id": "76128533B46531174070538",
+    "lat": 29.0412,
+    "lon": 79.4379,
+    "area_km2": 2554.2
+  },
+  {
+    "district_id": 357,
+    "name": "Kannur",
+    "shape_id": "76128533B41976979530466",
+    "lat": 11.9881,
+    "lon": 75.5477,
+    "area_km2": 2990.5
+  },
+  {
+    "district_id": 358,
+    "name": "Pathanamthitta",
+    "shape_id": "76128533B29330052395581",
+    "lat": 9.2779,
+    "lon": 76.9729,
+    "area_km2": 2669.1
+  },
+  {
+    "district_id": 359,
+    "name": "Alappuzha",
+    "shape_id": "76128533B86368264587575",
+    "lat": 9.5006,
+    "lon": 76.4138,
+    "area_km2": 1442.5
+  },
+  {
+    "district_id": 360,
+    "name": "Ernakulam",
+    "shape_id": "76128533B75519739609062",
+    "lat": 10.0464,
+    "lon": 76.4999,
+    "area_km2": 3091.5
+  },
+  {
+    "district_id": 361,
+    "name": "Kollam",
+    "shape_id": "76128533B61117593923933",
+    "lat": 8.9694,
+    "lon": 76.8576,
+    "area_km2": 2522.5
+  },
+  {
+    "district_id": 362,
+    "name": "Kasaragod",
+    "shape_id": "76128533B63366045987285",
+    "lat": 12.443,
+    "lon": 75.1879,
+    "area_km2": 2018.1
+  },
+  {
+    "district_id": 363,
+    "name": "Idukki",
+    "shape_id": "76128533B35083559759016",
+    "lat": 9.8153,
+    "lon": 77.0022,
+    "area_km2": 4385.0
+  },
+  {
+    "district_id": 364,
+    "name": "Kozhikode",
+    "shape_id": "76128533B3985531353014",
+    "lat": 11.4634,
+    "lon": 75.8968,
+    "area_km2": 2385.2
+  },
+  {
+    "district_id": 365,
+    "name": "Kottayam",
+    "shape_id": "76128533B2576169508425",
+    "lat": 9.6296,
+    "lon": 76.6476,
+    "area_km2": 2214.3
+  },
+  {
+    "district_id": 366,
+    "name": "Thrissur",
+    "shape_id": "76128533B75696328527555",
+    "lat": 10.4826,
+    "lon": 76.2714,
+    "area_km2": 3062.9
+  },
+  {
+    "district_id": 367,
+    "name": "Palakkad",
+    "shape_id": "76128533B19581555782120",
+    "lat": 10.789,
+    "lon": 76.4753,
+    "area_km2": 4529.6
+  },
+  {
+    "district_id": 368,
+    "name": "Thiruvananthapuram",
+    "shape_id": "76128533B33162455176756",
+    "lat": 8.5775,
+    "lon": 77.0494,
+    "area_km2": 2237.2
+  },
+  {
+    "district_id": 369,
+    "name": "Malappuram",
+    "shape_id": "76128533B83861010847920",
+    "lat": 11.1076,
+    "lon": 76.1106,
+    "area_km2": 3573.6
+  },
+  {
+    "district_id": 370,
+    "name": "Wayanad",
+    "shape_id": "76128533B82539771173603",
+    "lat": 11.7164,
+    "lon": 76.0917,
+    "area_km2": 2039.8
+  },
+  {
+    "district_id": 371,
+    "name": "Lakshadweep",
+    "shape_id": "76128533B41477629049356",
+    "lat": 11.1598,
+    "lon": 72.0458,
+    "area_km2": 211.3
+  },
+  {
+    "district_id": 372,
+    "name": "North District",
+    "shape_id": "76128533B65820903826030",
+    "lat": 27.7536,
+    "lon": 88.5214,
+    "area_km2": 4286.5
+  },
+  {
+    "district_id": 373,
+    "name": "South District",
+    "shape_id": "76128533B10270619600482",
+    "lat": 27.3104,
+    "lon": 88.3838,
+    "area_km2": 702.2
+  },
+  {
+    "district_id": 374,
+    "name": "West District",
+    "shape_id": "76128533B30151252629779",
+    "lat": 27.3666,
+    "lon": 88.1878,
+    "area_km2": 1238.3
+  },
+  {
+    "district_id": 375,
+    "name": "East District",
+    "shape_id": "76128533B67639510673366",
+    "lat": 27.2779,
+    "lon": 88.6762,
+    "area_km2": 946.6
+  },
+  {
+    "district_id": 376,
+    "name": "Nadia",
+    "shape_id": "76128533B71390118115414",
+    "lat": 23.487,
+    "lon": 88.5586,
+    "area_km2": 3836.9
+  },
+  {
+    "district_id": 377,
+    "name": "Dakshin Dinajpur",
+    "shape_id": "76128533B43049220506604",
+    "lat": 25.3833,
+    "lon": 88.5097,
+    "area_km2": 2185.9
+  },
+  {
+    "district_id": 378,
+    "name": "Murshidabad",
+    "shape_id": "76128533B51402332870635",
+    "lat": 24.2889,
+    "lon": 88.3716,
+    "area_km2": 5550.5
+  },
+  {
+    "district_id": 379,
+    "name": "Kolkata",
+    "shape_id": "76128533B72507508533064",
+    "lat": 22.569,
+    "lon": 88.3734,
+    "area_km2": 91.9
+  },
+  {
+    "district_id": 380,
+    "name": "Maldah",
+    "shape_id": "76128533B36734405131975",
+    "lat": 25.0959,
+    "lon": 88.1118,
+    "area_km2": 3578.7
+  },
+  {
+    "district_id": 381,
+    "name": "South Twenty Four Parganas",
+    "shape_id": "76128533B2860535426345",
+    "lat": 22.0639,
+    "lon": 88.6219,
+    "area_km2": 9639.1
+  },
+  {
+    "district_id": 382,
+    "name": "Darjiling",
+    "shape_id": "76128533B17109302371020",
+    "lat": 26.8364,
+    "lon": 88.3111,
+    "area_km2": 2087.5
+  },
+  {
+    "district_id": 383,
+    "name": "Jalpaiguri",
+    "shape_id": "76128533B99051523080987",
+    "lat": 26.651,
+    "lon": 88.7272,
+    "area_km2": 3416.2
+  },
+  {
+    "district_id": 384,
+    "name": "Uttar Dinajpur",
+    "shape_id": "76128533B7157007143985",
+    "lat": 25.8705,
+    "lon": 87.9696,
+    "area_km2": 3135.9
+  },
+  {
+    "district_id": 385,
+    "name": "Purba Medinipur",
+    "shape_id": "76128533B25373378863054",
+    "lat": 22.0676,
+    "lon": 87.8329,
+    "area_km2": 4215.0
+  },
+  {
+    "district_id": 386,
+    "name": "Haora",
+    "shape_id": "76128533B22077262393417",
+    "lat": 22.492,
+    "lon": 88.029,
+    "area_km2": 1455.3
+  },
+  {
+    "district_id": 387,
+    "name": "North Twenty Four Parganas",
+    "shape_id": "76128533B93453964263910",
+    "lat": 22.7162,
+    "lon": 88.6464,
+    "area_km2": 3955.7
+  },
+  {
+    "district_id": 388,
+    "name": "Birbhum",
+    "shape_id": "76128533B53366745705922",
+    "lat": 24.0615,
+    "lon": 87.6971,
+    "area_km2": 4566.0
+  },
+  {
+    "district_id": 389,
+    "name": "Barddhaman",
+    "shape_id": "76128533B59121537940607",
+    "lat": 23.3929,
+    "lon": 87.9083,
+    "area_km2": 5406.7
+  },
+  {
+    "district_id": 390,
+    "name": "Bankura",
+    "shape_id": "76128533B20752885472650",
+    "lat": 23.1325,
+    "lon": 87.2053,
+    "area_km2": 6980.0
+  },
+  {
+    "district_id": 391,
+    "name": "Puruliya",
+    "shape_id": "76128533B16811573188243",
+    "lat": 23.2025,
+    "lon": 86.3009,
+    "area_km2": 6273.7
+  },
+  {
+    "district_id": 392,
+    "name": "Koch Bihar",
+    "shape_id": "76128533B64156747739715",
+    "lat": 26.2562,
+    "lon": 89.4215,
+    "area_km2": 3297.0
+  },
+  {
+    "district_id": 393,
+    "name": "Paschim Medinipur",
+    "shape_id": "76128533B88812350838807",
+    "lat": 22.3589,
+    "lon": 87.4121,
+    "area_km2": 6302.4
+  },
+  {
+    "district_id": 394,
+    "name": "Hugli",
+    "shape_id": "76128533B81857725777974",
+    "lat": 22.9136,
+    "lon": 88.0159,
+    "area_km2": 3160.2
+  },
+  {
+    "district_id": 395,
+    "name": "Pathankot",
+    "shape_id": "76128533B19630094725383",
+    "lat": 32.3064,
+    "lon": 75.6593,
+    "area_km2": 1002.8
+  },
+  {
+    "district_id": 396,
+    "name": "Gurdaspur",
+    "shape_id": "76128533B51331331726928",
+    "lat": 31.9122,
+    "lon": 75.228,
+    "area_km2": 2623.7
+  },
+  {
+    "district_id": 397,
+    "name": "Patiala",
+    "shape_id": "76128533B39368211148513",
+    "lat": 30.2119,
+    "lon": 76.3411,
+    "area_km2": 3354.1
+  },
+  {
+    "district_id": 398,
+    "name": "Tarn Taran",
+    "shape_id": "76128533B54652028494758",
+    "lat": 31.3259,
+    "lon": 74.841,
+    "area_km2": 2431.9
+  },
+  {
+    "district_id": 399,
+    "name": "Kapurthala",
+    "shape_id": "76128533B37199077904074",
+    "lat": 31.3842,
+    "lon": 75.3445,
+    "area_km2": 1663.1
+  },
+  {
+    "district_id": 400,
+    "name": "Fatehgarh Sahib",
+    "shape_id": "76128533B99919205026025",
+    "lat": 30.6574,
+    "lon": 76.3815,
+    "area_km2": 1149.8
+  },
+  {
+    "district_id": 401,
+    "name": "Sangrur",
+    "shape_id": "76128533B82601690264832",
+    "lat": 30.2096,
+    "lon": 75.8214,
+    "area_km2": 3598.8
+  },
+  {
+    "district_id": 402,
+    "name": "Mansa",
+    "shape_id": "76128533B41499938690181",
+    "lat": 29.8759,
+    "lon": 75.4898,
+    "area_km2": 2219.4
+  },
+  {
+    "district_id": 403,
+    "name": "Amritsar",
+    "shape_id": "76128533B8426545955058",
+    "lat": 31.7696,
+    "lon": 74.8342,
+    "area_km2": 2695.4
+  },
+  {
+    "district_id": 404,
+    "name": "Faridkot",
+    "shape_id": "76128533B13552746017223",
+    "lat": 30.597,
+    "lon": 74.799,
+    "area_km2": 1470.5
+  },
+  {
+    "district_id": 405,
+    "name": "Ludhiana",
+    "shape_id": "76128533B46195204843409",
+    "lat": 30.7875,
+    "lon": 75.8289,
+    "area_km2": 3711.4
+  },
+  {
+    "district_id": 406,
+    "name": "Bathinda",
+    "shape_id": "76128533B13791982054894",
+    "lat": 30.1769,
+    "lon": 75.0493,
+    "area_km2": 3380.7
+  },
+  {
+    "district_id": 407,
+    "name": "Jalandhar",
+    "shape_id": "76128533B91211372620495",
+    "lat": 31.2921,
+    "lon": 75.5692,
+    "area_km2": 2608.8
+  },
+  {
+    "district_id": 408,
+    "name": "Muktsar",
+    "shape_id": "76128533B50184713016881",
+    "lat": 30.2827,
+    "lon": 74.526,
+    "area_km2": 2644.5
+  },
+  {
+    "district_id": 409,
+    "name": "Moga",
+    "shape_id": "76128533B18834172694083",
+    "lat": 30.7971,
+    "lon": 75.163,
+    "area_km2": 2246.2
+  },
+  {
+    "district_id": 410,
+    "name": "Hoshiarpur",
+    "shape_id": "76128533B41747884279129",
+    "lat": 31.6056,
+    "lon": 75.8614,
+    "area_km2": 3387.7
+  },
+  {
+    "district_id": 411,
+    "name": "Rupnagar",
+    "shape_id": "76128533B24759700890118",
+    "lat": 31.0865,
+    "lon": 76.5291,
+    "area_km2": 1372.0
+  },
+  {
+    "district_id": 412,
+    "name": "Firozpur",
+    "shape_id": "76128533B421757708753",
+    "lat": 30.9483,
+    "lon": 74.7628,
+    "area_km2": 2048.9
+  },
+  {
+    "district_id": 413,
+    "name": "Fazilka",
+    "shape_id": "76128533B7291413308870",
+    "lat": 30.3768,
+    "lon": 74.1098,
+    "area_km2": 3267.0
+  },
+  {
+    "district_id": 414,
+    "name": "Barnala",
+    "shape_id": "76128533B39051871473194",
+    "lat": 30.3709,
+    "lon": 75.506,
+    "area_km2": 1409.8
+  },
+  {
+    "district_id": 415,
+    "name": "Sahibzada Ajit Singh Nagar",
+    "shape_id": "76128533B12197302963241",
+    "lat": 30.6501,
+    "lon": 76.7397,
+    "area_km2": 1104.3
+  },
+  {
+    "district_id": 416,
+    "name": "Shahid Bhagat Singh Nagar",
+    "shape_id": "76128533B14984770113274",
+    "lat": 31.1271,
+    "lon": 76.1632,
+    "area_km2": 1281.5
+  },
+  {
+    "district_id": 417,
+    "name": "Mandya",
+    "shape_id": "76128533B43335986553000",
+    "lat": 12.6367,
+    "lon": 76.7306,
+    "area_km2": 4933.4
+  },
+  {
+    "district_id": 418,
+    "name": "Mysore",
+    "shape_id": "76128533B95879808095476",
+    "lat": 12.1661,
+    "lon": 76.4958,
+    "area_km2": 6469.2
+  },
+  {
+    "district_id": 419,
+    "name": "Chikkaballapura",
+    "shape_id": "76128533B80772392204057",
+    "lat": 13.5995,
+    "lon": 77.7819,
+    "area_km2": 4228.0
+  },
+  {
+    "district_id": 420,
+    "name": "Yadgir",
+    "shape_id": "76128533B84927972855096",
+    "lat": 16.5745,
+    "lon": 76.9264,
+    "area_km2": 5309.2
+  },
+  {
+    "district_id": 421,
+    "name": "Chikmagalur",
+    "shape_id": "76128533B15550697205080",
+    "lat": 13.4273,
+    "lon": 75.6472,
+    "area_km2": 6953.9
+  },
+  {
+    "district_id": 422,
+    "name": "Chitradurga",
+    "shape_id": "76128533B47594161132413",
+    "lat": 14.3053,
+    "lon": 76.5335,
+    "area_km2": 8494.1
+  },
+  {
+    "district_id": 423,
+    "name": "Haveri",
+    "shape_id": "76128533B86721175299079",
+    "lat": 14.7157,
+    "lon": 75.3889,
+    "area_km2": 4838.5
+  },
+  {
+    "district_id": 424,
+    "name": "Dakshina Kannada",
+    "shape_id": "76128533B54396396829952",
+    "lat": 12.819,
+    "lon": 75.2547,
+    "area_km2": 5256.3
+  },
+  {
+    "district_id": 425,
+    "name": "Raichur",
+    "shape_id": "76128533B284680734793",
+    "lat": 16.0544,
+    "lon": 76.9037,
+    "area_km2": 8498.8
+  },
+  {
+    "district_id": 426,
+    "name": "Kolar",
+    "shape_id": "76128533B29292403538801",
+    "lat": 13.1803,
+    "lon": 78.2558,
+    "area_km2": 4126.6
+  },
+  {
+    "district_id": 427,
+    "name": "Bijapur",
+    "shape_id": "76128533B40495457052818",
+    "lat": 16.8165,
+    "lon": 75.8832,
+    "area_km2": 10461.7
+  },
+  {
+    "district_id": 428,
+    "name": "Uttara Kannada",
+    "shape_id": "76128533B79180273895456",
+    "lat": 14.725,
+    "lon": 74.6432,
+    "area_km2": 10433.1
+  },
+  {
+    "district_id": 429,
+    "name": "Davanagere",
+    "shape_id": "76128533B49597693387243",
+    "lat": 14.3684,
+    "lon": 75.8893,
+    "area_km2": 5983.4
+  },
+  {
+    "district_id": 430,
+    "name": "Dharwad",
+    "shape_id": "76128533B75110579117636",
+    "lat": 15.3706,
+    "lon": 75.135,
+    "area_km2": 4250.0
+  },
+  {
+    "district_id": 431,
+    "name": "Bidar",
+    "shape_id": "76128533B9794868259401",
+    "lat": 18.0199,
+    "lon": 77.2568,
+    "area_km2": 5466.4
+  },
+  {
+    "district_id": 432,
+    "name": "Chamarajanagar",
+    "shape_id": "76128533B16628456658675",
+    "lat": 11.949,
+    "lon": 77.1029,
+    "area_km2": 5783.3
+  },
+  {
+    "district_id": 433,
+    "name": "Gulbarga",
+    "shape_id": "76128533B1083016608278",
+    "lat": 17.239,
+    "lon": 76.7708,
+    "area_km2": 11030.8
+  },
+  {
+    "district_id": 434,
+    "name": "Gadag",
+    "shape_id": "76128533B33966968116377",
+    "lat": 15.4171,
+    "lon": 75.6828,
+    "area_km2": 4665.2
+  },
+  {
+    "district_id": 435,
+    "name": "Udupi",
+    "shape_id": "76128533B4839184447445",
+    "lat": 13.5641,
+    "lon": 74.8832,
+    "area_km2": 3603.6
+  },
+  {
+    "district_id": 436,
+    "name": "Bagalkot",
+    "shape_id": "76128533B83278580643229",
+    "lat": 16.2905,
+    "lon": 75.5816,
+    "area_km2": 6703.0
+  },
+  {
+    "district_id": 437,
+    "name": "Hassan",
+    "shape_id": "76128533B54775433755383",
+    "lat": 13.0307,
+    "lon": 76.1743,
+    "area_km2": 6822.6
+  },
+  {
+    "district_id": 438,
+    "name": "Shimoga",
+    "shape_id": "76128533B85389886560116",
+    "lat": 14.0594,
+    "lon": 75.1228,
+    "area_km2": 8494.3
+  },
+  {
+    "district_id": 439,
+    "name": "Bellary",
+    "shape_id": "76128533B92621859299479",
+    "lat": 15.1988,
+    "lon": 76.7441,
+    "area_km2": 8411.3
+  },
+  {
+    "district_id": 440,
+    "name": "Kodagu",
+    "shape_id": "76128533B57609583882472",
+    "lat": 12.3838,
+    "lon": 75.6625,
+    "area_km2": 4154.5
+  },
+  {
+    "district_id": 441,
+    "name": "Bangalore Rural",
+    "shape_id": "76128533B48075109668277",
+    "lat": 13.1753,
+    "lon": 77.3395,
+    "area_km2": 2359.1
+  },
+  {
+    "district_id": 442,
+    "name": "Tumkur",
+    "shape_id": "76128533B64905184636422",
+    "lat": 13.42,
+    "lon": 76.8828,
+    "area_km2": 10686.6
+  },
+  {
+    "district_id": 443,
+    "name": "Belgaum",
+    "shape_id": "76128533B74319098136622",
+    "lat": 16.1642,
+    "lon": 74.8902,
+    "area_km2": 13467.1
+  },
+  {
+    "district_id": 444,
+    "name": "Koppal",
+    "shape_id": "76128533B79601545186231",
+    "lat": 15.5771,
+    "lon": 76.313,
+    "area_km2": 5680.5
+  },
+  {
+    "district_id": 445,
+    "name": "Bangalore",
+    "shape_id": "76128533B76927648517269",
+    "lat": 12.9442,
+    "lon": 77.5325,
+    "area_km2": 2059.0
+  },
+  {
+    "district_id": 446,
+    "name": "Ramanagara",
+    "shape_id": "76128533B79600797037735",
+    "lat": 12.7206,
+    "lon": 77.3205,
+    "area_km2": 3526.1
+  },
+  {
+    "district_id": 447,
+    "name": "Washim",
+    "shape_id": "76128533B59866172845044",
+    "lat": 20.3065,
+    "lon": 77.2455,
+    "area_km2": 5183.0
+  },
+  {
+    "district_id": 448,
+    "name": "Ahmadnagar",
+    "shape_id": "76128533B47816398970283",
+    "lat": 19.1576,
+    "lon": 74.856,
+    "area_km2": 17145.8
+  },
+  {
+    "district_id": 449,
+    "name": "Latur",
+    "shape_id": "76128533B98050240849249",
+    "lat": 18.3574,
+    "lon": 76.7584,
+    "area_km2": 7275.4
+  },
+  {
+    "district_id": 450,
+    "name": "Solapur",
+    "shape_id": "76128533B62490300334729",
+    "lat": 17.8511,
+    "lon": 75.2757,
+    "area_km2": 14945.0
+  },
+  {
+    "district_id": 451,
+    "name": "Nashik",
+    "shape_id": "76128533B50056157736049",
+    "lat": 20.2268,
+    "lon": 74.101,
+    "area_km2": 15634.7
+  },
+  {
+    "district_id": 452,
+    "name": "Osmanabad",
+    "shape_id": "76128533B20474666262371",
+    "lat": 18.1709,
+    "lon": 76.1199,
+    "area_km2": 7609.2
+  },
+  {
+    "district_id": 453,
+    "name": "Sindhudurg",
+    "shape_id": "76128533B39238815774480",
+    "lat": 16.1331,
+    "lon": 73.6527,
+    "area_km2": 5166.7
+  },
+  {
+    "district_id": 454,
+    "name": "Kolhapur",
+    "shape_id": "76128533B66719908763317",
+    "lat": 16.4625,
+    "lon": 74.0896,
+    "area_km2": 7716.3
+  },
+  {
+    "district_id": 455,
+    "name": "Chandrapur",
+    "shape_id": "76128533B31342633028465",
+    "lat": 20.099,
+    "lon": 79.5054,
+    "area_km2": 11363.7
+  },
+  {
+    "district_id": 456,
+    "name": "Akola",
+    "shape_id": "76128533B12380735325851",
+    "lat": 20.7623,
+    "lon": 77.1917,
+    "area_km2": 5433.9
+  },
+  {
+    "district_id": 457,
+    "name": "Parbhani",
+    "shape_id": "76128533B27609096170969",
+    "lat": 19.2901,
+    "lon": 76.6267,
+    "area_km2": 6421.7
+  },
+  {
+    "district_id": 458,
+    "name": "Yavatmal",
+    "shape_id": "76128533B61814103412294",
+    "lat": 20.0621,
+    "lon": 78.3564,
+    "area_km2": 13598.6
+  },
+  {
+    "district_id": 459,
+    "name": "Nanded",
+    "shape_id": "76128533B63783580004876",
+    "lat": 19.097,
+    "lon": 77.485,
+    "area_km2": 10651.3
+  },
+  {
+    "district_id": 460,
+    "name": "Dhule",
+    "shape_id": "76128533B25344721013980",
+    "lat": 21.132,
+    "lon": 74.4799,
+    "area_km2": 7212.5
+  },
+  {
+    "district_id": 461,
+    "name": "Satara",
+    "shape_id": "76128533B93152786731267",
+    "lat": 17.638,
+    "lon": 74.3008,
+    "area_km2": 10655.1
+  },
+  {
+    "district_id": 462,
+    "name": "Sangli",
+    "shape_id": "76128533B9892158671522",
+    "lat": 17.1725,
+    "lon": 74.7749,
+    "area_km2": 8517.7
+  },
+  {
+    "district_id": 463,
+    "name": "Hingoli",
+    "shape_id": "76128533B86424887513424",
+    "lat": 19.627,
+    "lon": 77.1934,
+    "area_km2": 4699.8
+  },
+  {
+    "district_id": 464,
+    "name": "Pune",
+    "shape_id": "76128533B71380851181380",
+    "lat": 18.6433,
+    "lon": 73.9225,
+    "area_km2": 15729.1
+  },
+  {
+    "district_id": 465,
+    "name": "Gondiya",
+    "shape_id": "76128533B76286653784168",
+    "lat": 21.1474,
+    "lon": 80.27,
+    "area_km2": 5176.1
+  },
+  {
+    "district_id": 466,
+    "name": "Amravati",
+    "shape_id": "76128533B63815467309300",
+    "lat": 21.156,
+    "lon": 77.6433,
+    "area_km2": 12275.0
+  },
+  {
+    "district_id": 467,
+    "name": "Nandurbar",
+    "shape_id": "76128533B61304308285665",
+    "lat": 21.5142,
+    "lon": 74.5449,
+    "area_km2": 5931.8
+  },
+  {
+    "district_id": 468,
+    "name": "Ratnagiri",
+    "shape_id": "76128533B8575303957680",
+    "lat": 17.2829,
+    "lon": 73.4737,
+    "area_km2": 8399.6
+  },
+  {
+    "district_id": 469,
+    "name": "Wardha",
+    "shape_id": "76128533B37486272752374",
+    "lat": 20.8254,
+    "lon": 78.6162,
+    "area_km2": 6339.2
+  },
+  {
+    "district_id": 470,
+    "name": "Aurangabad",
+    "shape_id": "76128533B39329594544563",
+    "lat": 20.0255,
+    "lon": 75.1571,
+    "area_km2": 10297.5
+  },
+  {
+    "district_id": 471,
+    "name": "Buldana",
+    "shape_id": "76128533B70021405538438",
+    "lat": 20.5633,
+    "lon": 76.4107,
+    "area_km2": 9793.6
+  },
+  {
+    "district_id": 472,
+    "name": "Gadchiroli",
+    "shape_id": "76128533B36958871695926",
+    "lat": 19.7539,
+    "lon": 80.1699,
+    "area_km2": 14520.5
+  },
+  {
+    "district_id": 473,
+    "name": "Jalgaon",
+    "shape_id": "76128533B40156838070",
+    "lat": 20.839,
+    "lon": 75.5295,
+    "area_km2": 11760.8
+  },
+  {
+    "district_id": 474,
+    "name": "Raigarh",
+    "shape_id": "76128533B99895802074414",
+    "lat": 18.4935,
+    "lon": 73.1425,
+    "area_km2": 7004.7
+  },
+  {
+    "district_id": 475,
+    "name": "Bhandara",
+    "shape_id": "76128533B14243635342908",
+    "lat": 21.1206,
+    "lon": 79.7956,
+    "area_km2": 4199.9
+  },
+  {
+    "district_id": 476,
+    "name": "Bid",
+    "shape_id": "76128533B5215906594478",
+    "lat": 18.9916,
+    "lon": 75.9115,
+    "area_km2": 10620.1
+  },
+  {
+    "district_id": 477,
+    "name": "Jalna",
+    "shape_id": "76128533B55603381222870",
+    "lat": 19.9666,
+    "lon": 75.8282,
+    "area_km2": 7751.6
+  },
+  {
+    "district_id": 478,
+    "name": "Thane",
+    "shape_id": "76128533B74859418903113",
+    "lat": 19.355,
+    "lon": 73.3702,
+    "area_km2": 4175.0
+  },
+  {
+    "district_id": 479,
+    "name": "Palghar",
+    "shape_id": "76128533B37148244536449",
+    "lat": 19.7558,
+    "lon": 73.0939,
+    "area_km2": 5368.5
+  },
+  {
+    "district_id": 480,
+    "name": "Mumbai",
+    "shape_id": "76128533B16442413169750",
+    "lat": 18.9721,
+    "lon": 72.8296,
+    "area_km2": 88.3
+  },
+  {
+    "district_id": 481,
+    "name": "Mumbai Suburban",
+    "shape_id": "76128533B67326016655833",
+    "lat": 19.1261,
+    "lon": 72.8965,
+    "area_km2": 424.6
+  },
+  {
+    "district_id": 482,
+    "name": "Nagpur",
+    "shape_id": "76128533B3026318797185",
+    "lat": 21.1499,
+    "lon": 79.0186,
+    "area_km2": 9974.7
+  },
+  {
+    "district_id": 483,
+    "name": "Subarnapur",
+    "shape_id": "76128533B6884509901047",
+    "lat": 20.8539,
+    "lon": 83.8513,
+    "area_km2": 2363.5
+  },
+  {
+    "district_id": 484,
+    "name": "Puri",
+    "shape_id": "76128533B80656256583567",
+    "lat": 19.8331,
+    "lon": 85.6621,
+    "area_km2": 3547.4
+  },
+  {
+    "district_id": 485,
+    "name": "Anugul",
+    "shape_id": "76128533B60186573304899",
+    "lat": 21.1081,
+    "lon": 84.9596,
+    "area_km2": 6467.1
+  },
+  {
+    "district_id": 486,
+    "name": "Debagarh",
+    "shape_id": "76128533B64749652826710",
+    "lat": 21.4279,
+    "lon": 84.691,
+    "area_km2": 3016.8
+  },
+  {
+    "district_id": 487,
+    "name": "Koraput",
+    "shape_id": "76128533B47448948912370",
+    "lat": 18.7256,
+    "lon": 82.6106,
+    "area_km2": 8508.8
+  },
+  {
+    "district_id": 488,
+    "name": "Nabarangapur",
+    "shape_id": "76128533B99037046327658",
+    "lat": 19.613,
+    "lon": 82.2987,
+    "area_km2": 5424.9
+  },
+  {
+    "district_id": 489,
+    "name": "Bargarh",
+    "shape_id": "76128533B74482494441458",
+    "lat": 21.2339,
+    "lon": 83.5688,
+    "area_km2": 5817.7
+  },
+  {
+    "district_id": 490,
+    "name": "Jagatsinghapur",
+    "shape_id": "76128533B32949331695897",
+    "lat": 20.1788,
+    "lon": 86.3424,
+    "area_km2": 1747.0
+  },
+  {
+    "district_id": 491,
+    "name": "Kandhamal",
+    "shape_id": "76128533B8798165946807",
+    "lat": 20.1357,
+    "lon": 84.0794,
+    "area_km2": 8129.5
+  },
+  {
+    "district_id": 492,
+    "name": "Khordha",
+    "shape_id": "76128533B52802748445403",
+    "lat": 20.0524,
+    "lon": 85.5041,
+    "area_km2": 2833.3
+  },
+  {
+    "district_id": 493,
+    "name": "Mayurbhanj",
+    "shape_id": "76128533B34216851275023",
+    "lat": 21.916,
+    "lon": 86.3981,
+    "area_km2": 10496.0
+  },
+  {
+    "district_id": 494,
+    "name": "Malkangiri",
+    "shape_id": "76128533B85917349021677",
+    "lat": 18.2774,
+    "lon": 81.959,
+    "area_km2": 5849.3
+  },
+  {
+    "district_id": 495,
+    "name": "Baleshwar",
+    "shape_id": "76128533B81147724102706",
+    "lat": 21.5191,
+    "lon": 86.8772,
+    "area_km2": 3685.8
+  },
+  {
+    "district_id": 496,
+    "name": "Sambalpur",
+    "shape_id": "76128533B84129562351919",
+    "lat": 21.5529,
+    "lon": 84.1588,
+    "area_km2": 6561.3
+  },
+  {
+    "district_id": 497,
+    "name": "Gajapati",
+    "shape_id": "76128533B73854359719990",
+    "lat": 19.1967,
+    "lon": 84.1957,
+    "area_km2": 4093.0
+  },
+  {
+    "district_id": 498,
+    "name": "Dhenkanal",
+    "shape_id": "76128533B32509926596077",
+    "lat": 20.8367,
+    "lon": 85.6249,
+    "area_km2": 4407.2
+  },
+  {
+    "district_id": 499,
+    "name": "Nayagarh",
+    "shape_id": "76128533B77719785699048",
+    "lat": 20.2392,
+    "lon": 85.0523,
+    "area_km2": 3966.3
+  },
+  {
+    "district_id": 500,
+    "name": "Cuttack",
+    "shape_id": "76128533B70842759816811",
+    "lat": 20.367,
+    "lon": 85.5362,
+    "area_km2": 3766.9
+  },
+  {
+    "district_id": 501,
+    "name": "Jajapur",
+    "shape_id": "76128533B91818883767147",
+    "lat": 20.8707,
+    "lon": 86.1191,
+    "area_km2": 2966.6
+  },
+  {
+    "district_id": 502,
+    "name": "Kalahandi",
+    "shape_id": "76128533B70759200975708",
+    "lat": 19.8169,
+    "lon": 83.0421,
+    "area_km2": 7941.6
+  },
+  {
+    "district_id": 503,
+    "name": "Baudh",
+    "shape_id": "76128533B84772375641700",
+    "lat": 20.6443,
+    "lon": 84.0017,
+    "area_km2": 3132.1
+  },
+  {
+    "district_id": 504,
+    "name": "Kendrapara",
+    "shape_id": "76128533B98951704707517",
+    "lat": 20.555,
+    "lon": 86.5389,
+    "area_km2": 2455.3
+  },
+  {
+    "district_id": 505,
+    "name": "Kendujhar",
+    "shape_id": "76128533B59504628511334",
+    "lat": 21.5885,
+    "lon": 85.6707,
+    "area_km2": 8336.2
+  },
+  {
+    "district_id": 506,
+    "name": "Ganjam",
+    "shape_id": "76128533B633842538351",
+    "lat": 19.6111,
+    "lon": 84.7073,
+    "area_km2": 8452.0
+  },
+  {
+    "district_id": 507,
+    "name": "Sundargarh",
+    "shape_id": "76128533B6128685860104",
+    "lat": 22.0609,
+    "lon": 83.9333,
+    "area_km2": 9767.4
+  },
+  {
+    "district_id": 508,
+    "name": "Bhadrak",
+    "shape_id": "76128533B58797478961083",
+    "lat": 20.984,
+    "lon": 86.5954,
+    "area_km2": 2471.7
+  },
+  {
+    "district_id": 509,
+    "name": "Nuapada",
+    "shape_id": "76128533B33451850475260",
+    "lat": 20.5398,
+    "lon": 82.5303,
+    "area_km2": 3876.8
+  },
+  {
+    "district_id": 510,
+    "name": "Jharsuguda",
+    "shape_id": "76128533B93240759409313",
+    "lat": 21.8007,
+    "lon": 84.017,
+    "area_km2": 2121.6
+  },
+  {
+    "district_id": 511,
+    "name": "Rayagada",
+    "shape_id": "76128533B50498617372937",
+    "lat": 19.4416,
+    "lon": 83.5877,
+    "area_km2": 7401.0
+  },
+  {
+    "district_id": 512,
+    "name": "Balangir",
+    "shape_id": "76128533B44395557448920",
+    "lat": 20.6075,
+    "lon": 83.1683,
+    "area_km2": 6602.0
+  },
+  {
+    "district_id": 513,
+    "name": "Jhunjhunun",
+    "shape_id": "76128533B86135761305702",
+    "lat": 28.0793,
+    "lon": 75.5461,
+    "area_km2": 5920.4
+  },
+  {
+    "district_id": 514,
+    "name": "Jaisalmer",
+    "shape_id": "76128533B14849085202492",
+    "lat": 27.03,
+    "lon": 70.7867,
+    "area_km2": 38647.9
+  },
+  {
+    "district_id": 515,
+    "name": "Sikar",
+    "shape_id": "76128533B20732636837048",
+    "lat": 27.6605,
+    "lon": 75.0313,
+    "area_km2": 7707.5
+  },
+  {
+    "district_id": 516,
+    "name": "Hanumangarh",
+    "shape_id": "76128533B92044109913630",
+    "lat": 29.3636,
+    "lon": 74.2125,
+    "area_km2": 10005.0
+  },
+  {
+    "district_id": 517,
+    "name": "Nagaur",
+    "shape_id": "76128533B43544960343942",
+    "lat": 27.0603,
+    "lon": 74.2069,
+    "area_km2": 17751.2
+  },
+  {
+    "district_id": 518,
+    "name": "Barmer",
+    "shape_id": "76128533B75922461866405",
+    "lat": 25.5724,
+    "lon": 71.6158,
+    "area_km2": 28590.7
+  },
+  {
+    "district_id": 519,
+    "name": "Ganganagar",
+    "shape_id": "76128533B72079972234594",
+    "lat": 29.4628,
+    "lon": 73.5405,
+    "area_km2": 10678.5
+  },
+  {
+    "district_id": 520,
+    "name": "Jodhpur",
+    "shape_id": "76128533B84094142280102",
+    "lat": 26.7411,
+    "lon": 72.8735,
+    "area_km2": 22956.7
+  },
+  {
+    "district_id": 521,
+    "name": "Churu",
+    "shape_id": "76128533B66825707357376",
+    "lat": 28.2049,
+    "lon": 74.6905,
+    "area_km2": 14061.5
+  },
+  {
+    "district_id": 522,
+    "name": "Bikaner",
+    "shape_id": "76128533B55039756001726",
+    "lat": 28.0995,
+    "lon": 73.1082,
+    "area_km2": 30244.6
+  },
+  {
+    "district_id": 523,
+    "name": "Pratapgarh",
+    "shape_id": "76128533B50613523798301",
+    "lat": 24.0251,
+    "lon": 74.6716,
+    "area_km2": 4319.0
+  },
+  {
+    "district_id": 524,
+    "name": "Bhilwara",
+    "shape_id": "76128533B93441663686573",
+    "lat": 25.4886,
+    "lon": 74.7034,
+    "area_km2": 10514.1
+  },
+  {
+    "district_id": 525,
+    "name": "Tonk",
+    "shape_id": "76128533B54301724756864",
+    "lat": 26.1231,
+    "lon": 75.6668,
+    "area_km2": 7277.5
+  },
+  {
+    "district_id": 526,
+    "name": "Bundi",
+    "shape_id": "76128533B69412164931619",
+    "lat": 25.4406,
+    "lon": 75.751,
+    "area_km2": 5843.2
+  },
+  {
+    "district_id": 527,
+    "name": "Jaipur",
+    "shape_id": "76128533B28755611410447",
+    "lat": 27.1491,
+    "lon": 75.755,
+    "area_km2": 11316.0
+  },
+  {
+    "district_id": 528,
+    "name": "Kota",
+    "shape_id": "76128533B74447895476194",
+    "lat": 25.1929,
+    "lon": 76.0152,
+    "area_km2": 5294.3
+  },
+  {
+    "district_id": 529,
+    "name": "Pali",
+    "shape_id": "76128533B9783509419210",
+    "lat": 25.6155,
+    "lon": 73.4164,
+    "area_km2": 12416.9
+  },
+  {
+    "district_id": 530,
+    "name": "Rajsamand",
+    "shape_id": "76128533B11082155919544",
+    "lat": 25.3775,
+    "lon": 73.8607,
+    "area_km2": 4717.4
+  },
+  {
+    "district_id": 531,
+    "name": "Ajmer",
+    "shape_id": "76128533B60180372390230",
+    "lat": 26.3265,
+    "lon": 74.7164,
+    "area_km2": 8503.6
+  },
+  {
+    "district_id": 532,
+    "name": "Bharatpur",
+    "shape_id": "76128533B25576352747885",
+    "lat": 27.2632,
+    "lon": 77.3721,
+    "area_km2": 5092.0
+  },
+  {
+    "district_id": 533,
+    "name": "Dungarpur",
+    "shape_id": "76128533B12079567451207",
+    "lat": 23.6843,
+    "lon": 73.8208,
+    "area_km2": 3803.1
+  },
+  {
+    "district_id": 534,
+    "name": "Chittaurgarh",
+    "shape_id": "76128533B58527154065354",
+    "lat": 24.7214,
+    "lon": 74.4785,
+    "area_km2": 7633.9
+  },
+  {
+    "district_id": 535,
+    "name": "Udaipur",
+    "shape_id": "76128533B37392223136185",
+    "lat": 24.4626,
+    "lon": 73.656,
+    "area_km2": 12077.3
+  },
+  {
+    "district_id": 536,
+    "name": "Jalor",
+    "shape_id": "76128533B59459156188335",
+    "lat": 25.2097,
+    "lon": 72.3164,
+    "area_km2": 10773.2
+  },
+  {
+    "district_id": 537,
+    "name": "Dausa",
+    "shape_id": "76128533B73809971322123",
+    "lat": 26.8049,
+    "lon": 76.4573,
+    "area_km2": 3564.5
+  },
+  {
+    "district_id": 538,
+    "name": "Sirohi",
+    "shape_id": "76128533B49867917697487",
+    "lat": 24.8004,
+    "lon": 72.8294,
+    "area_km2": 5170.0
+  },
+  {
+    "district_id": 539,
+    "name": "Ariyalur",
+    "shape_id": "76128533B16889790752134",
+    "lat": 11.1517,
+    "lon": 79.2621,
+    "area_km2": 1979.9
+  },
+  {
+    "district_id": 540,
+    "name": "Sivaganga",
+    "shape_id": "76128533B89925537847414",
+    "lat": 9.9643,
+    "lon": 78.7207,
+    "area_km2": 4289.9
+  },
+  {
+    "district_id": 541,
+    "name": "Thanjavur",
+    "shape_id": "76128533B54279577656282",
+    "lat": 10.665,
+    "lon": 79.193,
+    "area_km2": 3450.3
+  },
+  {
+    "district_id": 542,
+    "name": "Tiruvannamalai",
+    "shape_id": "76128533B89575258858457",
+    "lat": 12.4267,
+    "lon": 79.0022,
+    "area_km2": 6205.0
+  },
+  {
+    "district_id": 543,
+    "name": "Ramanathapuram",
+    "shape_id": "76128533B1629699732681",
+    "lat": 9.5226,
+    "lon": 78.5197,
+    "area_km2": 4087.0
+  },
+  {
+    "district_id": 544,
+    "name": "Tirunelveli",
+    "shape_id": "76128533B52639434516056",
+    "lat": 8.5526,
+    "lon": 77.5803,
+    "area_km2": 3799.3
+  },
+  {
+    "district_id": 545,
+    "name": "Virudhunagar",
+    "shape_id": "76128533B70974512658911",
+    "lat": 9.4932,
+    "lon": 77.8663,
+    "area_km2": 4301.5
+  },
+  {
+    "district_id": 546,
+    "name": "Thiruvarur",
+    "shape_id": "76128533B45072089356239",
+    "lat": 10.6441,
+    "lon": 79.5213,
+    "area_km2": 2291.2
+  },
+  {
+    "district_id": 547,
+    "name": "Thiruvallur",
+    "shape_id": "76128533B45592431373253",
+    "lat": 13.2543,
+    "lon": 80.0578,
+    "area_km2": 3399.6
+  },
+  {
+    "district_id": 548,
+    "name": "Tiruchirappalli",
+    "shape_id": "76128533B1645877589145",
+    "lat": 10.849,
+    "lon": 78.7228,
+    "area_km2": 4535.9
+  },
+  {
+    "district_id": 549,
+    "name": "Tiruppur",
+    "shape_id": "76128533B57036825942975",
+    "lat": 10.7913,
+    "lon": 77.5348,
+    "area_km2": 5212.5
+  },
+  {
+    "district_id": 550,
+    "name": "Theni",
+    "shape_id": "76128533B79135514077232",
+    "lat": 9.8693,
+    "lon": 77.4253,
+    "area_km2": 2871.5
+  },
+  {
+    "district_id": 551,
+    "name": "Salem",
+    "shape_id": "76128533B52590639744160",
+    "lat": 11.6458,
+    "lon": 78.2114,
+    "area_km2": 5263.1
+  },
+  {
+    "district_id": 552,
+    "name": "Madurai",
+    "shape_id": "76128533B71824979235503",
+    "lat": 9.933,
+    "lon": 78.0083,
+    "area_km2": 3722.8
+  },
+  {
+    "district_id": 553,
+    "name": "Perambalur",
+    "shape_id": "76128533B51799781997546",
+    "lat": 11.2891,
+    "lon": 78.9319,
+    "area_km2": 1741.5
+  },
+  {
+    "district_id": 554,
+    "name": "Dindigul",
+    "shape_id": "76128533B28879432621383",
+    "lat": 10.4271,
+    "lon": 77.817,
+    "area_km2": 6107.3
+  },
+  {
+    "district_id": 555,
+    "name": "Karur",
+    "shape_id": "76128533B19335918192159",
+    "lat": 10.8221,
+    "lon": 78.3836,
+    "area_km2": 2915.7
+  },
+  {
+    "district_id": 556,
+    "name": "Dharmapuri",
+    "shape_id": "76128533B4743808419896",
+    "lat": 12.1619,
+    "lon": 78.1288,
+    "area_km2": 4665.8
+  },
+  {
+    "district_id": 557,
+    "name": "Namakkal",
+    "shape_id": "76128533B51372664315362",
+    "lat": 11.3036,
+    "lon": 78.1205,
+    "area_km2": 3430.7
+  },
+  {
+    "district_id": 558,
+    "name": "Moradabad",
+    "shape_id": "76128533B51849218363622",
+    "lat": 28.8864,
+    "lon": 78.7924,
+    "area_km2": 2339.8
+  },
+  {
+    "district_id": 559,
+    "name": "Sambhal",
+    "shape_id": "76128533B7545062765383",
+    "lat": 28.4241,
+    "lon": 78.5517,
+    "area_km2": 2469.7
+  },
+  {
+    "district_id": 560,
+    "name": "Budaun",
+    "shape_id": "76128533B84679668760735",
+    "lat": 28.0657,
+    "lon": 79.0358,
+    "area_km2": 4252.2
+  },
+  {
+    "district_id": 561,
+    "name": "Kanshiram Nagar",
+    "shape_id": "76128533B7643504807381",
+    "lat": 27.7949,
+    "lon": 78.8225,
+    "area_km2": 2023.4
+  },
+  {
+    "district_id": 562,
+    "name": "Bahraich",
+    "shape_id": "76128533B66612397499770",
+    "lat": 27.7382,
+    "lon": 81.474,
+    "area_km2": 4899.2
+  },
+  {
+    "district_id": 563,
+    "name": "Hapur",
+    "shape_id": "76128533B87317961648652",
+    "lat": 28.7054,
+    "lon": 77.9141,
+    "area_km2": 1069.3
+  },
+  {
+    "district_id": 564,
+    "name": "Sitapur",
+    "shape_id": "76128533B8998698404381",
+    "lat": 27.5066,
+    "lon": 80.8347,
+    "area_km2": 5802.0
+  },
+  {
+    "district_id": 565,
+    "name": "Samli",
+    "shape_id": "76128533B35465481868600",
+    "lat": 29.4719,
+    "lon": 77.2828,
+    "area_km2": 1341.2
+  },
+  {
+    "district_id": 566,
+    "name": "Shrawasti",
+    "shape_id": "76128533B34832354589031",
+    "lat": 27.6761,
+    "lon": 81.8871,
+    "area_km2": 1955.7
+  },
+  {
+    "district_id": 567,
+    "name": "Meerut",
+    "shape_id": "76128533B61760400952464",
+    "lat": 28.9944,
+    "lon": 77.7808,
+    "area_km2": 2628.1
+  },
+  {
+    "district_id": 568,
+    "name": "Aligarh",
+    "shape_id": "76128533B60862799554879",
+    "lat": 27.8741,
+    "lon": 78.1404,
+    "area_km2": 3529.2
+  },
+  {
+    "district_id": 569,
+    "name": "Bulandshahr",
+    "shape_id": "76128533B13272482176343",
+    "lat": 28.3533,
+    "lon": 77.9665,
+    "area_km2": 3805.9
+  },
+  {
+    "district_id": 570,
+    "name": "Bijnor",
+    "shape_id": "76128533B14534161138054",
+    "lat": 29.41,
+    "lon": 78.4959,
+    "area_km2": 4395.3
+  },
+  {
+    "district_id": 571,
+    "name": "Baghpat",
+    "shape_id": "76128533B46268976217915",
+    "lat": 29.0355,
+    "lon": 77.3095,
+    "area_km2": 1351.5
+  },
+  {
+    "district_id": 572,
+    "name": "Kheri",
+    "shape_id": "76128533B76479861129777",
+    "lat": 28.1836,
+    "lon": 80.716,
+    "area_km2": 7722.0
+  },
+  {
+    "district_id": 573,
+    "name": "Rampur",
+    "shape_id": "76128533B46682008877369",
+    "lat": 28.7782,
+    "lon": 79.1912,
+    "area_km2": 2502.4
+  },
+  {
+    "district_id": 574,
+    "name": "Bareilly",
+    "shape_id": "76128533B68554447699730",
+    "lat": 28.4622,
+    "lon": 79.4107,
+    "area_km2": 3833.2
+  },
+  {
+    "district_id": 575,
+    "name": "Mathura",
+    "shape_id": "76128533B88758450653156",
+    "lat": 27.599,
+    "lon": 77.5925,
+    "area_km2": 3369.5
+  },
+  {
+    "district_id": 576,
+    "name": "Etah",
+    "shape_id": "76128533B15342706434354",
+    "lat": 27.5452,
+    "lon": 78.7719,
+    "area_km2": 2471.0
+  },
+  {
+    "district_id": 577,
+    "name": "Hardoi",
+    "shape_id": "76128533B25208535254310",
+    "lat": 27.339,
+    "lon": 80.0998,
+    "area_km2": 6027.5
+  },
+  {
+    "district_id": 578,
+    "name": "Balrampur",
+    "shape_id": "76128533B87371000929659",
+    "lat": 27.4474,
+    "lon": 82.4037,
+    "area_km2": 3249.7
+  },
+  {
+    "district_id": 579,
+    "name": "Mahamaya Nagar",
+    "shape_id": "76128533B8878807356913",
+    "lat": 27.5467,
+    "lon": 78.0851,
+    "area_km2": 1776.4
+  },
+  {
+    "district_id": 580,
+    "name": "Shahjahanpur",
+    "shape_id": "76128533B96870418529164",
+    "lat": 27.9197,
+    "lon": 79.7473,
+    "area_km2": 4496.3
+  },
+  {
+    "district_id": 581,
+    "name": "Farrukhabad",
+    "shape_id": "76128533B59596968713717",
+    "lat": 27.4404,
+    "lon": 79.5002,
+    "area_km2": 2190.0
+  },
+  {
+    "district_id": 582,
+    "name": "Kannauj",
+    "shape_id": "76128533B80966996849325",
+    "lat": 26.9922,
+    "lon": 79.6944,
+    "area_km2": 2087.0
+  },
+  {
+    "district_id": 583,
+    "name": "Pilibhit",
+    "shape_id": "76128533B90071703601852",
+    "lat": 28.4994,
+    "lon": 80.0906,
+    "area_km2": 3788.4
+  },
+  {
+    "district_id": 584,
+    "name": "Mainpuri",
+    "shape_id": "76128533B84772439394056",
+    "lat": 27.2139,
+    "lon": 79.054,
+    "area_km2": 2643.4
+  },
+  {
+    "district_id": 585,
+    "name": "Jyotiba Phule Nagar",
+    "shape_id": "76128533B21119051307760",
+    "lat": 28.7437,
+    "lon": 78.2803,
+    "area_km2": 2287.9
+  },
+  {
+    "district_id": 586,
+    "name": "Firozabad",
+    "shape_id": "76128533B91640519747726",
+    "lat": 27.1934,
+    "lon": 78.4881,
+    "area_km2": 2408.5
+  },
+  {
+    "district_id": 587,
+    "name": "Sultanpur",
+    "shape_id": "76128533B1996088953603",
+    "lat": 26.2397,
+    "lon": 82.2931,
+    "area_km2": 2470.1
+  },
+  {
+    "district_id": 588,
+    "name": "Chitrakoot",
+    "shape_id": "76128533B53725063754801",
+    "lat": 25.2139,
+    "lon": 81.1583,
+    "area_km2": 3122.2
+  },
+  {
+    "district_id": 589,
+    "name": "Basti",
+    "shape_id": "76128533B18648944871057",
+    "lat": 26.8392,
+    "lon": 82.5238,
+    "area_km2": 2750.0
+  },
+  {
+    "district_id": 590,
+    "name": "Gorakhpur",
+    "shape_id": "76128533B40226077866964",
+    "lat": 26.6792,
+    "lon": 83.3702,
+    "area_km2": 3374.9
+  },
+  {
+    "district_id": 591,
+    "name": "Lucknow",
+    "shape_id": "76128533B49436035281620",
+    "lat": 26.8323,
+    "lon": 80.9162,
+    "area_km2": 2549.5
+  },
+  {
+    "district_id": 592,
+    "name": "Azamgarh",
+    "shape_id": "76128533B73925919155567",
+    "lat": 26.0322,
+    "lon": 83.0323,
+    "area_km2": 4389.8
+  },
+  {
+    "district_id": 593,
+    "name": "Faizabad",
+    "shape_id": "76128533B60320291189162",
+    "lat": 26.6393,
+    "lon": 82.042,
+    "area_km2": 2681.5
+  },
+  {
+    "district_id": 594,
+    "name": "Ambedkar Nagar",
+    "shape_id": "76128533B7879459377699",
+    "lat": 26.4054,
+    "lon": 82.5688,
+    "area_km2": 2345.7
+  },
+  {
+    "district_id": 595,
+    "name": "Ballia",
+    "shape_id": "76128533B73769926250842",
+    "lat": 25.8735,
+    "lon": 84.1289,
+    "area_km2": 3021.7
+  },
+  {
+    "district_id": 596,
+    "name": "Kanpur Nagar",
+    "shape_id": "76128533B23710487943819",
+    "lat": 26.4403,
+    "lon": 80.2728,
+    "area_km2": 2909.9
+  },
+  {
+    "district_id": 597,
+    "name": "Sant Ravidas Nagar (Bhadohi)",
+    "shape_id": "76128533B87515288456202",
+    "lat": 25.3579,
+    "lon": 82.5021,
+    "area_km2": 1012.3
+  },
+  {
+    "district_id": 598,
+    "name": "Siddharthnagar",
+    "shape_id": "76128533B40509297062120",
+    "lat": 27.2602,
+    "lon": 82.8505,
+    "area_km2": 2928.1
+  },
+  {
+    "district_id": 599,
+    "name": "Auraiya",
+    "shape_id": "76128533B20660206691661",
+    "lat": 26.6581,
+    "lon": 79.5155,
+    "area_km2": 2014.4
+  },
+  {
+    "district_id": 600,
+    "name": "Sant Kabir Nagar",
+    "shape_id": "76128533B54279951806726",
+    "lat": 26.7574,
+    "lon": 83.0249,
+    "area_km2": 1751.4
+  },
+  {
+    "district_id": 601,
+    "name": "Kaushambi",
+    "shape_id": "76128533B98420041301261",
+    "lat": 25.5393,
+    "lon": 81.4577,
+    "area_km2": 1809.3
+  },
+  {
+    "district_id": 602,
+    "name": "Jalaun",
+    "shape_id": "76128533B15835290978888",
+    "lat": 26.1055,
+    "lon": 79.3883,
+    "area_km2": 4526.3
+  },
+  {
+    "district_id": 603,
+    "name": "Varanasi",
+    "shape_id": "76128533B7622369120497",
+    "lat": 25.3763,
+    "lon": 82.9467,
+    "area_km2": 1552.0
+  },
+  {
+    "district_id": 604,
+    "name": "Pratapgarh",
+    "shape_id": "76128533B20647769792365",
+    "lat": 25.8743,
+    "lon": 81.8331,
+    "area_km2": 3726.4
+  },
+  {
+    "district_id": 605,
+    "name": "Hamirpur",
+    "shape_id": "76128533B27201270098470",
+    "lat": 25.8138,
+    "lon": 79.8671,
+    "area_km2": 4146.4
+  },
+  {
+    "district_id": 606,
+    "name": "Gonda",
+    "shape_id": "76128533B67530641452031",
+    "lat": 27.1109,
+    "lon": 81.9275,
+    "area_km2": 4049.6
+  },
+  {
+    "district_id": 607,
+    "name": "Kanpur Dehat",
+    "shape_id": "76128533B80299348876357",
+    "lat": 26.4591,
+    "lon": 79.8654,
+    "area_km2": 3203.4
+  },
+  {
+    "district_id": 608,
+    "name": "Jaunpur",
+    "shape_id": "76128533B64732849735713",
+    "lat": 25.797,
+    "lon": 82.4897,
+    "area_km2": 4046.8
+  },
+  {
+    "district_id": 609,
+    "name": "Bara Banki",
+    "shape_id": "76128533B74938989340684",
+    "lat": 26.9422,
+    "lon": 81.3855,
+    "area_km2": 3871.5
+  },
+  {
+    "district_id": 610,
+    "name": "Mahoba",
+    "shape_id": "76128533B11083100419963",
+    "lat": 25.355,
+    "lon": 79.7021,
+    "area_km2": 3071.8
+  },
+  {
+    "district_id": 611,
+    "name": "Mahrajganj",
+    "shape_id": "76128533B29554440319099",
+    "lat": 27.1822,
+    "lon": 83.491,
+    "area_km2": 2922.5
+  },
+  {
+    "district_id": 612,
+    "name": "Mirzapur",
+    "shape_id": "76128533B18243475101734",
+    "lat": 24.932,
+    "lon": 82.6359,
+    "area_km2": 4463.8
+  },
+  {
+    "district_id": 613,
+    "name": "Kushinagar",
+    "shape_id": "76128533B26931973511551",
+    "lat": 26.9186,
+    "lon": 83.8335,
+    "area_km2": 2894.4
+  },
+  {
+    "district_id": 614,
+    "name": "Deoria",
+    "shape_id": "76128533B40023971667984",
+    "lat": 26.426,
+    "lon": 83.7636,
+    "area_km2": 2566.0
+  },
+  {
+    "district_id": 615,
+    "name": "Unnao",
+    "shape_id": "76128533B42623703243160",
+    "lat": 26.5731,
+    "lon": 80.616,
+    "area_km2": 4615.6
+  },
+  {
+    "district_id": 616,
+    "name": "Fatehpur",
+    "shape_id": "76128533B7124697440629",
+    "lat": 25.8334,
+    "lon": 80.9134,
+    "area_km2": 4193.8
+  },
+  {
+    "district_id": 617,
+    "name": "Mau",
+    "shape_id": "76128533B88623139855224",
+    "lat": 26.0372,
+    "lon": 83.5156,
+    "area_km2": 1577.8
+  },
+  {
+    "district_id": 618,
+    "name": "Rae Bareli",
+    "shape_id": "76128533B74057284038879",
+    "lat": 26.2075,
+    "lon": 81.1346,
+    "area_km2": 3966.2
+  },
+  {
+    "district_id": 619,
+    "name": "Amethi",
+    "shape_id": "76128533B13908294104682",
+    "lat": 26.3431,
+    "lon": 81.6369,
+    "area_km2": 2631.4
+  },
+  {
+    "district_id": 620,
+    "name": "Ghaziabad",
+    "shape_id": "76128533B68984344044805",
+    "lat": 28.7689,
+    "lon": 77.465,
+    "area_km2": 962.8
+  },
+  {
+    "district_id": 621,
+    "name": "Muzaffarnagar",
+    "shape_id": "76128533B87051210355251",
+    "lat": 29.4412,
+    "lon": 77.7437,
+    "area_km2": 2747.6
+  },
+  {
+    "district_id": 622,
+    "name": "Gautam Buddha Nagar",
+    "shape_id": "76128533B34462889864078",
+    "lat": 28.3557,
+    "lon": 77.57,
+    "area_km2": 1192.8
+  },
+  {
+    "district_id": 623,
+    "name": "Saharanpur",
+    "shape_id": "76128533B33437990510331",
+    "lat": 29.981,
+    "lon": 77.5032,
+    "area_km2": 3749.7
+  },
+  {
+    "district_id": 624,
+    "name": "Etawah",
+    "shape_id": "76128533B79784438258239",
+    "lat": 26.7125,
+    "lon": 79.0867,
+    "area_km2": 2399.8
+  },
+  {
+    "district_id": 625,
+    "name": "Agra",
+    "shape_id": "76128533B26296891809198",
+    "lat": 27.0746,
+    "lon": 77.8922,
+    "area_km2": 4046.6
+  },
+  {
+    "district_id": 626,
+    "name": "Cuddalore",
+    "shape_id": "76128533B61321395333865",
+    "lat": 11.5195,
+    "lon": 79.3406,
+    "area_km2": 3712.9
+  },
+  {
+    "district_id": 627,
+    "name": "Pudukkottai",
+    "shape_id": "76128533B64003397477352",
+    "lat": 10.2911,
+    "lon": 78.8143,
+    "area_km2": 4706.1
+  },
+  {
+    "district_id": 628,
+    "name": "Vellore",
+    "shape_id": "76128533B89374164863010",
+    "lat": 12.8635,
+    "lon": 79.0484,
+    "area_km2": 2159.9
+  },
+  {
+    "district_id": 629,
+    "name": "Chennai",
+    "shape_id": "76128533B89024397489955",
+    "lat": 13.0536,
+    "lon": 80.2349,
+    "area_km2": 176.7
+  },
+  {
+    "district_id": 630,
+    "name": "Nagapattinam",
+    "shape_id": "76128533B88466433485589",
+    "lat": 10.6075,
+    "lon": 79.7618,
+    "area_km2": 1410.0
+  },
+  {
+    "district_id": 631,
+    "name": "Viluppuram",
+    "shape_id": "76128533B86430586962522",
+    "lat": 12.1209,
+    "lon": 79.597,
+    "area_km2": 4001.4
+  },
+  {
+    "district_id": 632,
+    "name": "Kancheepuram",
+    "shape_id": "76128533B83644689337946",
+    "lat": 12.6294,
+    "lon": 80.0639,
+    "area_km2": 2737.5
+  },
+  {
+    "district_id": 633,
+    "name": "Kanniyakumari",
+    "shape_id": "76128533B53796141759805",
+    "lat": 8.328,
+    "lon": 77.3673,
+    "area_km2": 1735.9
+  },
+  {
+    "district_id": 634,
+    "name": "Thoothukkudi",
+    "shape_id": "76128533B31241181851990",
+    "lat": 8.8503,
+    "lon": 77.993,
+    "area_km2": 4780.8
+  },
+  {
+    "district_id": 635,
+    "name": "Allahabad",
+    "shape_id": "76128533B51368558457506",
+    "lat": 25.2815,
+    "lon": 81.9042,
+    "area_km2": 5488.1
+  },
+  {
+    "district_id": 636,
+    "name": "Chandauli",
+    "shape_id": "76128533B13673614951516",
+    "lat": 25.1235,
+    "lon": 83.2479,
+    "area_km2": 2543.7
+  },
+  {
+    "district_id": 637,
+    "name": "Jhansi",
+    "shape_id": "76128533B66072086060089",
+    "lat": 25.5274,
+    "lon": 78.6527,
+    "area_km2": 5123.2
+  },
+  {
+    "district_id": 638,
+    "name": "Banda",
+    "shape_id": "76128533B45099378029175",
+    "lat": 25.4409,
+    "lon": 80.521,
+    "area_km2": 4573.3
+  },
+  {
+    "district_id": 639,
+    "name": "Sonbhadra",
+    "shape_id": "76128533B52058654769647",
+    "lat": 24.3972,
+    "lon": 83.0794,
+    "area_km2": 6909.9
+  },
+  {
+    "district_id": 640,
+    "name": "Lalitpur",
+    "shape_id": "76128533B59256192226816",
+    "lat": 24.6943,
+    "lon": 78.518,
+    "area_km2": 5073.3
+  },
+  {
+    "district_id": 641,
+    "name": "Ghazipur",
+    "shape_id": "76128533B49460554954204",
+    "lat": 25.6019,
+    "lon": 83.5097,
+    "area_km2": 3396.6
+  },
+  {
+    "district_id": 642,
+    "name": "Krishnagiri",
+    "shape_id": "76128533B35717069663408",
+    "lat": 12.5131,
+    "lon": 78.2371,
+    "area_km2": 5038.1
+  },
+  {
+    "district_id": 643,
+    "name": "Erode",
+    "shape_id": "76128533B15337568968545",
+    "lat": 11.4894,
+    "lon": 77.3503,
+    "area_km2": 5788.8
+  },
+  {
+    "district_id": 644,
+    "name": "Coimbatore",
+    "shape_id": "76128533B4753404177348",
+    "lat": 10.8127,
+    "lon": 77.0791,
+    "area_km2": 4724.5
+  },
+  {
+    "district_id": 645,
+    "name": "The Nilgiris",
+    "shape_id": "76128533B21812274124310",
+    "lat": 11.4295,
+    "lon": 76.6968,
+    "area_km2": 2479.8
+  },
+  {
+    "district_id": 646,
+    "name": "Jhalawar",
+    "shape_id": "76128533B91943656836526",
+    "lat": 24.3143,
+    "lon": 76.5295,
+    "area_km2": 6284.9
+  },
+  {
+    "district_id": 647,
+    "name": "Alwar",
+    "shape_id": "76128533B5628791558965",
+    "lat": 27.6381,
+    "lon": 76.617,
+    "area_km2": 8331.3
+  },
+  {
+    "district_id": 648,
+    "name": "Baran",
+    "shape_id": "76128533B98308664713511",
+    "lat": 24.9186,
+    "lon": 76.6929,
+    "area_km2": 6624.2
+  },
+  {
+    "district_id": 649,
+    "name": "Dhaulpur",
+    "shape_id": "76128533B64898456093948",
+    "lat": 26.6543,
+    "lon": 77.6364,
+    "area_km2": 3038.6
+  },
+  {
+    "district_id": 650,
+    "name": "Sawai Madhopur",
+    "shape_id": "76128533B28138828116492",
+    "lat": 26.2042,
+    "lon": 76.3049,
+    "area_km2": 5035.9
+  },
+  {
+    "district_id": 651,
+    "name": "Banswara",
+    "shape_id": "76128533B96584288929219",
+    "lat": 23.4916,
+    "lon": 74.354,
+    "area_km2": 4535.1
+  },
+  {
+    "district_id": 652,
+    "name": "Karauli",
+    "shape_id": "76128533B34069028331411",
+    "lat": 26.5001,
+    "lon": 77.0891,
+    "area_km2": 4887.0
+  },
+  {
+    "district_id": 653,
+    "name": "Jangaon",
+    "shape_id": "76128533B8930157583904",
+    "lat": 17.8202,
+    "lon": 79.2087,
+    "area_km2": 2411.6
+  },
+  {
+    "district_id": 654,
+    "name": "Bhadradri",
+    "shape_id": "76128533B30246762498957",
+    "lat": 17.9127,
+    "lon": 80.6431,
+    "area_km2": 11001.8
+  },
+  {
+    "district_id": 655,
+    "name": "Hydrabad",
+    "shape_id": "76128533B84676164211579",
+    "lat": 17.4144,
+    "lon": 78.4673,
+    "area_km2": 282.3
+  },
+  {
+    "district_id": 656,
+    "name": "Mancherial",
+    "shape_id": "76128533B53018054761164",
+    "lat": 18.9846,
+    "lon": 79.5204,
+    "area_km2": 3775.5
+  },
+  {
+    "district_id": 657,
+    "name": "Karimnagar",
+    "shape_id": "76128533B58104976570569",
+    "lat": 18.4066,
+    "lon": 79.2134,
+    "area_km2": 2136.2
+  },
+  {
+    "district_id": 658,
+    "name": "Nizamabad",
+    "shape_id": "76128533B58493775523243",
+    "lat": 18.7155,
+    "lon": 78.2242,
+    "area_km2": 4332.7
+  },
+  {
+    "district_id": 659,
+    "name": "Medak",
+    "shape_id": "76128533B97126567441665",
+    "lat": 17.9496,
+    "lon": 78.1607,
+    "area_km2": 2823.7
+  },
+  {
+    "district_id": 660,
+    "name": "Rangareddy",
+    "shape_id": "76128533B31175522938788",
+    "lat": 17.1373,
+    "lon": 78.4052,
+    "area_km2": 5101.9
+  },
+  {
+    "district_id": 661,
+    "name": "Nalgonda",
+    "shape_id": "76128533B8892495882090",
+    "lat": 16.864,
+    "lon": 79.2257,
+    "area_km2": 7220.2
+  },
+  {
+    "district_id": 662,
+    "name": "Nagarkurnool",
+    "shape_id": "76128533B31246189674263",
+    "lat": 16.415,
+    "lon": 78.6845,
+    "area_km2": 6208.6
+  },
+  {
+    "district_id": 663,
+    "name": "Adilabad",
+    "shape_id": "76128533B38354309367879",
+    "lat": 19.5359,
+    "lon": 78.6249,
+    "area_km2": 4091.8
+  },
+  {
+    "district_id": 664,
+    "name": "Komaram Bheem",
+    "shape_id": "76128533B33226396095315",
+    "lat": 19.3332,
+    "lon": 79.4219,
+    "area_km2": 4511.9
+  },
+  {
+    "district_id": 665,
+    "name": "Nirmal",
+    "shape_id": "76128533B25280172436550",
+    "lat": 19.0931,
+    "lon": 78.3737,
+    "area_km2": 3744.2
+  },
+  {
+    "district_id": 666,
+    "name": "Kamareddy",
+    "shape_id": "76128533B21068662878849",
+    "lat": 18.3144,
+    "lon": 78.0582,
+    "area_km2": 3610.7
+  },
+  {
+    "district_id": 667,
+    "name": "Jagtial",
+    "shape_id": "76128533B67054925852429",
+    "lat": 18.8072,
+    "lon": 78.9343,
+    "area_km2": 2829.6
+  },
+  {
+    "district_id": 668,
+    "name": "Jayashankar",
+    "shape_id": "76128533B60322704115131",
+    "lat": 18.518,
+    "lon": 79.9643,
+    "area_km2": 2888.3
+  },
+  {
+    "district_id": 669,
+    "name": "Peddapalli",
+    "shape_id": "76128533B53373614632193",
+    "lat": 18.6274,
+    "lon": 79.4983,
+    "area_km2": 2335.8
+  },
+  {
+    "district_id": 670,
+    "name": "Rajanna Sircilla",
+    "shape_id": "76128533B21485897206517",
+    "lat": 18.435,
+    "lon": 78.7674,
+    "area_km2": 1821.8
+  },
+  {
+    "district_id": 671,
+    "name": "Sangareddy",
+    "shape_id": "76128533B40480360118262",
+    "lat": 17.8611,
+    "lon": 77.827,
+    "area_km2": 4411.6
+  },
+  {
+    "district_id": 672,
+    "name": "Siddipet",
+    "shape_id": "76128533B31111781432113",
+    "lat": 18.037,
+    "lon": 78.9063,
+    "area_km2": 3740.0
+  },
+  {
+    "district_id": 673,
+    "name": "Khammam",
+    "shape_id": "76128533B96571577519224",
+    "lat": 17.1901,
+    "lon": 80.3966,
+    "area_km2": 4691.8
+  },
+  {
+    "district_id": 674,
+    "name": "Mahabubabad",
+    "shape_id": "76128533B28290181894983",
+    "lat": 17.729,
+    "lon": 80.0594,
+    "area_km2": 3602.8
+  },
+  {
+    "district_id": 675,
+    "name": "Warangal (R)",
+    "shape_id": "76128533B63833971372360",
+    "lat": 17.9274,
+    "lon": 79.8223,
+    "area_km2": 2048.2
+  },
+  {
+    "district_id": 676,
+    "name": "Warangal (U)",
+    "shape_id": "76128533B34824326075805",
+    "lat": 18.0291,
+    "lon": 79.5332,
+    "area_km2": 1016.6
+  },
+  {
+    "district_id": 677,
+    "name": "Suryapet",
+    "shape_id": "76128533B24594618908349",
+    "lat": 17.0816,
+    "lon": 79.7988,
+    "area_km2": 3492.8
+  },
+  {
+    "district_id": 678,
+    "name": "Yadadri Bhongiri",
+    "shape_id": "76128533B85157820615002",
+    "lat": 17.418,
+    "lon": 79.0895,
+    "area_km2": 3449.0
+  },
+  {
+    "district_id": 679,
+    "name": "Medchal",
+    "shape_id": "76128533B71056110198347",
+    "lat": 17.53,
+    "lon": 78.5324,
+    "area_km2": 1069.0
+  },
+  {
+    "district_id": 680,
+    "name": "Vikarabad",
+    "shape_id": "76128533B74887942950962",
+    "lat": 17.2689,
+    "lon": 77.7386,
+    "area_km2": 3629.0
+  },
+  {
+    "district_id": 681,
+    "name": "Jogulamba",
+    "shape_id": "76128533B72829420975835",
+    "lat": 16.0873,
+    "lon": 77.7318,
+    "area_km2": 2532.9
+  },
+  {
+    "district_id": 682,
+    "name": "Wanaparthy",
+    "shape_id": "76128533B49394025943542",
+    "lat": 16.2737,
+    "lon": 78.0027,
+    "area_km2": 2277.4
+  },
+  {
+    "district_id": 683,
+    "name": "Mahabubnagar",
+    "shape_id": "76128533B58170186574016",
+    "lat": 16.7251,
+    "lon": 78.0588,
+    "area_km2": 2856.6
+  },
+  {
+    "district_id": 684,
+    "name": "Tirap",
+    "shape_id": "76128533B99469070633974",
+    "lat": 27.0179,
+    "lon": 95.5114,
+    "area_km2": 1204.2
+  },
+  {
+    "district_id": 685,
+    "name": "Namsai",
+    "shape_id": "76128533B1875965515331",
+    "lat": 27.7039,
+    "lon": 96.0242,
+    "area_km2": 1283.1
+  },
+  {
+    "district_id": 686,
+    "name": "East Siang",
+    "shape_id": "76128533B53717296822608",
+    "lat": 28.0211,
+    "lon": 95.2244,
+    "area_km2": 2393.6
+  },
+  {
+    "district_id": 687,
+    "name": "Kra Daadi",
+    "shape_id": "76128533B12129983841645",
+    "lat": 27.9634,
+    "lon": 93.8254,
+    "area_km2": 2003.1
+  },
+  {
+    "district_id": 688,
+    "name": "Charaideo",
+    "shape_id": "76128533B89228414823983",
+    "lat": 27.0589,
+    "lon": 95.0542,
+    "area_km2": 1054.0
+  },
+  {
+    "district_id": 689,
+    "name": "Majuli",
+    "shape_id": "76128533B15157901669242",
+    "lat": 26.9731,
+    "lon": 94.2822,
+    "area_km2": 1253.3
+  },
+  {
+    "district_id": 690,
+    "name": "Biswanath",
+    "shape_id": "76128533B40714385808093",
+    "lat": 26.7991,
+    "lon": 93.427,
+    "area_km2": 1800.5
+  },
+  {
+    "district_id": 691,
+    "name": "Hojai",
+    "shape_id": "76128533B70315194619807",
+    "lat": 25.9612,
+    "lon": 92.9834,
+    "area_km2": 1460.2
+  },
+  {
+    "district_id": 692,
+    "name": "Karbi Anglong West",
+    "shape_id": "76128533B57995625790051",
+    "lat": 25.8512,
+    "lon": 92.5924,
+    "area_km2": 3113.6
+  },
+  {
+    "district_id": 693,
+    "name": "South Salmara-Mankachar",
+    "shape_id": "76128533B20298037622173",
+    "lat": 25.7756,
+    "lon": 89.8994,
+    "area_km2": 720.6
+  },
+  {
+    "district_id": 694,
+    "name": "Agar",
+    "shape_id": "76128533B29721759389119",
+    "lat": 23.9326,
+    "lon": 76.1459,
+    "area_km2": 2765.4
+  },
+  {
+    "district_id": 695,
+    "name": "Pherzawl",
+    "shape_id": "76128533B71254158898830",
+    "lat": 24.3689,
+    "lon": 93.2625,
+    "area_km2": 2342.8
+  },
+  {
+    "district_id": 696,
+    "name": "Noney",
+    "shape_id": "76128533B36594996191182",
+    "lat": 24.6733,
+    "lon": 93.4865,
+    "area_km2": 1102.3
+  },
+  {
+    "district_id": 697,
+    "name": "Tengnoupal",
+    "shape_id": "76128533B61831576863813",
+    "lat": 24.3724,
+    "lon": 94.2682,
+    "area_km2": 1204.8
+  },
+  {
+    "district_id": 698,
+    "name": "Kamjong",
+    "shape_id": "76128533B66815680293072",
+    "lat": 24.8145,
+    "lon": 94.3961,
+    "area_km2": 2378.1
+  },
+  {
+    "district_id": 699,
+    "name": "Senapati",
+    "shape_id": "76128533B95642877176862",
+    "lat": 25.3891,
+    "lon": 94.1456,
+    "area_km2": 1750.9
+  },
+  {
+    "district_id": 700,
+    "name": "Kakching",
+    "shape_id": "76128533B82279368215419",
+    "lat": 24.3975,
+    "lon": 93.8857,
+    "area_km2": 275.2
+  },
+  {
+    "district_id": 701,
+    "name": "Jiribam",
+    "shape_id": "76128533B64881202564500",
+    "lat": 24.7068,
+    "lon": 93.11,
+    "area_km2": 146.5
+  },
+  {
+    "district_id": 702,
+    "name": "North West",
+    "shape_id": "76128533B71353370080255",
+    "lat": 28.7415,
+    "lon": 77.0219,
+    "area_km2": 159.3
+  },
+  {
+    "district_id": 703,
+    "name": "New Delhi",
+    "shape_id": "76128533B58262202014972",
+    "lat": 28.5672,
+    "lon": 77.1265,
+    "area_km2": 171.5
+  },
+  {
+    "district_id": 704,
+    "name": "East",
+    "shape_id": "76128533B72485933575946",
+    "lat": 28.6268,
+    "lon": 77.294,
+    "area_km2": 66.5
+  },
+  {
+    "district_id": 705,
+    "name": "South West",
+    "shape_id": "76128533B53136419849111",
+    "lat": 28.5836,
+    "lon": 76.9587,
+    "area_km2": 270.1
+  },
+  {
+    "district_id": 706,
+    "name": "West",
+    "shape_id": "76128533B68379889579232",
+    "lat": 28.6498,
+    "lon": 77.0662,
+    "area_km2": 134.3
+  },
+  {
+    "district_id": 707,
+    "name": "South",
+    "shape_id": "76128533B97089774514948",
+    "lat": 28.4815,
+    "lon": 77.1857,
+    "area_km2": 151.8
+  },
+  {
+    "district_id": 708,
+    "name": "North ",
+    "shape_id": "76128533B45574198291616",
+    "lat": 28.7825,
+    "lon": 77.0978,
+    "area_km2": 290.2
+  },
+  {
+    "district_id": 709,
+    "name": "North East",
+    "shape_id": "76128533B9976625304286",
+    "lat": 28.7296,
+    "lon": 77.2594,
+    "area_km2": 38.8
+  },
+  {
+    "district_id": 710,
+    "name": "South East",
+    "shape_id": "76128533B1420136949169",
+    "lat": 28.5463,
+    "lon": 77.273,
+    "area_km2": 105.9
+  },
+  {
+    "district_id": 711,
+    "name": "Central",
+    "shape_id": "76128533B19832024635761",
+    "lat": 28.7,
+    "lon": 77.22,
+    "area_km2": 75.8
+  },
+  {
+    "district_id": 712,
+    "name": "Shahdara",
+    "shape_id": "76128533B81419063387740",
+    "lat": 28.6884,
+    "lon": 77.2959,
+    "area_km2": 26.5
+  },
+  {
+    "district_id": 713,
+    "name": "Alipurduar",
+    "shape_id": "76128533B23858286755005",
+    "lat": 26.6306,
+    "lon": 89.4566,
+    "area_km2": 2812.6
+  },
+  {
+    "district_id": 714,
+    "name": "Jhargram",
+    "shape_id": "76128533B24861976740713",
+    "lat": 22.3337,
+    "lon": 86.9956,
+    "area_km2": 3105.0
+  },
+  {
+    "district_id": 715,
+    "name": "Paschim Barddhaman",
+    "shape_id": "76128533B60845263086042",
+    "lat": 23.6442,
+    "lon": 87.1584,
+    "area_km2": 1642.2
+  },
+  {
+    "district_id": 716,
+    "name": "Kalimpong",
+    "shape_id": "76128533B78458325839103",
+    "lat": 27.0293,
+    "lon": 88.6505,
+    "area_km2": 1112.5
+  },
+  {
+    "district_id": 717,
+    "name": "Narayanpet",
+    "shape_id": "76128533B14968875277413",
+    "lat": 16.689,
+    "lon": 77.6163,
+    "area_km2": 2306.3
+  },
+  {
+    "district_id": 718,
+    "name": "Mulugu",
+    "shape_id": "76128533B84398038505400",
+    "lat": 18.3045,
+    "lon": 80.2034,
+    "area_km2": 3033.8
+  },
+  {
+    "district_id": 719,
+    "name": "Niwari",
+    "shape_id": "76128533B38767180038480",
+    "lat": 25.306,
+    "lon": 78.6652,
+    "area_km2": 1301.0
+  },
+  {
+    "district_id": 720,
+    "name": "Pakke Kessang",
+    "shape_id": "76128533B24017517661394",
+    "lat": 27.1503,
+    "lon": 93.0853,
+    "area_km2": 2128.4
+  },
+  {
+    "district_id": 721,
+    "name": "Kamle",
+    "shape_id": "76128533B19898496046456",
+    "lat": 27.7319,
+    "lon": 94.1234,
+    "area_km2": 1440.3
+  },
+  {
+    "district_id": 722,
+    "name": "Shi Yomi",
+    "shape_id": "76128533B46084756537322",
+    "lat": 28.676,
+    "lon": 94.3449,
+    "area_km2": 3533.8
+  },
+  {
+    "district_id": 723,
+    "name": "Leparada",
+    "shape_id": "76128533B25448742967716",
+    "lat": 27.9533,
+    "lon": 94.7132,
+    "area_km2": 825.2
+  },
+  {
+    "district_id": 724,
+    "name": "Lower Siang",
+    "shape_id": "76128533B49993259380917",
+    "lat": 27.7319,
+    "lon": 94.595,
+    "area_km2": 1418.5
+  },
+  {
+    "district_id": 725,
+    "name": "Hnahthial",
+    "shape_id": "76128533B64903504311414",
+    "lat": 22.9742,
+    "lon": 93.0128,
+    "area_km2": 848.0
+  },
+  {
+    "district_id": 726,
+    "name": "Saitual",
+    "shape_id": "76128533B62486414019241",
+    "lat": 23.8686,
+    "lon": 93.1549,
+    "area_km2": 1368.4
+  },
+  {
+    "district_id": 727,
+    "name": "Khawzawl",
+    "shape_id": "76128533B41321006511827",
+    "lat": 23.5474,
+    "lon": 93.1398,
+    "area_km2": 1094.5
+  },
+  {
+    "district_id": 728,
+    "name": "Tirupathur",
+    "shape_id": "76128533B11403491783632",
+    "lat": 12.5787,
+    "lon": 78.6266,
+    "area_km2": 1951.7
+  },
+  {
+    "district_id": 729,
+    "name": "Ranipet",
+    "shape_id": "76128533B22687502928564",
+    "lat": 12.9192,
+    "lon": 79.4091,
+    "area_km2": 1991.6
+  },
+  {
+    "district_id": 730,
+    "name": "Chengalputtu",
+    "shape_id": "76128533B88669134807148",
+    "lat": 12.7948,
+    "lon": 79.7743,
+    "area_km2": 1752.7
+  },
+  {
+    "district_id": 731,
+    "name": "Kallakurichi",
+    "shape_id": "76128533B19545859035458",
+    "lat": 11.7859,
+    "lon": 79.0391,
+    "area_km2": 3253.7
+  },
+  {
+    "district_id": 732,
+    "name": "Mayiladuthurai",
+    "shape_id": "76128533B63176236753619",
+    "lat": 11.1861,
+    "lon": 79.6928,
+    "area_km2": 1176.8
+  },
+  {
+    "district_id": 733,
+    "name": "Tenkasi",
+    "shape_id": "76128533B27604563137530",
+    "lat": 9.0814,
+    "lon": 77.4771,
+    "area_km2": 2887.4
+  },
+  {
+    "district_id": 734,
+    "name": "Gaurella Pendra Marwahi",
+    "shape_id": "76128533B38203190611533",
+    "lat": 22.8305,
+    "lon": 81.9619,
+    "area_km2": 1992.0
+  }
+]
