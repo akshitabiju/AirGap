@@ -90,3 +90,6 @@ export interface History { start: string; series: Record<string, [string, number
 export interface Forecast { generated_at: string; base_date: string; days: string[]; weather_source: string; series: Record<string, [string, number, number, number, number][]> }
 
 export type ViewMode = 'pred' | 'unc' | 'dist'
+
+/** Hourly PM2.5 profile per district for today and tomorrow (24 ints each, or null). */
+export interface Hourly { generated_at: string; days: string[]; method: string; series: Record<string, (number[] | null)[]> }

@@ -124,14 +124,14 @@ export default function Hero({ onExplore, onCheck }: { onExplore: () => void; on
       <div className="relative mx-auto flex h-full max-w-7xl flex-col justify-center px-5 pb-24 pt-20 sm:px-8">
         <div className="max-w-3xl">
           <p className="rise inline-flex items-center gap-2 rounded-full border border-cream/20 bg-white/5 px-3 py-1 text-xs uppercase tracking-[0.18em] text-cream/80 backdrop-blur">
-            <Satellite size={13} className="text-haze" /> Live satellite + ground truth · updated {meta?.prediction_date ?? '…'}
+            <Satellite size={13} className="text-haze" /> Daily air guide for every district in India · {meta?.prediction_date ?? '…'}
           </p>
           <h1 className="rise rise-1 mt-6 text-[2.9rem] leading-[0.98] text-cream sm:text-6xl lg:text-[5.4rem]">
-            The air in <span className="shimmer-text italic">735 districts.</span><br />
-            Measured in <span className="text-haze">{meta ? fmt(Math.round((meta.ground_truth as { stations: number }).stations / 10) * 10) : '…'}</span> places.
+            Should you <span className="shimmer-text italic">step out</span> today?<br />
+            <span className="text-haze">Every district</span> has an answer now.
           </h1>
           <p className="rise rise-2 mt-6 max-w-xl text-lg leading-relaxed text-cream/75">
-            AirGap learns from every public PM2.5 monitor in India, reads today's satellite aerosol and weather for every district, and tells you what the air is probably like where nobody is checking. With an error bar you can check, and the twenty places that need a monitor most.
+            India measures air in about {meta ? fmt(Math.round((meta.ground_truth as { stations: number }).stations / 10) * 10) : '570'} places; 368 districts have no monitor within 50 km. AirGap gives every district today's PM2.5, the cleanest hours to go outside, plain advice for you or your child, a three-day forecast, and a one-tap WhatsApp share. In English and Hindi. Checked against real monitors, with the error shown.
           </p>
           <div className="rise rise-3 mt-8 flex flex-wrap items-center gap-3">
             <button onClick={onCheck} className="group inline-flex items-center gap-2 rounded-full bg-cream px-5 py-2.5 text-sm font-medium text-ink transition hover:bg-haze">

@@ -1,4 +1,4 @@
-import { useMemo, useRef, useState } from 'react'
+import { useEffect, useMemo, useRef, useState } from 'react'
 import { AlertTriangle, Loader2, MapPin, Radio, Satellite, Target } from 'lucide-react'
 import Hero from '../components/Hero'
 import IndiaMap from '../components/IndiaMap'
@@ -21,6 +21,17 @@ export default function Landing() {
   const [flyTo, setFlyTo] = useState<{ lat: number; lon: number } | null>(null)
   const [mapReady, setMapReady] = useState(false)
   useReveal([districts, metrics])
+  // Shared links carry ?d=<district id>: pin it and jump to the map once data is in.
+  const deepLinked = useRef(false)
+  useEffect(() => {
+    if (deepLinked.current || !districts) return
+    const id = Number(new URLSearchParams(location.search).get('d'))
+    const f = Number.isFinite(id) ? districts.features.find((x) => x.properties.id === id) : undefined
+    if (!f) return
+    deepLinked.current = true
+    setSelected(f.properties.id); setFlyTo({ lat: f.properties.lat, lon: f.properties.lon })
+    setTimeout(() => mapSection.current?.scrollIntoView({ behavior: 'smooth' }), 600)
+  }, [districts, setSelected])
 
 
   const ranked = useMemo(() => districts ? [...districts.features].filter((f) => f.properties.pred != null).sort((a, b) => (b.properties.pred ?? 0) - (a.properties.pred ?? 0)) : [], [districts])
@@ -117,9 +128,9 @@ export default function Landing() {
       {/* how */}
       <section className="border-t border-line bg-cream-2/40">
         <div className="mx-auto grid max-w-7xl gap-10 px-5 py-20 sm:px-8 md:grid-cols-3">
-          <Step n="01" icon={<Radio size={16} />} title="Learn from the monitors that exist" text="Daily PM2.5 from the OpenAQ network across India is matched to the satellite-assimilated aerosol and weather that Copernicus publishes for the same place and day." />
-          <Step n="02" icon={<Satellite size={16} />} title="Prove it on cities we hid" text="We hold out whole cities, predict them cold, and publish the error next to the raw satellite model's error on the same rows. If we didn't beat it, you'd see that here." />
-          <Step n="03" icon={<Target size={16} />} title="Say where to measure next" text="Where the model is least sure, the most people live, and the nearest monitor is farthest away: that's where the next instrument earns its keep." />
+          <Step n="01" icon={<Radio size={16} />} title="Know your hours, not just a number" text="A single daily number doesn't tell you when to send the kids out. AirGap shows the cleanest and worst three-hour windows today and tomorrow, so you can plan the walk, the run, or the school pickup." />
+          <Step n="02" icon={<Satellite size={16} />} title="Trust it, because we checked" text="We hid whole cities from the model and made it guess them cold. Its error is 36 percent lower than the raw satellite data, every number carries a calibrated error bar, and the proof is a page away." />
+          <Step n="03" icon={<Target size={16} />} title="Spread it, and fix the gap" text="One tap shares your district's air and best hours on WhatsApp. For the people who decide where monitors go, a ranked list of the twenty towns that need one most." />
         </div>
       </section>
     </>

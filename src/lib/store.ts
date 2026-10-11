@@ -1,5 +1,5 @@
 import { create } from 'zustand'
-import type { City, Forecast, History, Meta, Metrics, Placement, Station, ViewMode } from './types'
+import type { City, Forecast, History, Hourly, Meta, Metrics, Placement, Station, ViewMode } from './types'
 import type { FeatureCollection, Geometry } from 'geojson'
 import type { DistrictProps } from './types'
 
@@ -14,6 +14,7 @@ interface State {
   cities: City[] | null
   history: History | null
   forecast: Forecast | null
+  hourly: Hourly | null
   day: number | null            // index into history series; null = latest day
   setDay: (d: number | null) => void
   view: ViewMode
@@ -37,7 +38,7 @@ async function getJson<T>(path: string): Promise<T> {
 
 export const useData = create<State>((set, get) => ({
   districts: null, stations: null, metrics: null, placement: null, meta: null, cities: null,
-  history: null, forecast: null, day: null, view: 'pred',
+  history: null, forecast: null, hourly: null, day: null, view: 'pred',
   setDay: (day) => set({ day }), setView: (view) => set({ view }),
   errors: {}, loading: false, selected: null, hovered: null,
   setSelected: (id) => set({ selected: id }),
@@ -48,7 +49,7 @@ export const useData = create<State>((set, get) => ({
     const jobs: [keyof State, string][] = [
       ['districts', '/data/districts.geojson'], ['stations', '/data/stations.json'],
       ['metrics', '/data/metrics.json'], ['placement', '/data/placement.json'],
-      ['meta', '/data/meta.json'], ['cities', '/data/cities.json'], ['history', '/data/history.json'], ['forecast', '/data/forecast.json'],
+      ['meta', '/data/meta.json'], ['cities', '/data/cities.json'], ['history', '/data/history.json'], ['forecast', '/data/forecast.json'], ['hourly', '/data/hourly.json'],
     ]
     const results = await Promise.allSettled(jobs.map(([, p]) => getJson<unknown>(p)))
     const patch: Partial<State> = {}; const errors: Record<string, string> = {}

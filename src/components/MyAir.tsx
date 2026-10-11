@@ -5,6 +5,7 @@ import { band, colorFor, fmt, WHO_GUIDELINE_24H } from '../lib/scale'
 import { districtAt, inIndia } from '../lib/geo'
 import { STRINGS, type BandKey, type Lang, type Profile } from '../lib/i18n'
 import Search from './Search'
+import BestHours from './BestHours'
 import type { City, DistrictProps } from '../lib/types'
 
 const PROFILE_ICONS: Record<Profile, React.ReactNode> = { general: <User size={14} />, sensitive: <HeartPulse size={14} />, child: <Baby size={14} />, active: <Bike size={14} /> }
@@ -127,6 +128,7 @@ export default function MyAir({ onLocate }: { onLocate: (p: DistrictProps) => vo
                   </div>
                 </div>
               )}
+              <BestHours district={district} lang={lang} bandLabel={T.band[bandKey]} />
               <div className="mt-4 flex flex-wrap items-center justify-between gap-2">
                 <p className="text-[11px] text-ink-3">{T.ui.disclaimer}</p>
                 <button className="btn !py-1.5 text-xs" onClick={() => onLocate(district)}>{T.ui.show_map}</button>
