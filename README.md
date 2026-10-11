@@ -117,6 +117,19 @@ src/pages/              Landing (map), Accuracy, Placement, Method
 src/components/         IndiaMap, DetailPanel, Search, Legend, Charts, Hero
 ```
 
+## Build notes: what broke, what I'd change
+
+Written the same day, so it's honest rather than tidy.
+
+- **The data pull hit a wall.** Open-Meteo's archive endpoint has an hourly cap; the first full run of 1,300 points × 92 days tripped it halfway. I added on-disk caching and a `--partial` mode so a re-run resumes instead of restarting, then trained a preliminary model on 350 stations while the cap reset. Lesson: build the cache before the fetch, not after.
+- **OpenAQ's `/days` ignores `datetime_from`.** It honours `date_from`. Found by printing the first and last row. Cost ten minutes; would have cost an hour at 3 req/s.
+- **CloudFront refused.** New AWS accounts can't create distributions until Support verifies them. The deploy script was written for S3 + CloudFront; I moved hosting to Amplify (manual zip deploy) in half an hour and left the CloudFront path in for verified accounts.
+- **The public Lambda URL returned 403** with a correct-looking policy. The docs now require `lambda:InvokeFunction` as well as `lambda:InvokeFunctionUrl`. Fixed, and the deploy script adds both.
+- **R² is 0.28.** The monsoon window has low, flat PM2.5, so there's little variance to explain; MAE (10.2 vs 16.0 for the satellite baseline) is the more honest headline in this season. I'd rather show the modest number than hide it. In winter the same pipeline should show a very different R², and it's built to be re-run.
+- **The error bars were too narrow at first** (48 % coverage for a "68 %" interval). A single multiplier fitted out-of-fold fixed it (now 68 %). Any uncertainty you can't check is decoration.
+- **Hourly "best hours" are borrowed shape, not learned.** There's no hourly ground truth at district level, so the within-day pattern comes from the CAMS forecast scaled to our daily estimate, and the card says so.
+- **What I'd change with another week:** hourly ground truth from OpenAQ to learn the daily cycle; a winter retrain; NASA FIRMS fire detections as a feature (crop burning); Census district populations instead of GeoNames town sums for the placement score; and a scheduled daily re-run on AWS instead of a laptop.
+
 ## Licence
 
 Code: MIT (see `LICENSE`). Data outputs inherit their sources' licences listed above.
