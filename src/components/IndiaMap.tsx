@@ -1,12 +1,14 @@
-import { useEffect, useRef } from 'react'
-import { Map as MLMap, NavigationControl, type MapMouseEvent } from 'maplibre-gl'
+import { useEffect, useRef, useState } from 'react'
+import { Map as MLMap, NavigationControl, setWorkerUrl, type MapMouseEvent } from 'maplibre-gl'
 import 'maplibre-gl/dist/maplibre-gl.css'
 import { useData } from '../lib/store'
 import { MAP_COLOR_EXPR } from '../lib/scale'
 import type { PlacementSite } from '../lib/types'
 
 const STYLE = 'https://tiles.openfreemap.org/styles/positron'
-const INDIA_BOUNDS: [[number, number], [number, number]] = [[67.5, 6.5], [97.5, 36.5]]
+// Vite 8 / Rolldown can't resolve MapLibre's inline worker blob; serve the worker as a static file instead.
+setWorkerUrl(`${import.meta.env.BASE_URL.replace(/\/$/, '')}/maplibre-gl-worker.mjs`)
+const INDIA_BOUNDS: [[number, number], [number, number]] = [[68.0, 7.0], [97.0, 35.5]]
 
 interface Props {
   mode?: 'districts' | 'placement'
@@ -21,6 +23,7 @@ export default function IndiaMap({ mode = 'districts', sites, highlightSite, fly
   const el = useRef<HTMLDivElement>(null)
   const mapRef = useRef<MLMap | null>(null)
   const ready = useRef(false)
+  const [loaded, setLoaded] = useState(false)
   const districts = useData((s) => s.districts)
   const stations = useData((s) => s.stations)
   const selected = useData((s) => s.selected)
@@ -35,7 +38,7 @@ export default function IndiaMap({ mode = 'districts', sites, highlightSite, fly
       container: el.current,
       style: STYLE,
       bounds: INDIA_BOUNDS,
-      fitBoundsOptions: { padding: 20 },
+      fitBoundsOptions: { padding: 12 },
       attributionControl: { compact: true },
       maxBounds: [[55, -5], [110, 45]],
       minZoom: 3.2,
@@ -46,8 +49,8 @@ export default function IndiaMap({ mode = 'districts', sites, highlightSite, fly
     map.addControl(new NavigationControl({ showCompass: false }), 'top-right')
     map.on('load', () => {
       ready.current = true
+      setLoaded(true)   // triggers the paint effect with the *current* data, not a stale closure
       onReady?.()
-      paint()
     })
     mapRef.current = map
     return () => {
@@ -177,26 +180,26 @@ export default function IndiaMap({ mode = 'districts', sites, highlightSite, fly
     }
   }
   // eslint-disable-next-line react-hooks/exhaustive-deps
-  useEffect(() => { paint() }, [districts, stations, sites, mode])
+  useEffect(() => { paint() }, [loaded, districts, stations, sites, mode])
 
   // Selected feature state.
   const prevSel = useRef<number | null>(null)
   useEffect(() => {
     const map = mapRef.current
-    if (!map || !ready.current || !map.getSource('districts')) return
+    if (!map || !loaded || !map.getSource('districts')) return
     if (prevSel.current != null) map.setFeatureState({ source: 'districts', id: prevSel.current }, { selected: false })
     if (selected != null) map.setFeatureState({ source: 'districts', id: selected }, { selected: true })
     prevSel.current = selected
-  }, [selected, districts])
+  }, [selected, districts, loaded])
 
   // Highlight a placement site.
   useEffect(() => {
     const map = mapRef.current
-    if (!map || !ready.current || !map.getLayer('sites')) return
+    if (!map || !loaded || !map.getLayer('sites')) return
     const r = highlightSite ?? -1
     map.setPaintProperty('sites', 'circle-radius', ['case', ['==', ['get', 'rank'], r], 11, 7])
     map.setPaintProperty('sites-halo', 'circle-radius', ['case', ['==', ['get', 'rank'], r], 24, 14])
-  }, [highlightSite])
+  }, [highlightSite, loaded])
 
   useEffect(() => {
     const map = mapRef.current
