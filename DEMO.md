@@ -6,9 +6,9 @@ Numbers in [brackets]: read what the screen shows that day. Check the Brahmapur 
 
 ---
 
-**0:00 · Hero. Hold still until the name.**
+**0:00 · Hero. Hold still until the name, then point at the map on the right: the pulsing orange dots and the "Most polluted right now" card.**
 
-> Three hundred and sixty-eight districts in India have no public PM2.5 monitor within fifty kilometres. That's at least eighty-five million people in towns alone, plus all of rural India, who can't find out what they're breathing today, let alone when it's safe to send a child outside. So I built the answer for every one of those districts. This is AirGap.
+> Three hundred and sixty-eight districts in India have no public PM2.5 monitor within fifty kilometres. That's at least eighty-five million people in towns alone, plus all of rural India, who can't find out what they're breathing today, let alone when it's safe to send a child outside. So I built the answer for every one of those districts. This is AirGap. The map is live: every district coloured by today's estimate, the worst spots pulsing, and the most polluted state right now, [read the state], with the clock in Indian time.
 
 **0:15 · Click "Check your air". Type "Brahmapur" in the search, pick it. Click "Child at home".**
 
