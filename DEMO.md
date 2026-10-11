@@ -10,7 +10,11 @@ Record screen at 1080p with the site open on the map page, scrolled to the hero.
 >
 > AirGap is a model that answers for them, with an error bar, and tells regulators where to put the next monitor.
 
-**0:20 – 1:00 · The map** (click "Explore the live map"; press Play on the timeline and let 92 days roll; then switch to "Monitor gap", back to "PM2.5"; search "Ashoknagar" or any small town; click to pin)
+**0:20 – 0:40 · My Air** (scroll to "Your air"; click "Use my location" or search your town; click "Asthma / heart / 60+")
+
+> First, for a person. Tell it where you are and who you are. This stays on your phone. It finds your district, gives today's number with its error bar, and says in plain words what to do: here, limit heavy exertion outside. About [1.4] cigarettes a day if you breathe this all day.
+
+**0:40 – 1:15 · The map** (click "Explore the live map"; press Play on the timeline and let 92 days roll; then switch to "Monitor gap", back to "PM2.5"; search "Ashoknagar" or any small town; click to pin)
 
 > Every one of India's seven hundred thirty-five districts. Colour is the predicted twenty-four-hour PM2.5 on the CPCB bands, and this is the last ninety-two days playing back: watch the monsoon wash the north clean, then October start to close in.
 >
