@@ -21,6 +21,8 @@ function projector(w: number, h: number) {
 function IndiaGlow() {
   const ref = useRef<HTMLCanvasElement>(null)
   const districts = useData((s) => s.districts)
+  const [outline, setOutline] = useState<GeoJSON.Feature | null>(null)
+  useEffect(() => { fetch(`${import.meta.env.BASE_URL.replace(/\/$/, '')}/data/india_outline.json`).then((r) => r.json()).then(setOutline).catch(() => setOutline(null)) }, [])
   useEffect(() => {
     const cv = ref.current
     if (!cv || !districts) return
@@ -53,6 +55,17 @@ function IndiaGlow() {
       const rg = b.createRadialGradient(cx, cy, 10, cx, cy, Math.max(W, H) * 0.55)
       rg.addColorStop(0, 'rgba(94,234,212,0.22)'); rg.addColorStop(1, 'rgba(94,234,212,0)')
       b.fillStyle = rg; b.fillRect(0, 0, W, H)
+      // land base from the state outline: fills gaps the district dataset leaves (Rann of Kutch salt flats)
+      if (outline) {
+        const g = outline.geometry as GeoJSON.Polygon | GeoJSON.MultiPolygon
+        const polys = g.type === 'Polygon' ? [g.coordinates] : g.coordinates
+        b.globalAlpha = 0.55; b.fillStyle = '#2f9a8a'
+        for (const poly of polys) {
+          b.beginPath()
+          for (const ring of poly) { ring.forEach(([lon, lat], i) => (i ? b.lineTo(X(lon), Y(lat)) : b.moveTo(X(lon), Y(lat)))); b.closePath() }
+          b.fill()
+        }
+      }
       b.globalAlpha = 0.62
       for (const f of districts.features) { b.fillStyle = colorFor(f.properties.pred); tracePolys(f); b.fill() }
       b.globalAlpha = 0.55; b.strokeStyle = 'rgba(244,247,246,0.38)'; b.lineWidth = 0.45
@@ -66,7 +79,7 @@ function IndiaGlow() {
     drawBase(); blit()
     const ro = new ResizeObserver(() => { drawBase(); blit() }); ro.observe(parent)
     return () => { ro.disconnect() }
-  }, [districts])
+  }, [districts, outline])
   return <canvas ref={ref} style={{ display: 'block', width: '100%', height: '100%' }} aria-hidden />
 }
 
