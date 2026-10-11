@@ -2,6 +2,8 @@
 
 **PM2.5 for the districts India doesn't measure.**
 
+![AirGap hero: India coloured by today's predicted PM2.5, with pollution hotspots and the most polluted state right now](docs/hero.png)
+
 Live: **https://main.d3cvwqcst393r5.amplifyapp.com** · Live model endpoint: `https://2gd4u767a54mvulo4cqwsnhshq0iwbjh.lambda-url.ap-south-1.on.aws/?lat=26.9&lon=75.8`
 
 India has roughly 600 PM2.5 monitors reporting publicly for 1.4 billion people. Most of its 735 districts have none. AirGap learns from the monitors that exist, reads today's satellite-assimilated aerosol and weather for every district, and publishes:
