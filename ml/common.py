@@ -59,7 +59,7 @@ def http_get_json(
     params: dict[str, Any] | None = None,
     headers: dict[str, str] | None = None,
     timeout: int = 60,
-    max_tries: int = 12,
+    max_tries: int = 5,
     min_interval: float = 0.0,
 ) -> Any:
     """GET with exponential backoff on 429/5xx/network errors."""
@@ -70,7 +70,10 @@ def http_get_json(
             r = _session.get(url, params=params, headers=headers, timeout=timeout)
             if r.status_code == 429 or r.status_code >= 500:
                 retry_after = r.headers.get("Retry-After")
+                reset = r.headers.get("X-Ratelimit-Reset")
                 wait = float(retry_after) if retry_after and retry_after.isdigit() else delay
+                if r.status_code == 429 and reset and reset.isdigit():
+                    wait = max(wait, float(reset) + 1)   # sleep until the provider says the window resets
                 log.warning("HTTP %s on %s (attempt %d/%d); sleeping %.1fs", r.status_code, url.split("?")[0], attempt, max_tries, wait)
                 time.sleep(wait)
                 delay = min(delay * 2, 120)

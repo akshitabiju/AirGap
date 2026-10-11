@@ -57,7 +57,9 @@ function IndiaGlow() {
           b.font = `500 ${size}px "Fraunces", Georgia, serif`
           b.shadowColor = 'rgba(94,234,212,0.95)'; b.shadowBlur = 10
           b.fillStyle = 'rgba(244,247,246,0.95)'
-          const label = st.name.toUpperCase().replace('ARUNACHAL PRADESH', 'ARUNACHAL').replace('ANDAMAN & NICOBAR', 'A & N').replace('JAMMU & KASHMIR', 'J & K').replace('HIMACHAL PRADESH', 'HIMACHAL').replace('DADRA AND NAGAR HAVELI AND DAMAN AND DIU', '')
+          const up = st.name.toUpperCase()
+          if (up.startsWith('DADRA') || up.startsWith('LAKSHADWEEP') || up.startsWith('PUDUCHERRY') || up.startsWith('CHANDIGARH')) continue   // tiny UTs: label would float over sea or neighbours
+          const label = up.replace('ARUNACHAL PRADESH', 'ARUNACHAL').replace('ANDAMAN & NICOBAR', 'A & N').replace('JAMMU & KASHMIR', 'J & K').replace('HIMACHAL PRADESH', 'HIMACHAL')
           if (label) b.fillText(label, X(st.lon), Y(st.lat))
         }
         b.shadowBlur = 0

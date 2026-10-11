@@ -29,8 +29,8 @@ COUNTRY_INDIA = 9
 PARAM_PM25 = 2
 MIN_HOURS = 16          # at least 16 of 24 hourly values behind a daily mean
 MIN_VALUE, MAX_VALUE = 1.0, 1500.0
-REQ_INTERVAL = 1.05     # seconds of sleep after each call, per worker
-WORKERS = 3             # each call takes ~3s, so 3 workers ~= 45 req/min (< 60 limit)
+REQ_INTERVAL = 1.5      # seconds of sleep after each call: ~40 req/min, well under the 60/min limit
+WORKERS = 1             # single worker: OpenAQ suspended an account when we ran 3 and retried through 429s
 
 
 def fetch_locations(headers: dict) -> list[dict]:
