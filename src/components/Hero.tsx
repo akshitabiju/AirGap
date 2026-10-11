@@ -9,9 +9,11 @@ const merc = (lat: number) => Math.log(Math.tan(Math.PI / 4 + (lat * Math.PI) / 
 const MY0 = merc(LAT0), MY1 = merc(LAT1)
 /** Web-Mercator fit of India's bounding box into a w x h box (same look as the MapLibre map below). */
 function projector(w: number, h: number) {
+  const pad = 0.04
+  w *= 1 - 2 * pad; h *= 1 - 2 * pad
   const sc = Math.min(w / ((LON1 - LON0) * (Math.PI / 180)), h / (MY1 - MY0))
   const pw = (LON1 - LON0) * (Math.PI / 180) * sc, ph = (MY1 - MY0) * sc
-  const ox = (w - pw) / 2, oy = (h - ph) / 2
+  const ox = (w - pw) / 2 + w * pad / (1 - 2 * pad), oy = (h - ph) / 2 + h * pad / (1 - 2 * pad)
   return { X: (lon: number) => ox + (lon - LON0) * (Math.PI / 180) * sc, Y: (lat: number) => oy + (MY1 - merc(lat)) * sc, sc }
 }
 
@@ -146,6 +148,16 @@ function Particles() {
   return <canvas ref={ref} className="absolute inset-0" style={{ display: 'block', width: '100%', height: '100%' }} aria-hidden />
 }
 
+/* Window size, for laying the map out without CSS calc. */
+function useViewport() {
+  const [v, setV] = useState({ w: typeof window === 'undefined' ? 1280 : window.innerWidth, h: typeof window === 'undefined' ? 800 : window.innerHeight })
+  useEffect(() => {
+    const on = () => setV({ w: window.innerWidth, h: window.innerHeight })
+    window.addEventListener('resize', on); return () => window.removeEventListener('resize', on)
+  }, [])
+  return v
+}
+
 /* Live IST clock. */
 function Clock() {
   const [now, setNow] = useState(() => new Date())
@@ -173,6 +185,13 @@ export default function Hero({ onExplore, onCheck }: { onExplore: () => void; on
   const host = useRef<HTMLElement>(null)
   useParallax(host)
   const gain = metrics ? Math.round(((metrics.overall.cams_mae - metrics.overall.mae) / metrics.overall.cams_mae) * 100) : null
+  const vp = useViewport()
+  const desktop = vp.w >= 1024
+  const mapH = desktop ? Math.min(vp.h - 130, 940) : Math.round(vp.h * 0.5)
+  const mapW = desktop ? Math.min(Math.round(mapH * 0.98), Math.round(vp.w * 0.5)) : Math.round(vp.w * 0.7)
+  const mapBox: React.CSSProperties = desktop
+    ? { right: '1%', top: 104, width: mapW, height: mapH }
+    : { right: '-8%', top: '12%', width: mapW, height: mapH }
   const worstState = states ? [...states.states].filter((s) => s.n_districts).sort((a, b) => (b.mean_pred ?? 0) - (a.mean_pred ?? 0))[0] : null
   const top = states?.hotspots[0]
 
@@ -184,7 +203,7 @@ export default function Hero({ onExplore, onCheck }: { onExplore: () => void; on
       <Particles />
 
       {/* glowing India, sized to the viewport so the whole country is on the first screen */}
-      <div className="float-2 pointer-events-none absolute right-[-6%] top-[14%] z-10 h-[60%] w-[60%] opacity-95 lg:right-[1%] lg:top-[112px] lg:h-[calc(100svh-120px)] lg:max-h-[960px] lg:w-[calc((100svh-120px)*0.98)] lg:max-w-[52vw]">
+      <div className="float-2 pointer-events-none absolute z-10 opacity-95" style={mapBox}>
         <IndiaGlow />
         <Hotspots onOpen={onOpenDistrict} />
       </div>
