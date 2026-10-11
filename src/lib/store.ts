@@ -1,5 +1,5 @@
 import { create } from 'zustand'
-import type { City, History, Meta, Metrics, Placement, Station, ViewMode } from './types'
+import type { City, Forecast, History, Meta, Metrics, Placement, Station, ViewMode } from './types'
 import type { FeatureCollection, Geometry } from 'geojson'
 import type { DistrictProps } from './types'
 
@@ -13,6 +13,7 @@ interface State {
   meta: Meta | null
   cities: City[] | null
   history: History | null
+  forecast: Forecast | null
   day: number | null            // index into history series; null = latest day
   setDay: (d: number | null) => void
   view: ViewMode
@@ -36,7 +37,7 @@ async function getJson<T>(path: string): Promise<T> {
 
 export const useData = create<State>((set, get) => ({
   districts: null, stations: null, metrics: null, placement: null, meta: null, cities: null,
-  history: null, day: null, view: 'pred',
+  history: null, forecast: null, day: null, view: 'pred',
   setDay: (day) => set({ day }), setView: (view) => set({ view }),
   errors: {}, loading: false, selected: null, hovered: null,
   setSelected: (id) => set({ selected: id }),
@@ -47,7 +48,7 @@ export const useData = create<State>((set, get) => ({
     const jobs: [keyof State, string][] = [
       ['districts', '/data/districts.geojson'], ['stations', '/data/stations.json'],
       ['metrics', '/data/metrics.json'], ['placement', '/data/placement.json'],
-      ['meta', '/data/meta.json'], ['cities', '/data/cities.json'], ['history', '/data/history.json'],
+      ['meta', '/data/meta.json'], ['cities', '/data/cities.json'], ['history', '/data/history.json'], ['forecast', '/data/forecast.json'],
     ]
     const results = await Promise.allSettled(jobs.map(([, p]) => getJson<unknown>(p)))
     const patch: Partial<State> = {}; const errors: Record<string, string> = {}
@@ -56,6 +57,17 @@ export const useData = create<State>((set, get) => ({
       if (r.status === 'fulfilled') (patch as Record<string, unknown>)[key] = r.value
       else errors[key] = String(r.reason)
     })
+    // Append the forecast days to each district's history so the timeline runs past today.
+    const h = patch.history as History | undefined, f = patch.forecast as Forecast | undefined
+    if (h && f && h.forecastFrom == null) {
+      let n = 0
+      for (const [id, s] of Object.entries(h.series)) {
+        n = s.length
+        const fs = f.series[id]
+        if (fs) s.push(...fs.map(([d, p, , , c]) => [d, p, c] as [string, number, number]))
+      }
+      h.forecastFrom = n
+    }
     set({ ...patch, errors, loading: false })
   },
 }))

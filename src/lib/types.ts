@@ -84,6 +84,9 @@ export interface Meta {
 export interface City { name: string; lat: number; lon: number; pop: number }
 
 /** 92-day predicted history per district: [MM-DD, pred, cams] */
-export interface History { start: string; series: Record<string, [string, number, number][]> }
+export interface History { start: string; series: Record<string, [string, number, number][]>; forecastFrom?: number }
+
+/** 3-day forecast per district: [MM-DD, pred, lo, hi, cams] */
+export interface Forecast { generated_at: string; base_date: string; days: string[]; weather_source: string; series: Record<string, [string, number, number, number, number][]> }
 
 export type ViewMode = 'pred' | 'unc' | 'dist'

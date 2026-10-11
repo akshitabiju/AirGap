@@ -21,13 +21,14 @@ function Sparkline({ id, dayIdx }: { id: number; dayIdx: number | null }) {
   const max = Math.max(...series.map((d) => Math.max(d[1], d[2])), 30)
   const x = (i: number) => m.l + (i / (series.length - 1)) * (W - m.l - m.r)
   const y = (v: number) => m.t + (1 - Math.min(v, max) / max) * (H - m.t - m.b)
-  const path = (k: 1 | 2) => series.map((d, i) => `${i ? 'L' : 'M'}${x(i).toFixed(1)},${y(d[k]).toFixed(1)}`).join(' ')
-  const cur = hover ?? dayIdx ?? series.length - 1
+  const fcFrom = history?.forecastFrom ?? series.length
+  const seg = (k: 1 | 2, from: number, to: number) => series.slice(from, to).map((d, i) => `${i ? 'L' : 'M'}${x(from + i).toFixed(1)},${y(d[k]).toFixed(1)}`).join(' ')
+  const cur = hover ?? dayIdx ?? fcFrom - 1
   const d = series[cur]
   return (
     <figure className="mt-4">
       <div className="flex items-center justify-between text-[10px] uppercase tracking-[0.12em] text-ink-3">
-        <span>Last {series.length} days</span>
+        <span>Last {fcFrom} days{fcFrom < series.length ? ` + ${series.length - fcFrom}-day forecast` : ''}</span>
         <span className="flex gap-3 normal-case tracking-normal">
           <span className="flex items-center gap-1"><span className="h-0.5 w-3" style={{ background: SERIES.airgap }} />AirGap</span>
           <span className="flex items-center gap-1"><span className="h-0.5 w-3 border-t border-dashed" style={{ borderColor: SERIES.cams }} />CAMS</span>
@@ -36,18 +37,20 @@ function Sparkline({ id, dayIdx }: { id: number; dayIdx: number | null }) {
       <svg viewBox={`0 0 ${W} ${H}`} className="mt-1 h-auto w-full cursor-crosshair" role="img" aria-label="PM2.5 over the last three months"
         onMouseMove={(e) => { const r = e.currentTarget.getBoundingClientRect(); setHover(Math.round(((e.clientX - r.left) / r.width) * (series.length - 1))) }}
         onMouseLeave={() => setHover(null)}
-        onClick={() => { if (hover != null) setDay(hover === series.length - 1 ? null : hover) }}>
+        onClick={() => { if (hover != null) setDay(hover === fcFrom - 1 ? null : hover) }}>
         <line x1={m.l} x2={W - m.r} y1={y(WHO_GUIDELINE_24H)} y2={y(WHO_GUIDELINE_24H)} stroke="#1b1a17" strokeOpacity={0.15} strokeDasharray="2 3" />
         {max > INDIA_NAAQS_24H && <line x1={m.l} x2={W - m.r} y1={y(INDIA_NAAQS_24H)} y2={y(INDIA_NAAQS_24H)} stroke="#b5462d" strokeOpacity={0.35} strokeDasharray="2 3" />}
-        <path d={path(2)} fill="none" stroke={SERIES.cams} strokeWidth={1.2} strokeDasharray="3 3" strokeOpacity={0.8} />
-        <path d={path(1)} fill="none" stroke={SERIES.airgap} strokeWidth={2} strokeLinejoin="round" />
+        <path d={seg(2, 0, series.length)} fill="none" stroke={SERIES.cams} strokeWidth={1.2} strokeDasharray="3 3" strokeOpacity={0.8} />
+        <path d={seg(1, 0, fcFrom)} fill="none" stroke={SERIES.airgap} strokeWidth={2} strokeLinejoin="round" />
+        {fcFrom < series.length && <path d={seg(1, fcFrom - 1, series.length)} fill="none" stroke={SERIES.airgap} strokeWidth={2} strokeDasharray="4 3" strokeOpacity={0.7} />}
+        {fcFrom < series.length && <line x1={x(fcFrom - 1)} x2={x(fcFrom - 1)} y1={m.t} y2={H - m.b} stroke="#16697a" strokeOpacity={0.4} />}
         <line x1={x(cur)} x2={x(cur)} y1={m.t} y2={H - m.b} stroke="#1b1a17" strokeOpacity={0.35} />
         <circle cx={x(cur)} cy={y(d[1])} r={3.5} fill={SERIES.airgap} stroke="#f5efe4" strokeWidth={1.5} />
         <text x={m.l} y={H - 3} fontSize={9} fill="#7d776d" className="num">{series[0][0]}</text>
         <text x={W - m.r} y={H - 3} fontSize={9} fill="#7d776d" textAnchor="end" className="num">{series[series.length - 1][0]}</text>
       </svg>
       <figcaption className="num flex justify-between text-[11px] text-ink-2">
-        <span>{d[0]}: <strong className="text-ink">{fmt(d[1])}</strong> µg/m³ <span className="text-ink-3">(CAMS {fmt(d[2])})</span></span>
+        <span>{d[0]}{cur >= fcFrom ? ' (forecast)' : ''}: <strong className="text-ink">{fmt(d[1])}</strong> µg/m³ <span className="text-ink-3">(CAMS {fmt(d[2])})</span></span>
         <span className="text-ink-3">click to scrub the map</span>
       </figcaption>
     </figure>
@@ -72,7 +75,7 @@ export default function DetailPanel() {
   const shown = useMemo(() => {
     if (!p) return null
     const s = history?.series[String(p.id)]
-    if (day != null && s && s[day]) return { pred: s[day][1], cams: s[day][2], prev: day > 0 ? s[day - 1][1] : null, date: `${history!.start.slice(0, 4)}-${s[day][0]}`, scrubbed: true }
+    if (day != null && s && s[day]) return { pred: s[day][1], cams: s[day][2], prev: day > 0 ? s[day - 1][1] : null, date: `${history!.start.slice(0, 4)}-${s[day][0]}${day >= (history!.forecastFrom ?? Infinity) ? ' (forecast)' : ''}`, scrubbed: true }
     return { pred: p.pred, cams: p.cams, prev: p.pred_prev, date: p.date, scrubbed: false }
   }, [p, history, day])
 

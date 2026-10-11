@@ -20,18 +20,20 @@ export default function MapControls() {
   const timer = useRef<number | null>(null)
 
   const n = history ? Object.values(history.series)[0]?.length ?? 0 : 0
-  const idx = day ?? n - 1
-  const label = history && n ? `${history.start.slice(0, 4)}-${Object.values(history.series)[0][idx][0]}` : ''
+  const idx = day ?? Math.max((history?.forecastFrom ?? n) - 1, 0)
+  const fcFrom = history?.forecastFrom ?? n
+  const isFc = idx >= fcFrom
+  const label = history && n ? `${history.start.slice(0, 4)}-${Object.values(history.series)[0][idx][0]}${isFc ? ' · forecast' : day == null ? ' · today' : ''}` : ''
 
   useEffect(() => {
     if (!playing || !n) return
     timer.current = window.setInterval(() => {
-      const cur = useData.getState().day ?? n - 1
+      const cur = useData.getState().day ?? fcFrom - 1
       const next = cur + 1
-      if (next >= n) { setDay(null); setPlaying(false) } else setDay(next)
+      if (next >= n) { setDay(null); setPlaying(false) } else setDay(next === fcFrom - 1 ? null : next)
     }, 220)
     return () => { if (timer.current) window.clearInterval(timer.current) }
-  }, [playing, n, setDay])
+  }, [playing, n, fcFrom, setDay])
 
   return (
     <div className="glass-light flex flex-col gap-2 rounded-2xl p-2 sm:flex-row sm:items-center sm:gap-3">
@@ -48,9 +50,12 @@ export default function MapControls() {
           <button onClick={() => { if (!playing && day == null) setDay(0); setPlaying((p) => !p) }} className="grid h-8 w-8 shrink-0 place-items-center rounded-full bg-ink text-cream transition hover:bg-forest" aria-label={playing ? 'Pause' : 'Play 92 days'}>
             {playing ? <Pause size={13} /> : <Play size={13} />}
           </button>
-          <input type="range" min={0} max={n - 1} value={idx} onChange={(e) => { setPlaying(false); const v = Number(e.target.value); setDay(v === n - 1 ? null : v) }}
-            className="h-1.5 flex-1 cursor-pointer accent-forest" aria-label="Day" />
-          <button onClick={() => { setPlaying(false); setDay(null) }} className="num flex shrink-0 items-center gap-1 rounded-full border border-line px-2.5 py-1 text-[11px] text-ink-2 hover:bg-cream-2" title="Jump to today">
+          <div className="relative flex-1">
+          <input type="range" min={0} max={n - 1} value={idx} onChange={(e) => { setPlaying(false); const v = Number(e.target.value); setDay(v === fcFrom - 1 ? null : v) }}
+            className="h-1.5 w-full cursor-pointer accent-forest" aria-label="Day" />
+          {fcFrom < n && <span className="pointer-events-none absolute -bottom-3 text-[9px] uppercase tracking-wider text-ink-3" style={{ left: `${((fcFrom - 1) / (n - 1)) * 100}%` }}>today ›</span>}
+          </div>
+          <button onClick={() => { setPlaying(false); setDay(null) }} className={`num flex shrink-0 items-center gap-1 rounded-full border px-2.5 py-1 text-[11px] hover:bg-cream-2 ${isFc ? 'border-forest-3 bg-forest/10 text-forest' : 'border-line text-ink-2'}`} title="Jump to today">
             {label}{day != null ? <SkipForward size={11} /> : ''}
           </button>
         </div>

@@ -17,7 +17,7 @@ Numbers in [brackets] are what the site shows on the day of recording; read what
 
 ### 0:25 – 0:50 · My Air (scroll to "Your air"; click "Use my location" or search your town; click "Asthma / heart / 60+")
 
-> It starts with a person. Tell it where you are and who you are; this stays on your device. It finds your district, gives today's estimate with an error bar, and says in plain language what to do, following CPCB's own health advisories. And a number everyone understands: breathing this all day is about [1.4] cigarettes.
+> It starts with a person. Tell it where you are and who you are; this stays on your device. It finds your district, gives today's estimate with an error bar, and says in plain language what to do, following CPCB's own health advisories. A number everyone understands: breathing this all day is about [1.4] cigarettes. And the next three days, forecast by the same model, so you can plan.
 
 ### 0:50 – 1:30 · The map (click "Show on the map"; press Play on the timeline; then switch view to "Monitor gap"; back to "PM2.5"; zoom into your district so streets appear; hover a monitor dot)
 

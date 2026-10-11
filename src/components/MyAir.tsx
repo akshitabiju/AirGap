@@ -37,6 +37,7 @@ const LEVEL_STYLE = ['bg-emerald-500/10 border-emerald-500/30', 'bg-lime-500/10 
 
 export default function MyAir({ onLocate }: { onLocate: (p: DistrictProps) => void }) {
   const districts = useData((s) => s.districts)
+  const forecast = useData((s) => s.forecast)
   const [profile, setProfile] = useState<Profile>(() => { try { return (localStorage.getItem('airgap.profile') as Profile) || 'general' } catch { return 'general' } })
   const [place, setPlace] = useState<{ label: string; lat: number; lon: number; via: 'gps' | 'search' } | null>(() => { try { const s = localStorage.getItem('airgap.place'); return s ? JSON.parse(s) : null } catch { return null } })
   const [geo, setGeo] = useState<'idle' | 'asking' | 'error' | 'outside'>('idle')
@@ -62,6 +63,8 @@ export default function MyAir({ onLocate }: { onLocate: (p: DistrictProps) => vo
 
   const pm = district?.pred ?? null
   const adv = pm != null ? advice(pm, profile) : null
+  const fc = district && forecast ? forecast.series[String(district.id)] ?? null : null
+  const trend = fc && pm != null ? fc[0][1] - pm : null
 
   return (
     <section className="mx-auto max-w-7xl px-5 pt-20 sm:px-8" id="my-air">
@@ -125,6 +128,17 @@ export default function MyAir({ onLocate }: { onLocate: (p: DistrictProps) => vo
                 <div className="rounded-xl bg-cream-2/70 p-3"><div className="flex items-center gap-1 text-ink-3"><Cigarette size={11} />cigarettes / day</div><div className="num mt-1 text-lg">{(pm / 22).toFixed(1)}</div></div>
                 <div className="rounded-xl bg-cream-2/70 p-3"><div className="text-ink-3">vs yesterday</div><div className="num mt-1 text-lg">{district.pred_prev != null ? `${pm - district.pred_prev > 0 ? '+' : ''}${fmt(pm - district.pred_prev)}` : '—'}</div></div>
               </div>
+              {fc && (
+                <div className="mt-4">
+                  <div className="mb-1.5 flex items-center justify-between text-[10px] uppercase tracking-[0.12em] text-ink-3"><span>Next three days (forecast)</span>{trend != null && <span className={trend > 3 ? 'text-rust' : trend < -3 ? 'text-forest-3' : ''}>{trend > 3 ? 'getting worse' : trend < -3 ? 'improving' : 'about the same'}</span>}</div>
+                  <div className="grid grid-cols-4 gap-2 text-xs">
+                    <div className="rounded-xl border border-line p-2.5"><div className="text-ink-3">Today</div><div className="num mt-0.5 text-lg" style={{ color: colorFor(pm) }}>{fmt(pm)}</div><div className="text-[10px] text-ink-3">{band(pm).label}</div></div>
+                    {fc.map(([d, p, lo, hi]) => (
+                      <div key={d} className="rounded-xl border border-dashed border-line p-2.5"><div className="text-ink-3">{d}</div><div className="num mt-0.5 text-lg" style={{ color: colorFor(p) }}>{fmt(p)}</div><div className="num text-[10px] text-ink-3">{fmt(lo)}–{fmt(hi)}</div></div>
+                    ))}
+                  </div>
+                </div>
+              )}
               <div className="mt-4 flex flex-wrap items-center justify-between gap-2">
                 <p className="text-[11px] text-ink-3">General guidance adapted from CPCB AQI health advisories. Not medical advice.</p>
                 <button className="btn !py-1.5 text-xs" onClick={() => onLocate(district)}>Show on the map</button>
