@@ -26,11 +26,11 @@ Numbers in [brackets]: read what the screen shows.
 
 **1:00 · Click "Show on the map". Press Play. Let it run about 8 seconds. Click "Monitor gap". Wait 3 seconds. Click "PM2.5". Scroll-zoom into your district until streets appear. Hover a monitor dot.**
 
-> Every district in the country. Press play and ninety-two days roll across India, into the forecast. Switch the view: the darker the district, the farther it is from any monitor. Three hundred sixty-eight districts have none within fifty kilometres. Zoom in and it's a street-level map. The dots are real monitors coloured by what they measured; everything between them is inferred, and we say so. When a district is pinned, the browser calls a Lambda function on AWS that fetches today's satellite and weather data for that exact point and runs the model live.
+> Every district in the country. Press play and ninety-two days roll across India, into the forecast. (pause while it plays) Now switch the view. The darker the district, the farther it is from any monitor. (hold here, slow) Three hundred sixty-eight districts. Nobody measuring. Zoom in and it's a street-level map. The dots are real monitors coloured by what they measured; everything between them is inferred, and we say so. When a district is pinned, the browser calls a Lambda function on AWS that fetches today's satellite and weather data for that exact point and runs the model live.
 
 **1:40 · Click "Accuracy". Pause on the four tiles for four seconds. Scroll to the scatter, then the per-city table.**
 
-> How wrong is it where there's no monitor? We hide whole cities, train on the rest, and predict them cold, five times over. On cities it never saw, the mean error is 10.2 micrograms. The raw satellite model we build on, Copernicus CAMS, scored on the same days, is at 16. That's 36 percent lower, we win every fold, and the error bars are calibrated: the sixty-eight percent interval covers sixty-eight percent of real values. Every city, both numbers, no cherry-picking.
+> How wrong is it where there's no monitor? We hide whole cities, train on the rest, and predict them cold, five times over. On cities it never saw, the mean error is 10.2 micrograms. The raw satellite model we build on, Copernicus CAMS, scored on the same days, is at 16. That's 36 percent lower, we win every fold, and the error bars are calibrated: the sixty-eight percent interval covers sixty-eight percent of real values. Every city, both numbers, no cherry-picking. Everything the model infers is labelled as inferred, with an error bar you can check.
 
 **2:15 · Click "Next 20 monitors". Hover sites 1, 2, 3.**
 
