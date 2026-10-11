@@ -9,6 +9,7 @@ export interface DistrictProps {
   nearest_name: string | null
   pop: number | null           // population of largest city in district (GeoNames), if any
   city: string | null          // name of that city
+  urban_pop: number            // sum of GeoNames city populations inside the district
   lat: number
   lon: number
   date: string
@@ -70,6 +71,19 @@ export interface Meta {
   n_stations: number
   ground_truth: Record<string, unknown>
   sources: { name: string; url: string; licence: string; role: string }[]
+  districts_no_monitor_50km: number
+  urban_pop_over_15: number
+  urban_pop_over_60: number
+  urban_pop_no_monitor_50km: number
+  urban_pop_total: number
+  districts_over_15: number
+  districts_over_60: number
+  district_pred_median: number
 }
 
 export interface City { name: string; lat: number; lon: number; pop: number }
+
+/** 92-day predicted history per district: [MM-DD, pred, cams] */
+export interface History { start: string; series: Record<string, [string, number, number][]> }
+
+export type ViewMode = 'pred' | 'unc' | 'dist'

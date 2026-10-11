@@ -27,13 +27,15 @@ Numbers below are copied from `public/data/metrics.json`, which the pipeline reg
 
 | Metric | AirGap | CAMS baseline |
 |---|---|---|
-| Mean absolute error (µg/m³) | **10.6** | 17.7 |
-| RMSE (µg/m³) | **16.8** | 26.5 |
-| R² | **0.29** | −0.78 |
-| Share of days within ±15 µg/m³ | see site | see site |
-| 68 % interval coverage (after CV calibration) | **0.68** | n/a |
+| Mean absolute error (µg/m³) | **10.2** | 16.0 |
+| RMSE (µg/m³) | **16.0** | 25.5 |
+| R² | **0.28** | −0.83 |
+| Share of station-days within ±15 µg/m³ | **80 %** | 64 % |
+| 68 % interval coverage (raw quantile models → after CV calibration) | 48 % → **68 %** | n/a |
 
-Training set at the time of writing: 24,230 station-days from 350 monitors (an Open-Meteo hourly rate limit interrupted the feature pull for the remaining 221 stations; the full set is 40,160 station-days from 571 monitors and the numbers will be refreshed once `python ml/run_all.py` is re-run). Period: 2026-07-11 to 2026-10-10, i.e. monsoon and early post-monsoon, when PM2.5 is low and comparatively flat. R² will read differently in winter.
+Per fold (MAE, AirGap vs CAMS): 9.8 vs 18.1 · 10.5 vs 14.6 · 8.7 vs 14.8 · 11.7 vs 17.7 · 10.4 vs 14.9. AirGap wins every fold.
+
+Training set: 39,695 station-days from 571 monitors in 306 city groups, 2026-07-12 to 2026-10-10. That is monsoon and early post-monsoon, when PM2.5 is low (median observed 24 µg/m³) and comparatively flat, which is why R² is modest even though the error is 36 % below the satellite baseline. Winter in the Indo-Gangetic plain will read differently, and the pipeline is built to be re-run then.
 
 What this means: on a district with no monitor, the map's number is typically within about 10 µg/m³ of what a monitor would have read. That is enough to tell a clean day from a bad one; it is not a regulatory measurement.
 

@@ -19,12 +19,17 @@ export default function PlacementPage() {
 
   return (
     <div className="mx-auto max-w-7xl px-5 py-12 sm:px-8">
-      <p className="eyebrow rise">Next 20 monitors</p>
-      <h1 className="rise rise-1 mt-2 max-w-3xl text-4xl sm:text-5xl">If you could only buy twenty instruments, put them here.</h1>
-      <p className="rise rise-2 mt-4 max-w-2xl text-ink-2">
+      <div className="hero-sky relative -mx-5 -mt-12 overflow-hidden px-5 pb-14 pt-16 text-cream sm:-mx-8 sm:rounded-b-[2.5rem] sm:px-10">
+        <div className="haze haze-a" style={{ width: '50vw', height: '40vh', left: '-10vw', top: '-10%', background: 'rgba(217,100,58,0.3)' }} />
+        <div className="relative">
+      <p className="rise text-xs uppercase tracking-[0.18em] text-cream/60">Next 20 monitors</p>
+      <h1 className="rise rise-1 mt-2 max-w-3xl !text-cream text-4xl sm:text-6xl">If you could only buy twenty instruments, <em className="italic text-haze">put them here.</em></h1>
+      <p className="rise rise-2 mt-4 max-w-2xl text-cream/75">
         {fmt(params.n_candidates)} towns of {fmt(params.min_pop)}+ people have no PM2.5 monitor within {params.cover_km} km. We rank them by how many people live there, how unsure our model is for that district, and how far the nearest monitor is, then pick greedily so the twenty spread out instead of clustering.
-        Together these twenty cover <strong className="text-ink">{fmt(people)}</strong> people who currently rely on inference.
+        Together these twenty cover <strong className="text-haze">{fmt(people)}</strong> people who currently rely on inference.
       </p>
+        </div>
+      </div>
 
       <div className="rise rise-3 mt-10 grid gap-4 lg:grid-cols-12">
         <div className="overflow-hidden rounded-2xl border border-line bg-cream-2 lg:col-span-7" style={{ height: 'min(70vh, 640px)', minHeight: 420 }}>

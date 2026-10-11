@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-11T03:50:00+00:00",
+  "generated_at": "2026-10-11T04:33:31+00:00",
   "prediction_date": "2026-10-11",
   "n_districts": 735,
   "n_districts_predicted": 735,
@@ -53,9 +53,13 @@
       "role": "Basemap tiles"
     }
   ],
-  "district_pred_median": 29.7,
-  "district_pred_max": 64.0,
-  "districts_over_60": 3,
-  "districts_over_15": 681,
-  "districts_no_monitor_50km": 368
+  "district_pred_median": 35.7,
+  "district_pred_max": 75.6,
+  "districts_over_60": 21,
+  "districts_over_15": 697,
+  "districts_no_monitor_50km": 368,
+  "urban_pop_over_15": 365104840,
+  "urban_pop_over_60": 27757211,
+  "urban_pop_no_monitor_50km": 85743278,
+  "urban_pop_total": 365721547
 }

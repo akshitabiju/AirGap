@@ -19,12 +19,17 @@ export default function Accuracy() {
 
   return (
     <div className="mx-auto max-w-7xl px-5 py-12 sm:px-8">
-      <p className="eyebrow rise">Accuracy</p>
-      <h1 className="rise rise-1 mt-2 max-w-3xl text-4xl sm:text-5xl">How wrong is it, on cities it has never seen?</h1>
-      <p className="rise rise-2 mt-4 max-w-2xl text-ink-2">
-        We split {fmt(metrics.n_stations)} monitors into {metrics.folds.length} groups by city, trained on four groups and predicted the fifth, five times over.
-        Every number below is from a city the model was not trained on. The satellite model we build on (CAMS) is scored on exactly the same rows.
-      </p>
+      <div className="hero-sky relative -mx-5 -mt-12 overflow-hidden px-5 pb-14 pt-16 text-cream sm:-mx-8 sm:rounded-b-[2.5rem] sm:px-10">
+        <div className="haze haze-b" style={{ width: '50vw', height: '40vh', right: '-10vw', top: '-10%', background: 'rgba(240,179,106,0.35)' }} />
+        <div className="relative">
+          <p className="rise text-xs uppercase tracking-[0.18em] text-cream/60">Accuracy</p>
+          <h1 className="rise rise-1 mt-2 max-w-3xl !text-cream text-4xl sm:text-6xl">How wrong is it, on cities it has <em className="italic text-haze">never seen?</em></h1>
+          <p className="rise rise-2 mt-4 max-w-2xl text-cream/75">
+            We split {fmt(metrics.n_stations)} monitors into {metrics.folds.length} groups by city, trained on four groups and predicted the fifth, five times over.
+            Every number below is from a city the model was not trained on. The satellite model we build on (CAMS) is scored on exactly the same rows.
+          </p>
+        </div>
+      </div>
 
       <div className="rise rise-3 mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
         <Tile label="Mean absolute error" value={fmt(o.mae, 1)} unit="µg/m³" sub={`CAMS baseline ${fmt(o.cams_mae, 1)}`} />

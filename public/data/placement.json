@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-10-11T03:50:25+00:00",
+  "generated_at": "2026-10-11T04:34:21+00:00",
   "method": "Greedy: score = log10(pop) × (uncertainty / median) × min(km-to-nearest-monitor / 50, 3); each pick becomes a monitor for later picks.",
   "params": {
     "min_pop": 50000,
     "cover_km": 25.0,
     "n_candidates": 640,
-    "median_unc": 15.3
+    "median_unc": 16.2
   },
   "sites": [
     {
@@ -15,378 +15,378 @@
       "lon": 84.7929,
       "pop": 356598,
       "district": "Ganjam",
-      "pred": 40.2,
-      "unc": 24.8,
+      "pred": 41.8,
+      "unc": 22.7,
       "nearest_km": 147.4,
-      "score": 26.54,
+      "score": 22.94,
       "score_breakdown": {
         "pop_weight": 5.55,
-        "unc_weight": 1.62,
+        "unc_weight": 1.4,
         "dist_weight": 2.95,
         "coverage_penalty": 0.0
       },
-      "reason": "356,598 people, nearest monitor 147 km away, model 68% half-width ±25 µg/m³ (1.6× median)."
+      "reason": "356,598 people, nearest monitor 147 km away, model 68% half-width ±23 µg/m³ (1.4× median)."
     },
     {
       "rank": 2,
-      "name": "Lohārdagā",
-      "lat": 23.43305,
-      "lon": 84.67992,
-      "pop": 57411,
-      "district": "Lohardaga",
-      "pred": 28.2,
-      "unc": 23.9,
-      "nearest_km": 133.7,
-      "score": 19.88,
-      "score_breakdown": {
-        "pop_weight": 4.76,
-        "unc_weight": 1.56,
-        "dist_weight": 2.67,
-        "coverage_penalty": 0.0
-      },
-      "reason": "57,411 people, nearest monitor 134 km away, model 68% half-width ±24 µg/m³ (1.6× median)."
-    },
-    {
-      "rank": 3,
-      "name": "Nowrangapur",
-      "lat": 19.23114,
-      "lon": 82.54826,
-      "pop": 1220946,
-      "district": "Nabarangapur",
-      "pred": 18.5,
-      "unc": 16.4,
-      "nearest_km": 176.3,
-      "score": 19.57,
-      "score_breakdown": {
-        "pop_weight": 6.09,
-        "unc_weight": 1.07,
-        "dist_weight": 3.0,
-        "coverage_penalty": 0.0
-      },
-      "reason": "1,220,946 people, nearest monitor 176 km away, model 68% half-width ±16 µg/m³ (1.1× median)."
-    },
-    {
-      "rank": 4,
       "name": "Lakhīmpur",
       "lat": 27.94822,
       "lon": 80.77935,
       "pop": 140223,
       "district": "Kheri",
-      "pred": 39.9,
-      "unc": 24.1,
+      "pred": 44.5,
+      "unc": 25.9,
       "nearest_km": 117.5,
-      "score": 19.06,
+      "score": 19.34,
       "score_breakdown": {
         "pop_weight": 5.15,
-        "unc_weight": 1.58,
+        "unc_weight": 1.6,
         "dist_weight": 2.35,
         "coverage_penalty": 0.0
       },
-      "reason": "140,223 people, nearest monitor 118 km away, model 68% half-width ±24 µg/m³ (1.6× median)."
+      "reason": "140,223 people, nearest monitor 118 km away, model 68% half-width ±26 µg/m³ (1.6× median)."
     },
     {
-      "rank": 5,
-      "name": "Rāmgundam",
-      "lat": 18.80084,
-      "lon": 79.45206,
-      "pop": 452261,
-      "district": "Peddapalli",
-      "pred": 34.9,
-      "unc": 19.2,
-      "nearest_km": 130.2,
-      "score": 18.48,
-      "score_breakdown": {
-        "pop_weight": 5.66,
-        "unc_weight": 1.25,
-        "dist_weight": 2.6,
-        "coverage_penalty": 0.0
-      },
-      "reason": "452,261 people, nearest monitor 130 km away, model 68% half-width ±19 µg/m³ (1.3× median)."
-    },
-    {
-      "rank": 6,
-      "name": "Ambikāpur",
-      "lat": 23.11892,
-      "lon": 83.19537,
-      "pop": 121071,
-      "district": "Surguja",
-      "pred": 25.3,
-      "unc": 28.8,
-      "nearest_km": 95.3,
-      "score": 18.24,
-      "score_breakdown": {
-        "pop_weight": 5.08,
-        "unc_weight": 1.88,
-        "dist_weight": 1.91,
-        "coverage_penalty": 0.0
-      },
-      "reason": "121,071 people, nearest monitor 95 km away, model 68% half-width ±29 µg/m³ (1.9× median)."
-    },
-    {
-      "rank": 7,
+      "rank": 3,
       "name": "Nizāmābād",
       "lat": 18.67154,
       "lon": 78.0988,
       "pop": 311152,
       "district": "Nizamabad",
-      "pred": 35.8,
-      "unc": 23.1,
+      "pred": 48.2,
+      "unc": 28.0,
       "nearest_km": 101.2,
-      "score": 16.79,
+      "score": 19.22,
       "score_breakdown": {
         "pop_weight": 5.49,
-        "unc_weight": 1.51,
+        "unc_weight": 1.73,
         "dist_weight": 2.02,
         "coverage_penalty": 0.0
       },
-      "reason": "311,152 people, nearest monitor 101 km away, model 68% half-width ±23 µg/m³ (1.5× median)."
+      "reason": "311,152 people, nearest monitor 101 km away, model 68% half-width ±28 µg/m³ (1.7× median)."
     },
     {
-      "rank": 8,
-      "name": "Dhubri",
-      "lat": 26.01856,
-      "lon": 89.98564,
-      "pop": 63388,
-      "district": "Dhubri",
-      "pred": 32.6,
-      "unc": 17.7,
-      "nearest_km": 152.6,
-      "score": 16.67,
+      "rank": 4,
+      "name": "Bhawānipatna",
+      "lat": 19.90717,
+      "lon": 83.16697,
+      "pop": 69045,
+      "district": "Kalahandi",
+      "pred": 33.1,
+      "unc": 20.6,
+      "nearest_km": 182.7,
+      "score": 18.46,
       "score_breakdown": {
-        "pop_weight": 4.8,
-        "unc_weight": 1.16,
+        "pop_weight": 4.84,
+        "unc_weight": 1.27,
         "dist_weight": 3.0,
         "coverage_penalty": 0.0
       },
-      "reason": "63,388 people, nearest monitor 153 km away, model 68% half-width ±18 µg/m³ (1.2× median)."
+      "reason": "69,045 people, nearest monitor 183 km away, model 68% half-width ±21 µg/m³ (1.3× median)."
     },
     {
-      "rank": 9,
+      "rank": 5,
+      "name": "Ranchi",
+      "lat": 23.34316,
+      "lon": 85.3094,
+      "pop": 1120374,
+      "district": "Ranchi",
+      "pred": 37.6,
+      "unc": 20.2,
+      "nearest_km": 119.8,
+      "score": 18.07,
+      "score_breakdown": {
+        "pop_weight": 6.05,
+        "unc_weight": 1.25,
+        "dist_weight": 2.4,
+        "coverage_penalty": 0.0
+      },
+      "reason": "1,120,374 people, nearest monitor 120 km away, model 68% half-width ±20 µg/m³ (1.2× median)."
+    },
+    {
+      "rank": 6,
       "name": "Okha",
       "lat": 22.46756,
       "lon": 69.07002,
       "pop": 62052,
       "district": "Devbhumi Dwarka",
-      "pred": 36.0,
-      "unc": 16.9,
+      "pred": 36.5,
+      "unc": 20.3,
       "nearest_km": 177.2,
-      "score": 15.88,
+      "score": 18.02,
       "score_breakdown": {
         "pop_weight": 4.79,
-        "unc_weight": 1.1,
+        "unc_weight": 1.25,
         "dist_weight": 3.0,
         "coverage_penalty": 0.0
       },
-      "reason": "62,052 people, nearest monitor 177 km away, model 68% half-width ±17 µg/m³ (1.1× median)."
+      "reason": "62,052 people, nearest monitor 177 km away, model 68% half-width ±20 µg/m³ (1.3× median)."
     },
     {
-      "rank": 10,
+      "rank": 7,
+      "name": "Rāmgundam",
+      "lat": 18.80084,
+      "lon": 79.45206,
+      "pop": 452261,
+      "district": "Peddapalli",
+      "pred": 43.3,
+      "unc": 19.4,
+      "nearest_km": 130.2,
+      "score": 17.64,
+      "score_breakdown": {
+        "pop_weight": 5.66,
+        "unc_weight": 1.2,
+        "dist_weight": 2.6,
+        "coverage_penalty": 0.0
+      },
+      "reason": "452,261 people, nearest monitor 130 km away, model 68% half-width ±19 µg/m³ (1.2× median)."
+    },
+    {
+      "rank": 8,
       "name": "Māngrol",
       "lat": 21.12268,
       "lon": 70.11484,
       "pop": 69779,
       "district": "Junagadh",
-      "pred": 42.6,
-      "unc": 17.4,
+      "pred": 40.4,
+      "unc": 19.7,
       "nearest_km": 142.7,
-      "score": 15.72,
+      "score": 16.81,
       "score_breakdown": {
         "pop_weight": 4.84,
-        "unc_weight": 1.14,
+        "unc_weight": 1.22,
         "dist_weight": 2.85,
         "coverage_penalty": 0.0
       },
-      "reason": "69,779 people, nearest monitor 143 km away, model 68% half-width ±17 µg/m³ (1.1× median)."
+      "reason": "69,779 people, nearest monitor 143 km away, model 68% half-width ±20 µg/m³ (1.2× median)."
+    },
+    {
+      "rank": 9,
+      "name": "Dhubri",
+      "lat": 26.01856,
+      "lon": 89.98564,
+      "pop": 63388,
+      "district": "Dhubri",
+      "pred": 39.7,
+      "unc": 18.9,
+      "nearest_km": 152.6,
+      "score": 16.81,
+      "score_breakdown": {
+        "pop_weight": 4.8,
+        "unc_weight": 1.17,
+        "dist_weight": 3.0,
+        "coverage_penalty": 0.0
+      },
+      "reason": "63,388 people, nearest monitor 153 km away, model 68% half-width ±19 µg/m³ (1.2× median)."
+    },
+    {
+      "rank": 10,
+      "name": "Balrāmpur",
+      "lat": 27.42949,
+      "lon": 82.18545,
+      "pop": 77396,
+      "district": "Balrampur",
+      "pred": 32.2,
+      "unc": 20.8,
+      "nearest_km": 132.1,
+      "score": 16.59,
+      "score_breakdown": {
+        "pop_weight": 4.89,
+        "unc_weight": 1.28,
+        "dist_weight": 2.64,
+        "coverage_penalty": 0.0
+      },
+      "reason": "77,396 people, nearest monitor 132 km away, model 68% half-width ±21 µg/m³ (1.3× median)."
     },
     {
       "rank": 11,
-      "name": "Bālurghāt",
-      "lat": 25.22099,
-      "lon": 88.77732,
-      "pop": 153279,
-      "district": "Dakshin Dinajpur",
-      "pred": 33.5,
-      "unc": 17.0,
-      "nearest_km": 127.9,
-      "score": 14.74,
-      "score_breakdown": {
-        "pop_weight": 5.19,
-        "unc_weight": 1.11,
-        "dist_weight": 2.56,
-        "coverage_penalty": 0.0
-      },
-      "reason": "153,279 people, nearest monitor 128 km away, model 68% half-width ±17 µg/m³ (1.1× median)."
-    },
-    {
-      "rank": 12,
-      "name": "Azamgarh",
-      "lat": 26.06832,
-      "lon": 83.18358,
-      "pop": 116644,
-      "district": "Azamgarh",
-      "pred": 43.7,
-      "unc": 27.3,
-      "nearest_km": 77.7,
-      "score": 14.05,
-      "score_breakdown": {
-        "pop_weight": 5.07,
-        "unc_weight": 1.78,
-        "dist_weight": 1.55,
-        "coverage_penalty": 0.0
-      },
-      "reason": "116,644 people, nearest monitor 78 km away, model 68% half-width ±27 µg/m³ (1.8× median)."
-    },
-    {
-      "rank": 13,
-      "name": "Mārkāpur",
-      "lat": 15.73534,
-      "lon": 79.26848,
-      "pop": 71092,
-      "district": "Prakasam",
-      "pred": 31.1,
-      "unc": 16.5,
-      "nearest_km": 133.1,
-      "score": 13.93,
-      "score_breakdown": {
-        "pop_weight": 4.85,
-        "unc_weight": 1.08,
-        "dist_weight": 2.66,
-        "coverage_penalty": 0.0
-      },
-      "reason": "71,092 people, nearest monitor 133 km away, model 68% half-width ±16 µg/m³ (1.1× median)."
-    },
-    {
-      "rank": 14,
-      "name": "Shahdol",
-      "lat": 23.29356,
-      "lon": 81.3619,
-      "pop": 89289,
-      "district": "Shahdol",
-      "pred": 22.1,
-      "unc": 18.2,
-      "nearest_km": 117.5,
-      "score": 13.84,
-      "score_breakdown": {
-        "pop_weight": 4.95,
-        "unc_weight": 1.19,
-        "dist_weight": 2.35,
-        "coverage_penalty": 0.0
-      },
-      "reason": "89,289 people, nearest monitor 117 km away, model 68% half-width ±18 µg/m³ (1.2× median)."
-    },
-    {
-      "rank": 15,
       "name": "Farrukhābād",
       "lat": 27.39134,
       "lon": 79.5793,
       "pop": 241152,
       "district": "Farrukhabad",
-      "pred": 43.5,
-      "unc": 18.0,
+      "pred": 46.8,
+      "unc": 22.3,
       "nearest_km": 108.9,
-      "score": 13.79,
+      "score": 16.13,
       "score_breakdown": {
         "pop_weight": 5.38,
-        "unc_weight": 1.18,
+        "unc_weight": 1.38,
         "dist_weight": 2.18,
         "coverage_penalty": 0.0
       },
-      "reason": "241,152 people, nearest monitor 109 km away, model 68% half-width ±18 µg/m³ (1.2× median)."
+      "reason": "241,152 people, nearest monitor 109 km away, model 68% half-width ±22 µg/m³ (1.4× median)."
+    },
+    {
+      "rank": 12,
+      "name": "Jangipur",
+      "lat": 24.47001,
+      "lon": 88.07659,
+      "pop": 82548,
+      "district": "Murshidabad",
+      "pred": 47.8,
+      "unc": 19.6,
+      "nearest_km": 127.2,
+      "score": 15.13,
+      "score_breakdown": {
+        "pop_weight": 4.92,
+        "unc_weight": 1.21,
+        "dist_weight": 2.54,
+        "coverage_penalty": 0.0
+      },
+      "reason": "82,548 people, nearest monitor 127 km away, model 68% half-width ±20 µg/m³ (1.2× median)."
+    },
+    {
+      "rank": 13,
+      "name": "Azamgarh",
+      "lat": 26.06832,
+      "lon": 83.18358,
+      "pop": 116644,
+      "district": "Azamgarh",
+      "pred": 43.2,
+      "unc": 28.1,
+      "nearest_km": 77.7,
+      "score": 13.66,
+      "score_breakdown": {
+        "pop_weight": 5.07,
+        "unc_weight": 1.73,
+        "dist_weight": 1.55,
+        "coverage_penalty": 0.0
+      },
+      "reason": "116,644 people, nearest monitor 78 km away, model 68% half-width ±28 µg/m³ (1.7× median)."
+    },
+    {
+      "rank": 14,
+      "name": "Ashoknagar",
+      "lat": 24.57578,
+      "lon": 77.73123,
+      "pop": 81828,
+      "district": "Ashoknagar",
+      "pred": 39.5,
+      "unc": 17.0,
+      "nearest_km": 131.5,
+      "score": 13.56,
+      "score_breakdown": {
+        "pop_weight": 4.91,
+        "unc_weight": 1.05,
+        "dist_weight": 2.63,
+        "coverage_penalty": 0.0
+      },
+      "reason": "81,828 people, nearest monitor 131 km away, model 68% half-width ±17 µg/m³ (1.0× median)."
+    },
+    {
+      "rank": 15,
+      "name": "Firozpur",
+      "lat": 30.92574,
+      "lon": 74.61311,
+      "pop": 110313,
+      "district": "Firozpur",
+      "pred": 41.1,
+      "unc": 26.6,
+      "nearest_km": 81.2,
+      "score": 13.44,
+      "score_breakdown": {
+        "pop_weight": 5.04,
+        "unc_weight": 1.64,
+        "dist_weight": 1.62,
+        "coverage_penalty": 0.0
+      },
+      "reason": "110,313 people, nearest monitor 81 km away, model 68% half-width ±27 µg/m³ (1.6× median)."
     },
     {
       "rank": 16,
-      "name": "Madurai",
-      "lat": 9.919,
-      "lon": 78.11953,
-      "pop": 1465625,
-      "district": "Madurai",
-      "pred": 23.0,
-      "unc": 11.0,
-      "nearest_km": 168.8,
-      "score": 13.3,
+      "name": "Jeypore",
+      "lat": 18.8563,
+      "lon": 82.5716,
+      "pop": 84830,
+      "district": "Koraput",
+      "pred": 22.8,
+      "unc": 16.2,
+      "nearest_km": 132.5,
+      "score": 13.06,
       "score_breakdown": {
-        "pop_weight": 6.17,
-        "unc_weight": 0.72,
-        "dist_weight": 3.0,
-        "coverage_penalty": 0.0
+        "pop_weight": 4.93,
+        "unc_weight": 1.0,
+        "dist_weight": 2.65,
+        "coverage_penalty": 1.54
       },
-      "reason": "1,465,625 people, nearest monitor 169 km away, model 68% half-width ±11 µg/m³ (0.7× median)."
+      "reason": "84,830 people, nearest monitor 132 km away, model 68% half-width ±16 µg/m³ (1.0× median)."
     },
     {
       "rank": 17,
-      "name": "Chirmiri",
-      "lat": 23.19073,
-      "lon": 82.35314,
-      "pop": 100800,
-      "district": "Koriya",
-      "pred": 19.7,
-      "unc": 22.9,
-      "nearest_km": 86.5,
-      "score": 12.95,
+      "name": "Ratnagiri",
+      "lat": 16.99154,
+      "lon": 73.31022,
+      "pop": 76229,
+      "district": "Ratnagiri",
+      "pred": 49.3,
+      "unc": 20.4,
+      "nearest_km": 103.9,
+      "score": 12.78,
       "score_breakdown": {
-        "pop_weight": 5.0,
-        "unc_weight": 1.5,
-        "dist_weight": 1.73,
-        "coverage_penalty": 1.4
+        "pop_weight": 4.88,
+        "unc_weight": 1.26,
+        "dist_weight": 2.08,
+        "coverage_penalty": 0.0
       },
-      "reason": "100,800 people, nearest monitor 86 km away, model 68% half-width ±23 µg/m³ (1.5× median)."
+      "reason": "76,229 people, nearest monitor 104 km away, model 68% half-width ±20 µg/m³ (1.3× median)."
     },
     {
       "rank": 18,
-      "name": "Hazāribāgh",
-      "lat": 23.99241,
-      "lon": 85.36162,
-      "pop": 153595,
-      "district": "Hazaribagh",
-      "pred": 24.3,
-      "unc": 20.4,
-      "nearest_km": 93.2,
-      "score": 12.89,
+      "name": "Bālurghāt",
+      "lat": 25.22099,
+      "lon": 88.77732,
+      "pop": 153279,
+      "district": "Dakshin Dinajpur",
+      "pred": 37.9,
+      "unc": 18.2,
+      "nearest_km": 109.4,
+      "score": 12.75,
       "score_breakdown": {
         "pop_weight": 5.19,
-        "unc_weight": 1.33,
-        "dist_weight": 1.86,
-        "coverage_penalty": 0.09
+        "unc_weight": 1.12,
+        "dist_weight": 2.19,
+        "coverage_penalty": 2.16
       },
-      "reason": "153,595 people, nearest monitor 93 km away, model 68% half-width ±20 µg/m³ (1.3× median)."
+      "reason": "153,279 people, nearest monitor 109 km away, model 68% half-width ±18 µg/m³ (1.1× median)."
     },
     {
       "rank": 19,
-      "name": "Guna",
-      "lat": 24.64691,
-      "lon": 77.3113,
-      "pop": 180935,
-      "district": "Guna",
-      "pred": 33.3,
-      "unc": 18.6,
-      "nearest_km": 99.0,
+      "name": "Gondiā",
+      "lat": 21.46026,
+      "lon": 80.19205,
+      "pop": 132813,
+      "district": "Gondiya",
+      "pred": 39.9,
+      "unc": 17.0,
+      "nearest_km": 117.7,
       "score": 12.66,
       "score_breakdown": {
-        "pop_weight": 5.26,
-        "unc_weight": 1.22,
-        "dist_weight": 1.98,
+        "pop_weight": 5.12,
+        "unc_weight": 1.05,
+        "dist_weight": 2.35,
         "coverage_penalty": 0.0
       },
-      "reason": "180,935 people, nearest monitor 99 km away, model 68% half-width ±19 µg/m³ (1.2× median)."
+      "reason": "132,813 people, nearest monitor 118 km away, model 68% half-width ±17 µg/m³ (1.0× median)."
     },
     {
       "rank": 20,
-      "name": "Dhrāngadhra",
-      "lat": 22.99167,
-      "lon": 71.46793,
-      "pop": 75578,
-      "district": "Surendranagar",
-      "pred": 43.2,
-      "unc": 19.2,
-      "nearest_km": 101.3,
-      "score": 12.41,
+      "name": "Siruguppa",
+      "lat": 15.63,
+      "lon": 76.89217,
+      "pop": 52492,
+      "district": "Bellary",
+      "pred": 38.0,
+      "unc": 17.3,
+      "nearest_km": 123.7,
+      "score": 12.47,
       "score_breakdown": {
-        "pop_weight": 4.88,
-        "unc_weight": 1.25,
-        "dist_weight": 2.03,
+        "pop_weight": 4.72,
+        "unc_weight": 1.07,
+        "dist_weight": 2.47,
         "coverage_penalty": 0.0
       },
-      "reason": "75,578 people, nearest monitor 101 km away, model 68% half-width ±19 µg/m³ (1.3× median)."
+      "reason": "52,492 people, nearest monitor 124 km away, model 68% half-width ±17 µg/m³ (1.1× median)."
     }
   ]
 }

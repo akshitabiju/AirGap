@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from 'react'
 import { Map as MLMap, NavigationControl, setWorkerUrl, type MapMouseEvent } from 'maplibre-gl'
 import 'maplibre-gl/dist/maplibre-gl.css'
 import { useData } from '../lib/store'
-import { MAP_COLOR_EXPR } from '../lib/scale'
+import { MAP_COLOR_EXPR, UNC_COLOR_EXPR, DIST_COLOR_EXPR } from '../lib/scale'
 import type { PlacementSite } from '../lib/types'
 
 const STYLE = 'https://tiles.openfreemap.org/styles/positron'
@@ -29,6 +29,9 @@ export default function IndiaMap({ mode = 'districts', sites, highlightSite, fly
   const selected = useData((s) => s.selected)
   const setSelected = useData((s) => s.setSelected)
   const setHovered = useData((s) => s.setHovered)
+  const view = useData((s) => s.view)
+  const day = useData((s) => s.day)
+  const history = useData((s) => s.history)
   const hoverId = useRef<number | null>(null)
 
   // Create the map once.
@@ -46,7 +49,8 @@ export default function IndiaMap({ mode = 'districts', sites, highlightSite, fly
       dragRotate: false,
       pitchWithRotate: false,
     })
-    map.addControl(new NavigationControl({ showCompass: false }), 'top-right')
+    map.addControl(new NavigationControl({ showCompass: false }), 'top-left')
+    if (import.meta.env.DEV) (window as unknown as { __map?: MLMap }).__map = map
     map.on('load', () => {
       ready.current = true
       setLoaded(true)   // triggers the paint effect with the *current* data, not a stale closure
@@ -200,6 +204,24 @@ export default function IndiaMap({ mode = 'districts', sites, highlightSite, fly
     map.setPaintProperty('sites', 'circle-radius', ['case', ['==', ['get', 'rank'], r], 11, 7])
     map.setPaintProperty('sites-halo', 'circle-radius', ['case', ['==', ['get', 'rank'], r], 24, 14])
   }, [highlightSite, loaded])
+
+  // View mode: recolour the fill.
+  useEffect(() => {
+    const map = mapRef.current
+    if (!map || !loaded || !map.getLayer('district-fill') || mode !== 'districts') return
+    map.setPaintProperty('district-fill', 'fill-color', view === 'unc' ? UNC_COLOR_EXPR : view === 'dist' ? DIST_COLOR_EXPR : MAP_COLOR_EXPR)
+  }, [view, loaded, mode])
+
+  // Timeline: push the selected day's value into feature-state `v` (the colour expression prefers it).
+  useEffect(() => {
+    const map = mapRef.current
+    if (!map || !loaded || !map.getSource('districts') || !history) return
+    for (const [id, series] of Object.entries(history.series)) {
+      const fid = Number(id)
+      if (day == null) map.removeFeatureState({ source: 'districts', id: fid }, 'v')
+      else map.setFeatureState({ source: 'districts', id: fid }, { v: series[day]?.[1] ?? null })
+    }
+  }, [day, history, loaded, districts])
 
   useEffect(() => {
     const map = mapRef.current

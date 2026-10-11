@@ -37,11 +37,27 @@ function mix(a: string, b: string, t: number) {
 }
 
 /** MapLibre interpolate expression mirroring colorFor(). */
+type Expr = import('maplibre-gl').ExpressionSpecification
+/** Value to colour: the scrubbed day's value from feature-state if present, else today's. */
+const V = ['coalesce', ['feature-state', 'v'], ['get', 'pred']]
 export const MAP_COLOR_EXPR = [
-  'case', ['==', ['get', 'pred'], null], '#d9d2c3',
-  ['interpolate', ['linear'], ['get', 'pred'],
+  'case', ['==', V, null], '#d9d2c3',
+  ['interpolate', ['linear'], V,
     0, '#5f9470', 30, '#8fb58a', 60, '#d9c565', 90, '#dfa352', 120, '#c9623a', 250, '#8a2f1c', 400, '#4a160f'],
-] as unknown as import('maplibre-gl').ExpressionSpecification
+] as unknown as Expr
+/** Uncertainty: one hue, light -> dark (sequential). */
+export const UNC_COLOR_EXPR = [
+  'case', ['==', ['get', 'unc'], null], '#d9d2c3',
+  ['interpolate', ['linear'], ['get', 'unc'], 5, '#e9e3d6', 12, '#b9c9c0', 20, '#6f9a86', 30, '#2e5a3f', 45, '#14301f'],
+] as unknown as Expr
+/** Distance to nearest monitor: one hue, light -> dark. */
+export const DIST_COLOR_EXPR = [
+  'interpolate', ['linear'], ['get', 'nearest_km'], 0, '#efe6d4', 25, '#e7c89a', 60, '#d99a5a', 120, '#b5462d', 250, '#5a1f16',
+] as unknown as Expr
+export const VIEW_LEGEND = {
+  unc: { title: '68 % interval half-width, µg/m³', stops: ['#e9e3d6', '#b9c9c0', '#6f9a86', '#2e5a3f', '#14301f'], labels: ['5', '12', '20', '30', '45+'] },
+  dist: { title: 'Distance to nearest monitor, km', stops: ['#efe6d4', '#e7c89a', '#d99a5a', '#b5462d', '#5a1f16'], labels: ['0', '25', '60', '120', '250+'] },
+}
 
 export const WHO_GUIDELINE_24H = 15   // WHO 2021 AQG, 24-hour PM2.5
 export const INDIA_NAAQS_24H = 60     // India NAAQS 2009, 24-hour PM2.5

@@ -16,7 +16,7 @@ export default function App() {
   return (
     <div className="grain relative min-h-screen flex flex-col">
       <Nav />
-      <main className="relative z-[1] flex-1">
+      <main className={`relative z-[1] flex-1 ${pathname === '/' ? '' : 'pt-14'}`}>
         <Routes>
           <Route path="/" element={<Landing />} />
           <Route path="/accuracy" element={<Accuracy />} />

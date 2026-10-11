@@ -1,8 +1,21 @@
-import { BANDS, INDIA_NAAQS_24H, WHO_GUIDELINE_24H } from '../lib/scale'
+import { BANDS, INDIA_NAAQS_24H, VIEW_LEGEND, WHO_GUIDELINE_24H } from '../lib/scale'
+import { useData } from '../lib/store'
 
 export default function Legend({ compact = false }: { compact?: boolean }) {
+  const view = useData((s) => s.view)
+  if (view !== 'pred') {
+    const L = VIEW_LEGEND[view]
+    return (
+      <div className={`px-3.5 py-3 ${compact ? 'text-[11px]' : 'text-xs'}`}>
+        <div className="eyebrow mb-2">{L.title}</div>
+        <div className="flex h-2.5 w-full overflow-hidden rounded-full">{L.stops.map((c) => <span key={c} style={{ background: c, flex: 1 }} />)}</div>
+        <div className="num mt-1 flex justify-between text-[10px] text-ink-3">{L.labels.map((l) => <span key={l}>{l}</span>)}</div>
+        <p className="mt-2 text-[11px] leading-snug text-ink-3">{view === 'unc' ? 'Wider intervals mean the model is extrapolating: fewer nearby monitors, unusual conditions. These districts top the placement list.' : 'Half of India is more than 50 km from any public PM2.5 monitor.'}</p>
+      </div>
+    )
+  }
   return (
-    <div className={`card px-3.5 py-3 ${compact ? 'text-[11px]' : 'text-xs'}`}>
+    <div className={`px-3.5 py-3 ${compact ? 'text-[11px]' : 'text-xs'}`}>
       <div className="eyebrow mb-2">Predicted daily PM2.5, µg/m³</div>
       <div className="flex h-2.5 w-full overflow-hidden rounded-full">
         {BANDS.map((b, i) => (

@@ -77,11 +77,21 @@ def main() -> None:
     polys = [shape(f["geometry"]) for f in gj["features"]]
     tree = STRtree(polys)
     biggest: dict[int, dict] = {}
+    urban_pop: dict[int, int] = {}
     for c in cities:
         hits = tree.query(Point(c["lon"], c["lat"]), predicate="within")
         for i in hits:
+            i = int(i)
+            urban_pop[i] = urban_pop.get(i, 0) + int(c["pop"])
             if i not in biggest or c["pop"] > biggest[i]["pop"]:
-                biggest[int(i)] = c
+                biggest[i] = c
+
+    # Daily history per district (predicted + CAMS), for the sparkline in the detail panel.
+    hist = {}
+    for did, g in fx.sort_values("date").groupby("district_id"):
+        hist[int(did)] = [[d[5:], round(float(v), 1), round(float(c), 1)] for d, v, c in zip(g["date"], g["pred"], g["cams_pm25_mean"])]
+    write_json(PUBLIC_DATA / "history.json", {"start": str(fx["date"].min()), "series": hist}, compact=True)
+    log.info("history.json: %d districts x %d days", len(hist), len(next(iter(hist.values()))))
 
     feats, rows = [], []
     for m in meta:
@@ -100,6 +110,7 @@ def main() -> None:
             "nearest_km": round(near_km, 1), "nearest_name": stations[j]["name"],
             "pop": int(biggest[i]["pop"]) if i in biggest else None,
             "city": biggest[i]["name"] if i in biggest else None,
+            "urban_pop": int(urban_pop.get(i, 0)),
         }
         geom = polys[i].simplify(SIMPLIFY_DEG, preserve_topology=True)
         g = mapping(geom)
@@ -126,6 +137,10 @@ def main() -> None:
         "district_pred_median": float(np.median(preds)), "district_pred_max": float(np.max(preds)),
         "districts_over_60": int(sum(1 for v in preds if v > 60)), "districts_over_15": int(sum(1 for v in preds if v > 15)),
         "districts_no_monitor_50km": int(sum(1 for r in rows if r["nearest_km"] > 50)),
+        "urban_pop_over_15": int(sum(r["urban_pop"] for r in rows if r["pred"] is not None and r["pred"] > 15)),
+        "urban_pop_over_60": int(sum(r["urban_pop"] for r in rows if r["pred"] is not None and r["pred"] > 60)),
+        "urban_pop_no_monitor_50km": int(sum(r["urban_pop"] for r in rows if r["nearest_km"] > 50)),
+        "urban_pop_total": int(sum(r["urban_pop"] for r in rows)),
     })
     log.info("DONE: %d districts predicted; median %.1f; %d districts > 60 µg/m³; %d districts > 50 km from a monitor",
              len(preds), float(np.median(preds)), sum(1 for v in preds if v > 60), sum(1 for r in rows if r["nearest_km"] > 50))
