@@ -93,3 +93,6 @@ export type ViewMode = 'pred' | 'unc' | 'dist'
 
 /** Hourly PM2.5 profile per district for today and tomorrow (24 ints each, or null). */
 export interface Hourly { generated_at: string; days: string[]; method: string; series: Record<string, (number[] | null)[]> }
+
+export interface StateInfo { name: string; lat: number; lon: number; n_districts: number; mean_pred?: number; max_pred?: number; worst_district?: string; worst_pred?: number; worst_lat?: number; worst_lon?: number; area_deg2?: number }
+export interface States { generated_at: string; states: StateInfo[]; hotspots: { district: string; state: string; lat: number; lon: number; pred: number }[] }

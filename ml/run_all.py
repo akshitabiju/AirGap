@@ -11,7 +11,7 @@ from pathlib import Path
 HERE = Path(__file__).parent
 STEPS = [
     ("fetch_openaq.py", []), ("fetch_features.py", ["stations"]), ("fetch_features.py", ["districts"]),
-    ("train.py", []), ("predict_districts.py", []), ("placement.py", []), ("forecast.py", []), ("hourly.py", []),
+    ("train.py", []), ("predict_districts.py", []), ("placement.py", []), ("forecast.py", []), ("hourly.py", []), ("states.py", []),
 ]
 if "--no-fetch" in sys.argv:
     STEPS = STEPS[3:]
