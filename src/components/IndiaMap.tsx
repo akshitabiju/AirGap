@@ -84,12 +84,8 @@ export default function IndiaMap({ mode = 'districts', sites, highlightSite, fly
           source: 'districts',
           paint: {
             'fill-color': MAP_COLOR_EXPR,
-            'fill-opacity': [
-              'case',
-              ['boolean', ['feature-state', 'hover'], false], 0.95,
-              ['boolean', ['feature-state', 'selected'], false], 0.9,
-              ['interpolate', ['linear'], ['zoom'], 5, 0.72, 9, 0.5, 13, 0.3],
-            ],
+            // zoom expressions must be top-level: hover/selection emphasis lives on the line layer instead
+            'fill-opacity': ['interpolate', ['linear'], ['zoom'], 5, 0.74, 9, 0.52, 13, 0.3],
           },
         },
         firstSymbol,
@@ -107,7 +103,7 @@ export default function IndiaMap({ mode = 'districts', sites, highlightSite, fly
               ['boolean', ['feature-state', 'hover'], false], 0.5,
               0.12,
             ],
-            'line-width': ['case', ['boolean', ['feature-state', 'selected'], false], 1.6, 0.5],
+            'line-width': ['case', ['boolean', ['feature-state', 'selected'], false], 2, ['boolean', ['feature-state', 'hover'], false], 1.2, 0.5],
           },
         },
         firstSymbol,
