@@ -25,17 +25,16 @@ const T = {
 }
 
 const hhmm = (h: number) => `${h % 12 === 0 ? 12 : h % 12}${h < 12 ? 'am' : 'pm'}`
-const span = (s: number) => `${hhmm(s)}–${hhmm(s + 3)}`
+const span = (s: number) => `${hhmm(s % 24)}–${hhmm((s + 3) % 24)}`
 
-/** Lowest / highest mean 3-hour window between 6:00 and 21:00 (when people actually go out). */
+/** Cleanest 3-hour window in waking hours (5:00-22:00) and the worst 3-hour window over the whole day
+ *  (PM2.5 usually peaks at night when the air settles, so the worst hours are often overnight). */
 function windows(hours: number[]) {
-  let best = 6, worst = 6, bv = Infinity, wv = -Infinity
-  for (let s = 6; s <= 18; s++) {
-    const m = (hours[s] + hours[s + 1] + hours[s + 2]) / 3
-    if (m < bv) { bv = m; best = s }
-    if (m > wv) { wv = m; worst = s }
-  }
-  return { best, worst, bv, wv }
+  const mean = (s: number) => (hours[s % 24] + hours[(s + 1) % 24] + hours[(s + 2) % 24]) / 3
+  let best = 5, worst = 0, bv = Infinity, wv = -Infinity
+  for (let s = 5; s <= 19; s++) { const m = mean(s); if (m < bv) { bv = m; best = s } }
+  for (let s = 0; s < 24; s++) { const m = mean(s); if (m > wv) { wv = m; worst = s } }
+  return { best, worst, bv, wv, worstNight: worst >= 21 || worst < 5 }
 }
 
 export default function BestHours({ district, lang, bandLabel }: { district: DistrictProps; lang: Lang; bandLabel: string }) {
@@ -75,7 +74,7 @@ export default function BestHours({ district, lang, bandLabel }: { district: Dis
         <>
           <div className="mt-3 flex h-14 items-end gap-[2px]" role="img" aria-label="Hourly PM2.5 profile">
             {hours.map((v, h) => {
-              const isBest = h >= w.best && h < w.best + 3, isWorst = h >= w.worst && h < w.worst + 3
+              const isBest = h >= w.best && h < w.best + 3, isWorst = ((h - w.worst + 24) % 24) < 3
               const max = Math.max(...hours, 1)
               return (
                 <div key={h} className="group relative flex-1" title={`${hhmm(h)}: ${v} µg/m³ · ${band(v).label}`}>
@@ -89,7 +88,7 @@ export default function BestHours({ district, lang, bandLabel }: { district: Dis
           <div className="num mt-1 flex justify-between text-[10px] text-ink-3"><span>12am</span><span>6am</span><span>12pm</span><span>6pm</span><span>11pm</span></div>
           <div className="mt-3 grid grid-cols-2 gap-2 text-xs">
             <div className="rounded-xl border border-forest/30 bg-forest/5 p-2.5"><div className="text-ink-3">{t.best}</div><div className="num text-base text-forest">{span(w.best)}</div><div className="num text-[10px] text-ink-3">~{fmt(w.bv)} µg/m³</div></div>
-            <div className="rounded-xl border border-rust/30 bg-rust/5 p-2.5"><div className="text-ink-3">{t.worst}</div><div className="num text-base text-rust">{span(w.worst)}</div><div className="num text-[10px] text-ink-3">~{fmt(w.wv)} µg/m³</div></div>
+            <div className="rounded-xl border border-rust/30 bg-rust/5 p-2.5"><div className="text-ink-3">{t.worst}</div><div className="num text-base text-rust">{span(w.worst)}{w.worstNight ? <span className="ml-1 text-[10px] text-ink-3">{lang === 'hi' ? 'रात' : 'overnight'}</span> : null}</div><div className="num text-[10px] text-ink-3">~{fmt(w.wv)} µg/m³</div></div>
           </div>
           <p className="mt-2 text-sm text-ink-2">{t.tip(span(w.best), span(w.worst))}</p>
           <div className="mt-3 flex flex-wrap items-center justify-between gap-2">
