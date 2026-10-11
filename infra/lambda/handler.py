@@ -107,7 +107,8 @@ def predict(lat: float, lon: float) -> dict:
     }
 
 
-CORS = {"Access-Control-Allow-Origin": "*", "Access-Control-Allow-Methods": "GET,OPTIONS", "Content-Type": "application/json"}
+# CORS headers are added by the Function URL config; emitting them here too makes browsers reject the duplicate.
+CORS = {"Content-Type": "application/json"}
 
 
 def lambda_handler(event, _context):

@@ -48,9 +48,14 @@ function IndiaGlow() {
           for (const ring of poly) { ring.forEach(([lon, lat], i) => (i ? b.lineTo(X(lon), Y(lat)) : b.moveTo(X(lon), Y(lat)))); b.closePath() }
         }
       }
-      b.shadowColor = 'rgba(94,234,212,0.7)'; b.shadowBlur = 22; b.globalAlpha = 0.55
+      // one soft ambient glow under the whole country (per-district blur bled into the sea and closed the Gulf of Kutch)
+      const cx = X((LON0 + LON1) / 2), cy = Y(22)
+      const rg = b.createRadialGradient(cx, cy, 10, cx, cy, Math.max(W, H) * 0.55)
+      rg.addColorStop(0, 'rgba(94,234,212,0.22)'); rg.addColorStop(1, 'rgba(94,234,212,0)')
+      b.fillStyle = rg; b.fillRect(0, 0, W, H)
+      b.globalAlpha = 0.62
       for (const f of districts.features) { b.fillStyle = colorFor(f.properties.pred); tracePolys(f); b.fill() }
-      b.shadowBlur = 0; b.globalAlpha = 0.5; b.strokeStyle = 'rgba(244,247,246,0.35)'; b.lineWidth = 0.4
+      b.globalAlpha = 0.55; b.strokeStyle = 'rgba(244,247,246,0.38)'; b.lineWidth = 0.45
       for (const f of districts.features) { tracePolys(f); b.stroke() }
       b.globalAlpha = 1
     }
