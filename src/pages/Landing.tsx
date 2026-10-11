@@ -17,6 +17,7 @@ export default function Landing() {
   const meta = useData((s) => s.meta)
   const metrics = useData((s) => s.metrics)
   const setSelected = useData((s) => s.setSelected)
+  const placement = useData((s) => s.placement)
   const [flyTo, setFlyTo] = useState<{ lat: number; lon: number } | null>(null)
   const [mapReady, setMapReady] = useState(false)
   useReveal([districts, metrics])
@@ -117,7 +118,7 @@ export default function Landing() {
           </div>
           <div className="card flex flex-col justify-between bg-night p-6 text-cream" data-reveal>
             <div className="flex items-center gap-2 text-xs uppercase tracking-[0.14em] text-cream/60"><Target size={13} />Where to measure next</div>
-            <p className="mt-4 text-2xl leading-snug">Twenty towns, {fmt((useData.getState().placement?.sites ?? []).reduce((a, s) => a + s.pop, 0))} people, no monitor within 25 km.</p>
+            <p className="mt-4 text-2xl leading-snug">Twenty towns, {fmt((placement?.sites ?? []).reduce((a, s) => a + s.pop, 0))} people, no monitor within 25 km.</p>
             <a href="/placement" className="mt-6 inline-flex items-center gap-2 self-start rounded-full bg-cream px-4 py-2 text-sm font-medium text-night transition hover:bg-haze">See the ranked list</a>
           </div>
         </div>

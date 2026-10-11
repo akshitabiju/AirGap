@@ -10,11 +10,13 @@ Record screen at 1080p with the site open on the map page, scrolled to the hero.
 >
 > AirGap is a model that answers for them, with an error bar, and tells regulators where to put the next monitor.
 
-**0:20 – 0:55 · The map** (click "Explore the map"; hover a few districts in the north; then search "Ashoknagar" or any small town; click to pin)
+**0:20 – 1:00 · The map** (click "Explore the live map"; press Play on the timeline and let 92 days roll; then switch to "Monitor gap", back to "PM2.5"; search "Ashoknagar" or any small town; click to pin)
 
-> Every one of India's seven hundred thirty-five districts, today. Colour is the predicted twenty-four-hour PM2.5, on the CPCB bands.
+> Every one of India's seven hundred thirty-five districts. Colour is the predicted twenty-four-hour PM2.5 on the CPCB bands, and this is the last ninety-two days playing back: watch the monsoon wash the north clean, then October start to close in.
 >
-> This district has no monitor; the nearest is [118] kilometres away. We say [30], plus or minus [12]. The satellite model alone said [14]. Below that: how many times the WHO guideline, and how we know.
+> Switch the view and you see the actual problem: the darker the district, the farther it is from any monitor. Over half the country is more than fifty kilometres from one.
+>
+> This district has no monitor; the nearest is [118] kilometres away. We say [30], plus or minus [12]; that's about [1.4] cigarettes a day. The satellite model alone said [14]. The sparkline is its last three months.
 >
 > [If deployed:] When I pin it, the browser calls a Lambda function on AWS that fetches today's satellite and weather data for this exact point and runs the model live.
 
@@ -22,7 +24,7 @@ Record screen at 1080p with the site open on the map page, scrolled to the hero.
 
 > The question for any model like this is: how wrong is it where there's no monitor? So we don't do a random split. We hide whole cities, train on the rest, and predict the hidden ones cold, five times over.
 >
-> On cities it never saw, mean error is [10.6] micrograms. The raw satellite model we build on, Copernicus CAMS, scored on exactly the same days, is at [17.7]. That's a [40] percent improvement, and the error bars are calibrated: the sixty-eight percent interval covers [68] percent of real values.
+> On cities it never saw, mean error is [10.2] micrograms. The raw satellite model we build on, Copernicus CAMS, scored on exactly the same days, is at [16.0]. That's a [36] percent improvement, we win every fold, and the error bars are calibrated: the sixty-eight percent interval covers [68] percent of real values.
 >
 > (scroll to per-city table) Every city, both numbers, no cherry-picking. Where we lose, you'd see a red cross.
 

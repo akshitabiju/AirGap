@@ -16,7 +16,7 @@ Built solo for MakeDevs (Track 1: Air), 11 October 2026. Everything is open data
 
 | Page | What you get |
 |---|---|
-| `/` | India map coloured by predicted 24-h PM2.5 for every district. Hover for value ± 68 % interval, distance to nearest monitor, satellite baseline, WHO/India multiples. Search any town. Click to pin and (when deployed) query the live AWS model for that point. |
+| `/` | India map coloured by predicted 24-h PM2.5 for every district. **Timeline scrubber** replays the last 92 days across the whole country; **view modes** switch to model uncertainty or distance-to-nearest-monitor. Hover for value ± 68 % interval, satellite baseline, WHO/India multiples and a cigarettes-per-day equivalent; a 92-day sparkline per district. Search any town. Click to pin and (when deployed) query the live AWS model for that point. |
 | `/accuracy` | Leave-cities-out validation: MAE, RMSE, R², share within ±15 µg/m³, interval coverage. Predicted-vs-observed scatter, per-fold and per-city tables, each against the CAMS baseline. Plain-language "what the error means". |
 | `/placement` | The next 20 monitor sites with the score breakdown per site (people × uncertainty × distance), on a map. |
 | `/method` | Sources, licences, model, validation design, limitations, how to reproduce. |
