@@ -5,7 +5,7 @@ import { fmt } from '../lib/scale'
 import type { City } from '../lib/types'
 
 /** Finds a city, selects the district containing it and flies the map there. */
-export default function Search({ onPick }: { onPick: (c: City) => void }) {
+export default function Search({ onPick, placeholder }: { onPick: (c: City) => void; placeholder?: string }) {
   const cities = useData((s) => s.cities)
   const [q, setQ] = useState('')
   const [open, setOpen] = useState(false)
@@ -34,7 +34,7 @@ export default function Search({ onPick }: { onPick: (c: City) => void }) {
       <SearchIcon size={15} className="pointer-events-none absolute left-3.5 top-1/2 -translate-y-1/2 text-ink-3" />
       <input
         className="input pl-9"
-        placeholder={cities ? 'Find a town or city…' : 'Loading places…'}
+        placeholder={cities ? (placeholder ?? 'Find a town or city…') : 'Loading places…'}
         value={q}
         disabled={!cities}
         onChange={(e) => { setQ(e.target.value); setOpen(true) }}

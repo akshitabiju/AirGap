@@ -99,6 +99,10 @@ body { margin: 0; background: var(--color-cream); overflow-x: hidden; }
 .airgap-popup .maplibregl-popup-content { background: rgba(244,247,246,0.94); color: var(--color-ink); border: 1px solid var(--color-line-2); border-radius: 10px; padding: 8px 10px; box-shadow: 0 10px 30px -10px rgba(12,26,30,0.4); font-family: var(--font-sans); }
 .airgap-popup .maplibregl-popup-tip { border-top-color: rgba(244,247,246,0.94) !important; }
 
+/* Hindi: Devanagari-capable sans for body text; headings keep the serif fallback chain */
+.hi, .hi .btn, .hi .input, .hi .eyebrow { font-family: "Noto Sans Devanagari", "Nirmala UI", var(--font-sans); }
+.hi h2, .hi h3 { font-family: "Noto Sans Devanagari", "Nirmala UI", var(--font-display); letter-spacing: 0; }
+
 /* Scrollbar */
 * { scrollbar-width: thin; scrollbar-color: var(--color-cream-3) transparent; }
 
