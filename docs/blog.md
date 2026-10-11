@@ -1,4 +1,4 @@
-# I built a PM2.5 model for the half of India with no air monitor, and shipped it on AWS in a day
+# I built a PM2.5 model for the half of India with no air monitor, and shipped it on AWS in 48 hours
 
 India has about 570 public PM2.5 monitors for 1.4 billion people. When I counted, 368 of the 735 districts had no monitor within 50 km. For the people there, every air-quality app shows a blank, or quietly interpolates between faraway dots without saying how wrong that is.
 
