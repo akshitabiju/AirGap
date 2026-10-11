@@ -1,0 +1,72 @@
+[
+  {
+    "id": "01_hero",
+    "shot": "hero",
+    "text": "Three hundred and sixty-eight districts in India have no public PM2.5 monitor within fifty kilometres. At least eighty-five million people in towns, plus most of rural India, with no idea what they're breathing today. The air is there. The number isn't. AirGap makes the number."
+  },
+  {
+    "id": "02_hero_live",
+    "shot": "hero_hot",
+    "text": "This map isn't showing sensors; there are none in most of it. It's what a model worked out for every district this morning: hotspots pulsing, and the most polluted state right now."
+  },
+  {
+    "id": "03_myair",
+    "shot": "myair",
+    "text": "It starts with a person. Brahmapur, Odisha: three hundred fifty thousand people, nearest monitor a hundred and forty-seven kilometres away. Until today, a parent here had no number at all."
+  },
+  {
+    "id": "04_myair_detail",
+    "shot": "myair_card",
+    "text": "Now there is one, with an honest uncertainty range, advice from CPCB's health guidance tuned for a child, and how many cigarettes a day this air is worth."
+  },
+  {
+    "id": "05_hours",
+    "shot": "hours",
+    "text": "Then the part you'd use every morning: the cleanest and worst three hours, today and tomorrow, so the kid plays in the afternoon, not at night. One tap shares it on WhatsApp, and the next three days are forecast by the same model."
+  },
+  {
+    "id": "06_hindi",
+    "shot": "hindi",
+    "text": "And it speaks Hindi, because most people this is for don't read air-quality sites in English."
+  },
+  {
+    "id": "07_map",
+    "shot": "map",
+    "text": "Now the whole country. Press play and ninety-two days of predictions roll across India, into the forecast."
+  },
+  {
+    "id": "08_map_gap",
+    "shot": "map_gap",
+    "text": "Switch the view and you see the real problem: the darker the district, the farther from any monitor. Three hundred sixty-eight districts. Nobody measuring."
+  },
+  {
+    "id": "09_map_zoom",
+    "shot": "map_zoom",
+    "text": "Zoom in: a street-level map, real monitors with their readings; everything between them is inferred, and we say so. Pin a district and an AWS Lambda pulls live satellite and weather for that point and runs the model on the spot."
+  },
+  {
+    "id": "10_accuracy",
+    "shot": "accuracy",
+    "text": "Can you trust a number for a place with no monitor? We hid whole cities, trained on the rest, and predicted them cold, five times over. On cities it never saw, mean error ten point two micrograms. The Copernicus satellite baseline on the same days: sixteen. Thirty-six percent better, every fold."
+  },
+  {
+    "id": "11_accuracy_table",
+    "shot": "accuracy_table",
+    "text": "Error bars calibrated out of fold, so sixty-eight percent means sixty-eight percent. Every city, both numbers, nothing hidden."
+  },
+  {
+    "id": "12_placement",
+    "shot": "placement",
+    "text": "The real fix is more monitors, so the model says where: towns over fifty thousand with none nearby, ranked on people, uncertainty and distance. Twenty sites, three point eight five million people. Number one: Brahmapur."
+  },
+  {
+    "id": "13_method",
+    "shot": "method",
+    "text": "All open data: OpenAQ, Copernicus CAMS and ERA5 via Open-Meteo, geoBoundaries. One reproducible pipeline, on GitHub with tests. Deployed end to end on AWS: Amplify and Lambda."
+  },
+  {
+    "id": "14_close",
+    "shot": "hero",
+    "text": "Most of India has no monitor. AirGap gives those people a number, says how far to trust it, and tells the government where to put the next one. This is AirGap, by Team Axiom. Thank you."
+  }
+]

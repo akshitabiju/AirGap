@@ -69,7 +69,12 @@ export default function IndiaMap({ mode = 'districts', sites, highlightSite, fly
   function paint() {
     const map = mapRef.current
     if (!map || !ready.current || !districts) return
-    const firstSymbol = map.getStyle().layers.find((l) => l.type === 'symbol')?.id
+    // Insert our layers above every basemap fill/line (liberty draws water/landuse after its first symbol
+    // layer, which hid the choropleth) but below the label layers.
+    const layers = map.getStyle().layers
+    let lastPaint = -1
+    layers.forEach((l, i) => { if (l.type !== 'symbol') lastPaint = i })
+    const firstSymbol = layers[lastPaint + 1]?.id
     if (!map.getSource('districts')) {
       map.addSource('districts', { type: 'geojson', data: districts, promoteId: 'id' })
       map.addLayer(
