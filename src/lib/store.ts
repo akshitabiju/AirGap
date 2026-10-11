@@ -32,7 +32,7 @@ interface State {
 const BASE = import.meta.env.BASE_URL.replace(/\/$/, '')
 
 async function getJson<T>(path: string): Promise<T> {
-  const r = await fetch(`${BASE}${path}`, { cache: 'no-cache' })
+  const r = await fetch(`${BASE}${path}?v=${__BUILD__}`, { cache: 'no-cache' })
   if (!r.ok) throw new Error(`${path}: HTTP ${r.status}`)
   return r.json() as Promise<T>
 }

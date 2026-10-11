@@ -22,7 +22,7 @@ function IndiaGlow() {
   const ref = useRef<HTMLCanvasElement>(null)
   const districts = useData((s) => s.districts)
   const [outline, setOutline] = useState<GeoJSON.Feature | null>(null)
-  useEffect(() => { fetch(`${import.meta.env.BASE_URL.replace(/\/$/, '')}/data/india_outline.json`).then((r) => r.json()).then(setOutline).catch(() => setOutline(null)) }, [])
+  useEffect(() => { fetch(`${import.meta.env.BASE_URL.replace(/\/$/, '')}/data/india_outline.json?v=${__BUILD__}`).then((r) => r.json()).then(setOutline).catch(() => setOutline(null)) }, [])
   useEffect(() => {
     const cv = ref.current
     if (!cv || !districts) return

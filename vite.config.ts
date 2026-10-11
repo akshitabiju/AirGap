@@ -4,6 +4,8 @@ import { defineConfig } from 'vite'
 
 export default defineConfig({
   plugins: [react(), tailwindcss()],
+  // Build stamp appended to data requests so the CDN never serves stale JSON after a redeploy.
+  define: { __BUILD__: JSON.stringify(Date.now().toString(36)) },
   build: {
     chunkSizeWarningLimit: 1200,
     rollupOptions: {
