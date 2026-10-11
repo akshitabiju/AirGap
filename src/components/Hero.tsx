@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from 'react'
 import { ArrowDown, ChevronRight, Clock3, Flame, LocateFixed, Satellite, ShieldCheck, Wind } from 'lucide-react'
 import { useData } from '../lib/store'
-import { colorFor, fmt } from '../lib/scale'
+import { band, colorFor, fmt } from '../lib/scale'
 import { useParallax } from '../lib/useReveal'
 
 const LON0 = 68, LON1 = 97.5, LAT0 = 6.5, LAT1 = 36
@@ -10,15 +10,12 @@ const LON0 = 68, LON1 = 97.5, LAT0 = 6.5, LAT1 = 36
 function IndiaGlow() {
   const ref = useRef<HTMLCanvasElement>(null)
   const districts = useData((s) => s.districts)
-  const states = useData((s) => s.states)
   useEffect(() => {
     const cv = ref.current
     if (!cv || !districts) return
     const ctx = cv.getContext('2d')
     if (!ctx) return
     const parent = cv.parentElement as HTMLElement
-    const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches || new URLSearchParams(location.search).has('static')
-    let raf = 0
     const base = document.createElement('canvas')   // static layer (districts + labels), redrawn on resize only
     let W = 0, H = 0, dpr = 1
     let X = (lon: number) => lon, Y = (lat: number) => lat
@@ -47,45 +44,63 @@ function IndiaGlow() {
       b.shadowBlur = 0; b.globalAlpha = 0.5; b.strokeStyle = 'rgba(244,247,246,0.35)'; b.lineWidth = 0.4
       for (const f of districts.features) { tracePolys(f); b.stroke() }
       b.globalAlpha = 1
-      // state names: small glowing serif caps; tiny states only when there is room
-      if (states) {
-        b.textAlign = 'center'; b.textBaseline = 'middle'
-        for (const st of states.states) {
-          const big = (st.area_deg2 ?? 0) > 2.5
-          if (!big && s < 14) continue
-          const size = big ? Math.max(9, Math.min(13, s * 0.55)) : 8
-          b.font = `500 ${size}px "Fraunces", Georgia, serif`
-          b.shadowColor = 'rgba(94,234,212,0.95)'; b.shadowBlur = 10
-          b.fillStyle = 'rgba(244,247,246,0.95)'
-          const up = st.name.toUpperCase()
-          if (up.startsWith('DADRA') || up.startsWith('LAKSHADWEEP') || up.startsWith('PUDUCHERRY') || up.startsWith('CHANDIGARH')) continue   // tiny UTs: label would float over sea or neighbours
-          const label = up.replace('ARUNACHAL PRADESH', 'ARUNACHAL').replace('ANDAMAN & NICOBAR', 'A & N').replace('JAMMU & KASHMIR', 'J & K').replace('HIMACHAL PRADESH', 'HIMACHAL')
-          if (label) b.fillText(label, X(st.lon), Y(st.lat))
-        }
-        b.shadowBlur = 0
-      }
     }
 
-    const hot = (states?.hotspots ?? []).filter((h) => h.pred >= 60).slice(0, 25)
-    const frame = (t: number) => {
-      if (!W || !H) return
-      ctx.setTransform(1, 0, 0, 1, 0, 0); ctx.clearRect(0, 0, cv.width, cv.height)
-      ctx.drawImage(base, 0, 0)
-      ctx.setTransform(dpr, 0, 0, dpr, 0, 0)
-      hot.forEach((h, i) => {
-        const red = h.pred >= 90
-        const col = red ? '217,69,95' : '240,145,58'
-        const pulse = reduce ? 0.5 : (Math.sin(t / 600 + i) + 1) / 2
-        ctx.beginPath(); ctx.arc(X(h.lon), Y(h.lat), 6 + pulse * 8, 0, Math.PI * 2); ctx.fillStyle = `rgba(${col},${0.25 - pulse * 0.2})`; ctx.fill()
-        ctx.beginPath(); ctx.arc(X(h.lon), Y(h.lat), 3.2, 0, Math.PI * 2); ctx.fillStyle = `rgb(${col})`; ctx.shadowColor = `rgb(${col})`; ctx.shadowBlur = 10; ctx.fill(); ctx.shadowBlur = 0
-      })
-      if (!reduce) raf = requestAnimationFrame(frame)
+    const blit = () => {
+      ctx.setTransform(1, 0, 0, 1, 0, 0); ctx.clearRect(0, 0, cv.width, cv.height); ctx.drawImage(base, 0, 0)
     }
-    drawBase(); frame(0)
-    const ro = new ResizeObserver(() => { drawBase(); if (reduce) frame(0) }); ro.observe(parent)
-    return () => { cancelAnimationFrame(raf); ro.disconnect() }
-  }, [districts, states])
+    drawBase(); blit()
+    const ro = new ResizeObserver(() => { drawBase(); blit() }); ro.observe(parent)
+    return () => { ro.disconnect() }
+  }, [districts])
   return <canvas ref={ref} style={{ display: 'block', width: '100%', height: '100%' }} aria-hidden />
+}
+
+
+/* Clickable pollution hotspots over the glow: orange = 60-90 (Moderate), red = 90+ (Poor or worse). */
+function Hotspots({ onOpen }: { onOpen: (district: string) => void }) {
+  const states = useData((s) => s.states)
+  const host = useRef<HTMLDivElement>(null)
+  const [size, setSize] = useState({ w: 0, h: 0 })
+  const [open, setOpen] = useState<number | null>(null)
+  useEffect(() => {
+    const el = host.current
+    if (!el) return
+    const ro = new ResizeObserver(() => setSize({ w: el.clientWidth, h: el.clientHeight }))
+    ro.observe(el); setSize({ w: el.clientWidth, h: el.clientHeight })
+    return () => ro.disconnect()
+  }, [])
+  const hot = (states?.hotspots ?? []).filter((h) => h.pred >= 60).slice(0, 25)
+  const { w, h } = size
+  const sc = Math.min(w / (LON1 - LON0), h / ((LAT1 - LAT0) * 1.05))
+  const ox = (w - (LON1 - LON0) * sc) / 2, oy = (h - (LAT1 - LAT0) * sc * 1.05) / 2
+  const X = (lon: number) => ox + (lon - LON0) * sc, Y = (lat: number) => oy + (LAT1 - lat) * sc * 1.05
+  const sel = open != null ? hot[open] : null
+  return (
+    <div ref={host} className="absolute inset-0" onClick={(e) => { if (e.target === e.currentTarget) setOpen(null) }}>
+      {w > 0 && hot.map((d, i) => {
+        const red = d.pred >= 90
+        return (
+          <button key={`${d.district}-${i}`} onClick={() => setOpen(open === i ? null : i)} onMouseEnter={() => setOpen(i)}
+            className="group absolute -translate-x-1/2 -translate-y-1/2 pointer-events-auto" style={{ left: X(d.lon), top: Y(d.lat) }}
+            aria-label={`${d.district}, ${d.state}: ${d.pred} µg/m³`}>
+            <span className={`pulse-ring absolute inset-0 m-auto h-5 w-5 rounded-full ${red ? 'bg-[#d9455f]' : 'bg-[#f0913a]'} opacity-40`} style={{ animationDelay: `${(i % 7) * 0.3}s` }} />
+            <span className={`block h-3 w-3 rounded-full border border-night/60 ${red ? 'bg-[#d9455f] shadow-[0_0_14px_3px_rgba(217,69,95,0.8)]' : 'bg-[#f0913a] shadow-[0_0_14px_3px_rgba(240,145,58,0.8)]'} transition group-hover:scale-125`} />
+          </button>
+        )
+      })}
+      {sel && (
+        <div className="glass pointer-events-auto absolute z-10 w-56 rounded-2xl p-3 text-left text-xs text-cream"
+          style={{ left: Math.min(Math.max(X(sel.lon) + 14, 8), w - 232), top: Math.min(Math.max(Y(sel.lat) - 20, 8), h - 120) }}>
+          <div className="text-sm font-medium">{sel.district}</div>
+          <div className="text-cream/65">{sel.state}</div>
+          <div className="num mt-1.5 text-2xl leading-none" style={{ color: colorFor(sel.pred) }}>{fmt(sel.pred)} <span className="text-xs text-cream/60">µg/m³</span></div>
+          <div className="mt-0.5 text-[11px]" style={{ color: band(sel.pred).color }}>{band(sel.pred).label} · {(sel.pred / 15).toFixed(1)}× WHO guideline</div>
+          <button onClick={() => onOpen(sel.district)} className="mt-2 rounded-full bg-cream px-3 py-1 text-[11px] font-medium text-night hover:bg-haze">Open on the map</button>
+        </div>
+      )}
+    </div>
+  )
 }
 
 /* Drifting aerosol particles over the sky. */
@@ -141,6 +156,13 @@ function Clock() {
 
 export default function Hero({ onExplore, onCheck }: { onExplore: () => void; onCheck: () => void }) {
   const meta = useData((s) => s.meta)
+  const districts = useData((s) => s.districts)
+  const setSelected = useData((s) => s.setSelected)
+  const onOpenDistrict = (name: string) => {
+    const f = districts?.features.find((x) => x.properties.name === name)
+    if (f) setSelected(f.properties.id)
+    onExplore()
+  }
   const metrics = useData((s) => s.metrics)
   const states = useData((s) => s.states)
   const host = useRef<HTMLElement>(null)
@@ -159,6 +181,7 @@ export default function Hero({ onExplore, onCheck }: { onExplore: () => void; on
       {/* glowing India, sized to the viewport so the whole country is on the first screen */}
       <div className="float-2 pointer-events-none absolute right-[-6%] top-[14%] h-[60%] w-[60%] opacity-90 lg:right-[2%] lg:top-[76px] lg:h-[calc(100svh-140px)] lg:max-h-[880px] lg:w-[calc((100svh-140px)*0.92)] lg:max-w-[46vw]">
         <IndiaGlow />
+        <Hotspots onOpen={onOpenDistrict} />
       </div>
       {/* live readout over the map */}
       <div className="pointer-events-none absolute right-4 top-[72px] hidden flex-col items-end gap-2 lg:flex">
