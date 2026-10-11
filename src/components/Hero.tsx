@@ -1,10 +1,8 @@
 import { useEffect, useRef } from 'react'
-import { ArrowDown, ChevronRight, Satellite, ShieldCheck, Wind } from 'lucide-react'
+import { ArrowDown, ChevronRight, LocateFixed, Satellite, ShieldCheck, Wind } from 'lucide-react'
 import { useData } from '../lib/store'
 import { colorFor, fmt } from '../lib/scale'
 import { useParallax } from '../lib/useReveal'
-import Search from './Search'
-import type { City } from '../lib/types'
 
 /* India drawn from the live district predictions, glowing in the haze. */
 function IndiaGlow() {
@@ -97,7 +95,7 @@ function Particles() {
   return <canvas ref={ref} className="absolute inset-0" style={{ display: 'block', width: '100%', height: '100%' }} aria-hidden />
 }
 
-export default function Hero({ onExplore, onPick }: { onExplore: () => void; onPick: (c: City) => void }) {
+export default function Hero({ onExplore, onCheck }: { onExplore: () => void; onCheck: () => void }) {
   const meta = useData((s) => s.meta)
   const metrics = useData((s) => s.metrics)
   const host = useRef<HTMLElement>(null)
@@ -136,8 +134,11 @@ export default function Hero({ onExplore, onPick }: { onExplore: () => void; onP
             AirGap learns from every public PM2.5 monitor in India, reads today's satellite aerosol and weather for every district, and tells you what the air is probably like where nobody is checking. With an error bar you can check, and the twenty places that need a monitor most.
           </p>
           <div className="rise rise-3 mt-8 flex flex-wrap items-center gap-3">
-            <button onClick={onExplore} className="group inline-flex items-center gap-2 rounded-full bg-cream px-5 py-2.5 text-sm font-medium text-ink transition hover:bg-haze">
-              Explore the live map <ArrowDown size={15} className="transition group-hover:translate-y-0.5" />
+            <button onClick={onCheck} className="group inline-flex items-center gap-2 rounded-full bg-cream px-5 py-2.5 text-sm font-medium text-ink transition hover:bg-haze">
+              <LocateFixed size={15} /> Check your air <ArrowDown size={15} className="transition group-hover:translate-y-0.5" />
+            </button>
+            <button onClick={onExplore} className="inline-flex items-center gap-1.5 rounded-full border border-cream/25 px-5 py-2.5 text-sm text-cream/90 backdrop-blur transition hover:bg-white/10">
+              Explore the live map <ChevronRight size={15} />
             </button>
             <a href="/accuracy" className="inline-flex items-center gap-1.5 rounded-full border border-cream/25 px-5 py-2.5 text-sm text-cream/90 backdrop-blur transition hover:bg-white/10">
               See the proof <ChevronRight size={15} />
@@ -154,16 +155,6 @@ export default function Hero({ onExplore, onPick }: { onExplore: () => void; onP
         </div>
       </div>
 
-      {/* glass search bar overlapping the hero edge, like a booking widget */}
-      <div className="absolute inset-x-0 bottom-0 z-10 mx-auto max-w-4xl translate-y-1/2 px-5 sm:px-8">
-        <div className="tilt glass-light rounded-2xl p-3 text-ink sm:flex sm:items-center sm:gap-3 sm:p-3.5">
-          <div className="px-2 pb-2 sm:pb-0">
-            <div className="eyebrow">Your district</div>
-            <div className="text-sm text-ink-2">What's the air like where you are?</div>
-          </div>
-          <div className="flex-1"><Search onPick={onPick} /></div>
-        </div>
-      </div>
     </section>
   )
 }

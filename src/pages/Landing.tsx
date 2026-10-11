@@ -1,4 +1,4 @@
-import { useCallback, useMemo, useRef, useState } from 'react'
+import { useMemo, useRef, useState } from 'react'
 import { AlertTriangle, Loader2, MapPin, Radio, Satellite, Target } from 'lucide-react'
 import Hero from '../components/Hero'
 import IndiaMap from '../components/IndiaMap'
@@ -9,7 +9,6 @@ import MyAir from '../components/MyAir'
 import { useData } from '../lib/store'
 import { colorFor, fmt } from '../lib/scale'
 import { useReveal } from '../lib/useReveal'
-import type { City } from '../lib/types'
 
 export default function Landing() {
   const mapSection = useRef<HTMLDivElement>(null)
@@ -23,18 +22,6 @@ export default function Landing() {
   const [mapReady, setMapReady] = useState(false)
   useReveal([districts, metrics])
 
-  const onPick = useCallback((c: City) => {
-    setFlyTo({ lat: c.lat, lon: c.lon })
-    if (districts) {
-      let best = -1, bd = Infinity
-      for (const f of districts.features) {
-        const d = (f.properties.lat - c.lat) ** 2 + (f.properties.lon - c.lon) ** 2
-        if (d < bd) { bd = d; best = f.properties.id }
-      }
-      if (best >= 0) setSelected(best)
-    }
-    mapSection.current?.scrollIntoView({ behavior: 'smooth', block: 'start' })
-  }, [districts, setSelected])
 
   const ranked = useMemo(() => districts ? [...districts.features].filter((f) => f.properties.pred != null).sort((a, b) => (b.properties.pred ?? 0) - (a.properties.pred ?? 0)) : [], [districts])
   const worst = ranked.slice(0, 6)
@@ -43,7 +30,7 @@ export default function Landing() {
 
   return (
     <>
-      <Hero onExplore={() => mapSection.current?.scrollIntoView({ behavior: 'smooth' })} onPick={onPick} />
+      <Hero onExplore={() => mapSection.current?.scrollIntoView({ behavior: 'smooth' })} onCheck={() => document.getElementById('my-air')?.scrollIntoView({ behavior: 'smooth', block: 'start' })} />
 
       <MyAir onLocate={(d) => { setSelected(d.id); setFlyTo({ lat: d.lat, lon: d.lon }); mapSection.current?.scrollIntoView({ behavior: 'smooth' }) }} />
 
