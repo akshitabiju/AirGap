@@ -42,3 +42,4 @@ AIRGAP_PROMPT.md
 
 infra/site.zip
 infra/.amplify-*
+infra/.cf-config.json
